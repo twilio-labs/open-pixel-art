@@ -1,0 +1,13 @@
+newIssueWelcomeComment: |
+  Thank you so much for opening your first issue for this project! We'll try to get back to it as quickly as possible. While you are waiting...here's a random picture of a corgi (powered by [dog.ceo](https://dog.ceo))
+
+  ![dog](https://dog.ceo/api/breed/images/random)
+
+firstPRMergeComment: >
+  Congratulations to your first contribution to the Open Pixel Art project!
+
+  If you are on the look out for more ways to contribute to open-source, 
+  check out a list of some of our repositories at https://github.com/twilio/opensource.
+
+  And if you love Twilio as much as we do, make sure to check out our 
+  Twilio Champions program! https://www.twilio.com/champions

@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;
+}
+
+header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nav-list {
+  list-style: none;
+  padding-left: 0;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+main > section {
+  width: 100%;
+}
+
+#canvas {
+  max-width: 800px;
+  max-height: 800px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#canvas svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nes-btn {
+  margin-bottom: 10px;
+}
+
+.nes-container {
+  margin: 20px;
+  max-width: 800px;
+}
+
+.nes-container.is-dark {
+  margin-bottom: 20px;
+}
+
+footer p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.8em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p code {
+  font-family: monospace;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.twilio-link {
+  color: #f22f46;
+}
+
+.screenreader-only {
+  display: none;
+}

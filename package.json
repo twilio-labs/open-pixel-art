@@ -1,0 +1,33 @@
+{
+  "name": "open-pixel-art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A project to teach people how to do their first pull request",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twilio-labs/open-pixel-art.git"
+  },
+  "keywords": [],
+  "author": "Twilio Labs <open-source@twilio.com> (https://twilio.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twilio-labs/open-pixel-art/issues"
+  },
+  "homepage": "https://github.com/twilio-labs/open-pixel-art#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@types/jest": "^24.0.18",
+    "common-tags": "^1.8.0",
+    "danger": "^9.2.0",
+    "dot-prop": "^5.1.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "nes.css": "^2.2.0"
+  }
+}
