@@ -9,6 +9,17 @@
   "imageSize": 80,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "dkundel",
+      "name": "Dominik Kundel",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1505101?v=4",
+      "profile": "https://dkundel.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
