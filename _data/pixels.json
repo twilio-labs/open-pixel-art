@@ -17,6 +17,7 @@
     { "y": 7, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
     { "y": 7, "x": 4, "color": "#F22F46", "username": "<UNCLAIMED>" },
     { "y": 7, "x": 5, "color": "#F22F46", "username": "<UNCLAIMED>" },
-    { "y": 7, "x": 6, "color": "#F22F46", "username": "dkundel-releases" }
+    { "y": 7, "x": 6, "color": "#F22F46", "username": "<UNCLAIMED>" },
+    { "y": 10, "x": 10, "color": "#FF69B4", "username": "dkundel-releases" }
   ]
 }
