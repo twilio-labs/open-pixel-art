@@ -1,3 +1,3 @@
 module.exports = {
-  isLocal: process.env.NODE_ENV !== 'production'
-}
+  isLocal: process.env.PIXEL_ART_RULERS !== 'hide'
+};
