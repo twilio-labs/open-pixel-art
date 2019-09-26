@@ -14,6 +14,8 @@ body {
 header {
   margin-top: 20px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav-list {
@@ -67,6 +69,8 @@ main > section {
 footer p {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h1,
