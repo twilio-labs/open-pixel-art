@@ -22,6 +22,7 @@
     { "y": 20, "x": 20, "color": "#604b86", "username": "amykapernick"},
     { "y": 38, "x": 38, "color": "#0f61c1", "username": "rickyrobinett"},
     { "y": 39, "x": 39, "color": "#000080", "username": "rmkubik"},
-    { "y": 39, "x": 0, "color": "#623CE4", "username": "toddmoy"}
+    { "y": 39, "x": 0, "color": "#623CE4", "username": "toddmoy"},
+    { "y": 0, "x": 34, "color": "#ff2052", "username": "TheHandsomeCoder"}
   ]
 }
