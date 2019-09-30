@@ -1,6 +1,6 @@
 # Open Pixel Art by [Twilio](https://www.twilio.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
 This is an art project created with the intention to teach you how to create a pull request.
 
@@ -39,6 +39,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://dkundel.com"><img src="https://avatars3.githubusercontent.com/u/1505101?v=4" width="80px;" alt="Dominik Kundel"/><br /><sub><b>Dominik Kundel</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=dkundel" title="Code">💻</a> <a href="#ideas-dkundel" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://aimhigherwebdesign.com.au"><img src="https://avatars2.githubusercontent.com/u/15953185?v=4" width="80px;" alt="Amy Kapernick"/><br /><sub><b>Amy Kapernick</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=amykapernick" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/kwhinnery"><img src="https://avatars3.githubusercontent.com/u/29193?v=4" width="80px;" alt="Kevin Whinnery"/><br /><sub><b>Kevin Whinnery</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=kwhinnery" title="Code">💻</a></td>
+    <td align="center"><a href="http://rickyrobinett.com"><img src="https://avatars3.githubusercontent.com/u/838096?v=4" width="80px;" alt="Ricky Robinett"/><br /><sub><b>Ricky Robinett</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=rickyrobinett" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/andrescalco"><img src="https://avatars1.githubusercontent.com/u/10577705?v=4" width="80px;" alt="André Felipe Scalco"/><br /><sub><b>André Felipe Scalco</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=andrescalco" title="Code">💻</a></td>
   </tr>
 </table>
 
