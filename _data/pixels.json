@@ -15,7 +15,7 @@
     { "y": 5, "x": 6, "color": "#F22F46", "username": "<UNCLAIMED>" },
     { "y": 5, "x": 8, "color": "#F22F46", "username": "<UNCLAIMED>" },
     { "y": 7, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
-    { "y": 7, "x": 4, "color": "#F22F46", "username": "<UNCLAIMED>" },
+    { "y": 7, "x": 4, "color": "#1E90FF", "username": "nmmotus" },
     { "y": 7, "x": 5, "color": "#9613f9", "username": "AidanJSmith" },
     { "y": 7, "x": 6, "color": "#F22F46", "username": "kwhinnery" },
     { "y": 10, "x": 10, "color": "#FF69B4", "username": "dkundel-releases" },
@@ -27,7 +27,6 @@
     { "y": 37, "x": 37, "color": "#000080", "username": "robinske"},
     { "y": 23, "x": 7, "color": "#00ff7f", "username": "nokenwa"},
     { "y": 4, "x": 27, "color": "#32A2DB", "username": "FailedSitcom" },
-    { "y": 6, "x": 21, "color": "#32A2D0", "username": "andreasonny83"  },
-    { "y": 6, "x": 21, "color": "dodgerblue", "username": "nmmotus" }
+    { "y": 6, "x": 21, "color": "#32A2D0", "username": "andreasonny83"  }
   ]
 }
