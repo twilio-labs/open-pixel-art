@@ -97,15 +97,17 @@ function allPatchesAreForTheSamePixel(jsonPatch) {
       .map(pixel => pixel.username)
       .filter(username => username !== '<UNCLAIMED>');
 
-    fail(
-      'It seems like you are accidentally deleting some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
-    );
-    fail(
-      `Make sure that the following usernames are indeed included: ${removePatches.join(
-        ','
-      )}`
-    );
-    return false;
+    if (removePatches.length > 0) {
+      fail(
+        'It seems like you are accidentally deleting some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
+      );
+      fail(
+        `Make sure that the following usernames are indeed included: ${removePatches.join(
+          ','
+        )}`
+      );
+      return false;
+    }
   }
 
   let currentPixelIndex = undefined;
