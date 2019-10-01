@@ -91,6 +91,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "FailedSitcom",
+      "name": "Samuel Durkin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6232253?v=4",
+      "profile": "http://www.samueldurkin.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
