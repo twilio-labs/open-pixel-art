@@ -1,4 +1,10 @@
 pull_request_rules:
+  - name: inform people about merge conflict
+    conditions:
+      - -conflict
+    actions:
+      comment:
+        message: 'Unfortunately it seems like some other contributions have been merged since you contributed. Please resolve those merge conflicts. For more info check out this page: https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line'
   - name: automatic merge on CI success for pixel contributions
     conditions:
       - -conflict
