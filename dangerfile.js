@@ -159,8 +159,10 @@ function hasOnlyPixelChanges(gitChanges) {
 
 async function run() {
   if (danger.github.thisPR) {
-    if (!hasOnlyPixelChanges(danger.git)) {
-      await handleMultipleFileChanges();
+    if ((await danger.git.linesOfCode()) === 0) {
+      fail('This PR is empty and needs a manual review');
+    } else if (!hasOnlyPixelChanges(danger.git)) {
+      await handleMultipleFileChanges(danger.git);
     } else {
       const jsonPatch = await danger.git.JSONPatchForFile('_data/pixels.json');
       const passed = await evaluatePixelChanges(jsonPatch);
