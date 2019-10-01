@@ -140,7 +140,7 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
     if (oldEntry.username !== '<UNCLAIMED>') {
       fail(`I'm sorry but you cannot override someone elses pixel.`);
       return false;
-    } else if (newEntry.username !== gitHubUsername) {
+    } else if (newEntry.username.toLowerCase() !== gitHubUsername.toLowerCase()) {
       fail(
         `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${newEntry.username}" instead.`
       );
