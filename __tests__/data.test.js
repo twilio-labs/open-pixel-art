@@ -28,7 +28,9 @@ describe('pixels', () => {
 
     for (const pixel of pixels.data) {
       expect(pixel.x).toBeLessThan(defaults.image.width);
+      expect(pixel.x).toBeGreaterThanOrEqual(0);
       expect(pixel.y).toBeLessThan(defaults.image.height);
+      expect(pixel.y).toBeGreaterThanOrEqual(0);
     }
   });
 
