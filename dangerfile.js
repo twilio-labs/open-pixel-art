@@ -134,13 +134,15 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
     .replace(/\//g, '.');
   const propertyName = specificDiff.path.substr(lastSlash + 1);
   const newEntry = dotProp.get(patch.after, normalizedPath);
+  const entryUsernameLowerCase = newEntry.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
   if (propertyName === 'username') {
     const oldEntry = dotProp.get(patch.before, normalizedPath);
     if (oldEntry.username !== '<UNCLAIMED>') {
       fail(`I'm sorry but you cannot override someone elses pixel.`);
       return false;
-    } else if (newEntry.username !== gitHubUsername) {
+    } else if (entryUsernameLowerCase !== gitHubUsernameLoweCase) {
       fail(
         `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${newEntry.username}" instead.`
       );
@@ -153,8 +155,10 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
 
 function isValidNewPixelSubmission(pixel, gitHubUsername) {
   let result = true;
+  const pixelUsernameLowerCase = pixel.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
-  if (pixel.username !== gitHubUsername) {
+  if (pixelUsernameLowerCase !== gitHubUsernameLoweCase) {
     fail(
       `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${pixel.username}" instead.`
     );
