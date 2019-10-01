@@ -1,6 +1,6 @@
 # Open Pixel Art by [Twilio](https://www.twilio.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
 This is an art project created with the intention to teach you how to create a pull request.
 
@@ -43,6 +43,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/andrescalco"><img src="https://avatars1.githubusercontent.com/u/10577705?v=4" width="80px;" alt="André Felipe Scalco"/><br /><sub><b>André Felipe Scalco</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=andrescalco" title="Code">💻</a></td>
     <td align="center"><a href="https://gustiaux.com"><img src="https://avatars0.githubusercontent.com/u/26365722?v=4" width="80px;" alt="Teddy Gustiaux"/><br /><sub><b>Teddy Gustiaux</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=teddy-gustiaux" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AidanJSmith"><img src="https://avatars3.githubusercontent.com/u/26717362?v=4" width="80px;" alt="Aidan Smith"/><br /><sub><b>Aidan Smith</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=AidanJSmith" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/TheHandsomeCoder"><img src="https://avatars0.githubusercontent.com/u/1569604?v=4" width="80px;" alt="Scott O'Malley"/><br /><sub><b>Scott O'Malley</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=TheHandsomeCoder" title="Code">💻</a></td>
   </tr>
 </table>
 
