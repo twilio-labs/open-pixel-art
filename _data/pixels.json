@@ -20,6 +20,7 @@
     { "y": 7, "x": 5, "color": "#9613f9", "username": "AidanJSmith" },
     { "y": 7, "x": 6, "color": "#F22F46", "username": "kwhinnery" },
     { "y": 10, "x": 10, "color": "#FF69B4", "username": "dkundel-releases" },
+    { "y": 15, "x": 15, "color": "#00FFFF", "username": "Jrdngill"},
     { "y": 20, "x": 20, "color": "#604b86", "username": "amykapernick"},
     { "y": 30, "x": 30, "color": "#FFA500", "username": "brianmyburgh"},
     { "y": 38, "x": 38, "color": "#0f61c1", "username": "rickyrobinett"},
