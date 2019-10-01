@@ -34,13 +34,13 @@ describe('pixels', () => {
 
   test('every pixel should have a color or a tileName property', async () => {
     const pixels = await loadJson('pixels.json');
-    
+
     for (const pixel of pixels.data) {
       const hasTileName = typeof pixel.tileName !== 'undefined';
       const hasColor = typeof pixel.color !== 'undefined';
 
       expect(hasTileName || hasColor).toBeTruthy();
-     }
+    }
   })
 
   test('every pixel should have a hex code color if present', async () => {
@@ -52,6 +52,14 @@ describe('pixels', () => {
       if (hasColor) {
         expect(pixel.color).toMatch(/#[0-9a-f]{3,6}/i);
       }
+    }
+  })
+
+  test('claimed name doesn\'t have brackets', async () => {
+    const pixels = await loadJson('pixels.json');
+    for (const pixel of pixels.data) {
+      if (pixel.username !== '<UNCLAIMED>')
+        expect(pixel.username).not.toMatch(/^\<.*\>$/);
     }
   })
 });
