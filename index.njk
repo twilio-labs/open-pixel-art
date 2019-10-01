@@ -53,9 +53,9 @@
           <rect x="0" y="0" width="100%" height="100%" style="fill: {{defaults.image.background}}"/>
           {% for pixel in pixels.data %}
             {% if pixel.color %}
-              <rect x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" width="{{defaults.image.scale}}" height="{{defaults.image.scale}}" style="fill: {{pixel.color}}"/>
+              <rect x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" width="{{defaults.image.scale}}" height="{{defaults.image.scale}}" style="fill: {{pixel.color}}" name="{% if pixel.username %} {{pixel.username}} {% endif %}"/> 
             {% elif pixel.tileName %}
-              <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}"/>
+              <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
             {% endif %}
           {% endfor %}
           {% if env.isLocal %}
