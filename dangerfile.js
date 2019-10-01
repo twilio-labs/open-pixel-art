@@ -59,9 +59,13 @@ async function evaluatePixelChanges(jsonPatch) {
       );
     }
   } else {
-    if (!allPatchesAreForTheSamePixel(jsonPatch.diff)) {
+    if (!allPatchesAreForTheSamePixel(jsonPatch)) {
       return false;
     } else {
+      if (jsonPatch.diff.length === 0) {
+        fail('This PR appears to be empty and needs a manual review');
+        return false;
+      }
       return isValidPixelUpdate(jsonPatch, jsonPatch.diff[0], gitHubUsername);
     }
   }
@@ -72,7 +76,40 @@ function getIndexFromPath(diffPath) {
   return parseInt(diffPath.replace('/data/', '').match(/^\d*/)[0], 10);
 }
 
-function allPatchesAreForTheSamePixel(diffs) {
+function hasOperation(diffs, operation) {
+  for (const diff of diffs) {
+    if (diff.op === operation) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function allPatchesAreForTheSamePixel(jsonPatch) {
+  const diffs = jsonPatch.diff;
+
+  if (hasOperation(diffs, 'remove')) {
+    const removePatches = diffs
+      .filter(x => x.op === 'remove')
+      .map(x => getIndexFromPath(x.path))
+      .map(idx => jsonPatch.before.data[idx])
+      .map(pixel => pixel.username)
+      .filter(username => username !== '<UNCLAIMED>');
+
+    if (removePatches.length > 0) {
+      fail(
+        'It seems like you are accidentally deleting some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
+      );
+      fail(
+        `Make sure that the following usernames are indeed included: ${removePatches.join(
+          ','
+        )}`
+      );
+      return false;
+    }
+  }
+
   let currentPixelIndex = undefined;
   for (let diff of diffs) {
     const idx = getIndexFromPath(diff.path);
