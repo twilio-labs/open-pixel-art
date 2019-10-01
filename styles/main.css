@@ -18,6 +18,11 @@ header {
   padding-right: 20px;
 }
 
+.logo {
+  max-width: 800px;
+  max-height: 250px;
+}
+
 .nav-list {
   list-style: none;
   padding-left: 0;
@@ -66,6 +71,10 @@ main > section {
   margin-bottom: 20px;
 }
 
+footer {
+  margin-bottom: 60px;
+}
+
 footer p {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8em;
@@ -97,4 +106,20 @@ p code {
 
 .screenreader-only {
   display: none;
+}
+
+.twilio-pixel {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons > a {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
