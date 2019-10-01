@@ -28,7 +28,9 @@ describe('pixels', () => {
 
     for (const pixel of pixels.data) {
       expect(pixel.x).toBeLessThan(defaults.image.width);
+      expect(pixel.x).toBeGreaterThanOrEqual(0);
       expect(pixel.y).toBeLessThan(defaults.image.height);
+      expect(pixel.y).toBeGreaterThanOrEqual(0);
     }
   });
 
@@ -41,7 +43,7 @@ describe('pixels', () => {
 
       expect(hasTileName || hasColor).toBeTruthy();
     }
-  })
+  });
 
   test('every pixel should have a hex code color if present', async () => {
     const pixels = await loadJson('pixels.json');
@@ -53,13 +55,13 @@ describe('pixels', () => {
         expect(pixel.color).toMatch(/#[0-9a-f]{3,6}/i);
       }
     }
-  })
+  });
 
-  test('claimed name doesn\'t have brackets', async () => {
+  test("claimed name doesn't have brackets", async () => {
     const pixels = await loadJson('pixels.json');
     for (const pixel of pixels.data) {
       if (pixel.username !== '<UNCLAIMED>')
         expect(pixel.username).not.toMatch(/^\<.*\>$/);
     }
-  })
+  });
 });
