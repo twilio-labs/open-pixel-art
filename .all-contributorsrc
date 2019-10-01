@@ -55,6 +55,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "teddy-gustiaux",
+      "name": "Teddy Gustiaux",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/26365722?v=4",
+      "profile": "https://gustiaux.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
