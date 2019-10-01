@@ -1,5 +1,5 @@
 {
-  "name": "n",
+  "name": "open-pixel-art",
   "version": "1.0.0",
   "private": true,
   "description": "A project to teach people how to do their first pull request",
@@ -29,6 +29,5 @@
   },
   "dependencies": {
     "nes.css": "^2.2.0"
-  },
-  "main": ".eleventy.js"
+  }
 }
