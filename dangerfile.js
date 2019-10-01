@@ -87,15 +87,20 @@ function hasOperation(diffs, operation) {
 }
 
 function allPatchesAreForTheSamePixel(jsonPatch) {
+  console.log(jsonPatch.diff);
+  console.log('before', jsonPatch.before.data[10]);
+  console.log('after', jsonPatch.after.data[10]);
   const diffs = jsonPatch.diff;
 
-  if (hasOperation(diffs, 'remove')) {
-    const removePatches = diffs
-      .filter(x => x.op === 'remove')
+  if (hasOperation(diffs, 'remove') || hasOperation(diffs, 'replace')) {
+    const allRemovePatches = diffs
+      .filter(x => x.op === 'remove' || x.op === 'replace')
       .map(x => getIndexFromPath(x.path))
       .map(idx => jsonPatch.before.data[idx])
       .map(pixel => pixel.username)
       .filter(username => username !== '<UNCLAIMED>');
+
+    const removePatches = [...new Set(allRemovePatches)];
 
     if (removePatches.length > 0) {
       fail(
