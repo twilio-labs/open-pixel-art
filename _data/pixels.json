@@ -70,6 +70,7 @@
     { "y": 20, "x": 1, "color": "#FF0000", "username": "Arendt" },
     { "y": 26, "x": 26, "color": "#72B630", "username": "enbonnet" },
     { "y": 30, "x": 10, "color": "#00FF00", "username": "RanadeepPolavarapu" },
-    { "y": 21, "x": 9, "color": "#ff7518", "username": "TyLippe" }  
+    { "y": 21, "x": 9, "color": "#ff7518", "username": "TyLippe" },
+    { "y": 21, "x": 21, "color": "#CBF334", "username": "windixxie" }
   ]
 }
