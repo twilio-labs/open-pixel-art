@@ -1,21 +1,21 @@
 // Wait until the window has loaded to add the event handler
 window.onload = () => {
 	// Add a mouse move event handler to the canvas
-	document.getElementById("canvas").onmousemove = pixel_hover;
+	document.getElementById("canvas").onmousemove = pixelHover;
 };
 
-function pixel_hover(evt) {
+function pixelHover(evt) {
 	// Get the element under the mouse (or tap)
-	moused_over_el = document.elementFromPoint(evt.clientX, evt.clientY);
+	mousedOverEl = document.elementFromPoint(evt.clientX, evt.clientY);
 
 	// Check if the moused over element is a RECT
-	if (moused_over_el.nodeName == "rect") {
+	if (mousedOverEl.nodeName == "rect") {
 		// If it is a rect then get the "name" attribute
-		rect_name = moused_over_el.getAttribute("name");
+		rectName = mousedOverEl.getAttribute("name");
 		// Check if there is a name associated with that block then set
 		// the contributer name span to the name
-		if (rect_name != null) {
-			document.getElementById("contributer-name").textContent = rect_name;
+		if (rectName != null) {
+			document.getElementById("contributer-name").textContent = rectName;
 		}
 		// If there is no associated name then set the text to nothing
 		else {
