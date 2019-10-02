@@ -87,15 +87,20 @@ function hasOperation(diffs, operation) {
 }
 
 function allPatchesAreForTheSamePixel(jsonPatch) {
+  console.log(jsonPatch.diff);
+  console.log('before', jsonPatch.before.data[10]);
+  console.log('after', jsonPatch.after.data[10]);
   const diffs = jsonPatch.diff;
 
-  if (hasOperation(diffs, 'remove')) {
-    const removePatches = diffs
-      .filter(x => x.op === 'remove')
+  if (hasOperation(diffs, 'remove') || hasOperation(diffs, 'replace')) {
+    const allRemovePatches = diffs
+      .filter(x => x.op === 'remove' || x.op === 'replace')
       .map(x => getIndexFromPath(x.path))
       .map(idx => jsonPatch.before.data[idx])
       .map(pixel => pixel.username)
       .filter(username => username !== '<UNCLAIMED>');
+
+    const removePatches = [...new Set(allRemovePatches)];
 
     if (removePatches.length > 0) {
       fail(
@@ -134,13 +139,15 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
     .replace(/\//g, '.');
   const propertyName = specificDiff.path.substr(lastSlash + 1);
   const newEntry = dotProp.get(patch.after, normalizedPath);
+  const entryUsernameLowerCase = newEntry.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
   if (propertyName === 'username') {
     const oldEntry = dotProp.get(patch.before, normalizedPath);
     if (oldEntry.username !== '<UNCLAIMED>') {
       fail(`I'm sorry but you cannot override someone elses pixel.`);
       return false;
-    } else if (newEntry.username !== gitHubUsername) {
+    } else if (entryUsernameLowerCase !== gitHubUsernameLoweCase) {
       fail(
         `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${newEntry.username}" instead.`
       );
@@ -153,8 +160,10 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
 
 function isValidNewPixelSubmission(pixel, gitHubUsername) {
   let result = true;
+  const pixelUsernameLowerCase = pixel.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
-  if (pixel.username !== gitHubUsername) {
+  if (pixelUsernameLowerCase !== gitHubUsernameLoweCase) {
     fail(
       `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${pixel.username}" instead.`
     );
