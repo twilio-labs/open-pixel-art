@@ -9,6 +9,8 @@
 - [ ] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
 - [ ] I acknowledge that all my contributions will be made under the project's [license](../../LICENSE.md).
 
+<!-- To check a task, put a "x" between the brackets, similar to [x] -->
+
 <!-- If you are contributing more than a pixel, please uncomment the part below and fill out the rest of the template -->
 
 <!--
