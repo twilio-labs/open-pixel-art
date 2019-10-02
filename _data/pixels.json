@@ -89,6 +89,7 @@
     { "y": 15, "x": 35, "color": "#f12e45", "username": "MariyaAsterisk" },
     { "y": 24, "x":7, "color": "#B6084F", "username": "didacta"},
     { "y": 11, "x": 29, "color": "#d5f9fd", "username": "steveperkins" },
-    { "y": 3, "x": 15, "color": "#5DC1B9", "username": "baronrafael" }
+    { "y": 3, "x": 15, "color": "#5DC1B9", "username": "baronrafael" },
+    { "y": 20, "x": 15, "color": "#E57200", "username": "AM-Myrick" }
   ]
 }
