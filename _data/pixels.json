@@ -91,6 +91,9 @@
     { "y": 11, "x": 29, "color": "#d5f9fd", "username": "steveperkins" },
     { "y": 3, "x": 15, "color": "#5DC1B9", "username": "baronrafael" },
     { "y": 20, "x": 15, "color": "#E57200", "username": "AM-Myrick" },
-    { "y": 4, "x": 39, "color": "#33CEFF", "username": "micaswyers" }
+    { "y": 4, "x": 39, "color": "#33CEFF", "username": "micaswyers" },
+    { "y": 20, "x": 3, "color": "#ab1063", "username": "RashaMou" },
+    { "y": 25, "x": 25, "color": "#a11ec6", "username": "Joshua-Burleson"},
+    { "y": 27, "x": 27, "color": "#2BFFB9", "username": "niralpokal"}
   ]
 }
