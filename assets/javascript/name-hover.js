@@ -4,6 +4,10 @@ window.onload = () => {
   document.getElementById('canvas').onmousemove = pixelHover;
 };
 
+/**
+ * Print the contributer of a pixel on the canvas
+ * @param  {Event} evt MouseEvent from onmousemove event
+ */
 function pixelHover(evt) {
   // Get the element under the mouse (or tap)
   mousedOverEl = document.elementFromPoint(evt.clientX, evt.clientY);
