@@ -123,3 +123,8 @@ p code {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+#contributer-name{
+  font-weight:bold;
+  color:#f12e45;
+}
