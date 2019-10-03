@@ -62,13 +62,16 @@ Cada nuevo pixel debe ser un objeto que debe contener las siguientes cuatro prop
 - `color`: El color de tu pixel, en formato hexadecimal (Ejemplo: #ff0000 para rojo).
 - `username`: El usuario de GitHub que usarás para abrir el pull request.
 
+La fila de tu pixel va a tomar en cuenta primero la coordenada `y` y luego la coordenada `x`. Si no estás seguro de tus cambios, puedes hacerlos y ejecutar `npm run format:json` y esto ajustará tu pixel a la posición adecuada.
+
 El cambio final debería verse así (reemplazando dkundel por tu usuario de GitHub):
 
 ```diff
 {
   "data": [
-+    { "y": 10, "x": 20, "color": "#FFFF00", "username": "dkundel" },
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
+    {"y": 1, "x": 3, "color": "#F22F46", "username": "twilio-labs"},
++    { "y": 1, "x": 4, "color": "#FFFF00", "username": "dkundel"},
+    {"y": 2, "x": 9, "color": "#F22F46", "username": "twilio"},
     ...
   ]
 }
