@@ -171,7 +171,7 @@ The `_data` directory contains the `pixels.json` file that represents every sing
 
 ### `assets`
 
-A directoy for any static assets.
+A directory for any static assets.
 
 ### `dangerfile.js`
 
