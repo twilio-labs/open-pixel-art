@@ -8,7 +8,7 @@ pull_request_rules:
   - name: automatic merge on CI success for pixel contributions
     conditions:
       - -conflict
-      - 'status-success=build'
+      - 'status-success=ca395085-040a-526b-2ce8-bdc85f692774'
       - files=_data/pixels.json
       - '#files=1'
     actions:
@@ -21,7 +21,7 @@ pull_request_rules:
           - 'pixel-contribution'
   - name: create comment for failed CI
     conditions:
-      - 'status-failure=build'
+      - 'status-failure=ca395085-040a-526b-2ce8-bdc85f692774'
     actions:
       comment:
         message: 'Unfortunately the automatic code review has failed. Please click the details button for more information.'
