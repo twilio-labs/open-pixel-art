@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  margin-top: 20px;
+  margin-top: 20px;          /*px(or pixel) is the standard size in html, so it is optional for use*/
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
