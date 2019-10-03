@@ -139,6 +139,7 @@
     {"y": 39, "x": 20, "color": "#0088cc", "username": "clintdavis"},
     {"y": 39, "x": 30, "color": "#ff0000", "username": "forsas"},
     {"y": 39, "x": 38, "color": "#00b2e2", "username": "duncanleung"},
-    {"y": 39, "x": 39, "color": "#000080", "username": "rmkubik"}
+    {"y": 39, "x": 39, "color": "#000080", "username": "rmkubik"},
+    {"y": 1, "x": 0, "color": "#d46211", "username": "kefimochi"}
   ]
 }
