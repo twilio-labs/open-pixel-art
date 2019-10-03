@@ -1,5 +1,6 @@
 {
   "data": [
+    { "y": 10, "x": 11, "color": "#b603fc", "username": "smauer" },
     { "y": 39, "x": 20, "color": "#0088cc", "username": "clintdavis" },
     { "y": 10, "x": 5, "color": "#8a2be2", "username": "mfarberbrodsky"},
     { "y": 7, "x": 8, "color": "#edb5f5", "username": "adilhussain" },
