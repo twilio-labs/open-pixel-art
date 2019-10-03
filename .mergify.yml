@@ -24,7 +24,7 @@ pull_request_rules:
       - 'status-failure=build'
     actions:
       comment:
-        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information.'
+        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information. @dkundel'
       label:
         add:
           - 'hacktoberfest'
@@ -34,7 +34,7 @@ pull_request_rules:
       - '#files>=2'
     actions:
       comment:
-        message: 'This PR touches more than one file and has to be revied manually.'
+        message: 'This PR touches more than one file and has to be revied manually. @dkundel'
       label:
         add:
           - 'needs-review'
