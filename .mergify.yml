@@ -5,20 +5,20 @@ pull_request_rules:
     actions:
       comment:
         message: 'Unfortunately it seems like some other contributions have been merged since you contributed. Please resolve those merge conflicts. For more info check out this page: https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line'
-  - name: automatic merge on CI success for pixel contributions
-    conditions:
-      - -conflict
-      - 'status-success=build'
-      - files=_data/pixels.json
-      - '#files=1'
-    actions:
-      merge:
-        method: squash
-        strict: true
-      label:
-        add:
-          - 'hacktoberfest'
-          - 'pixel-contribution'
+  # - name: automatic merge on CI success for pixel contributions
+  #   conditions:
+  #     - -conflict
+  #     - 'status-success=build'
+  #     - files=_data/pixels.json
+  #     - '#files=1'
+  #   actions:
+  #     merge:
+  #       method: squash
+  #       strict: true
+  #     label:
+  #       add:
+  #         - 'hacktoberfest'
+  #         - 'pixel-contribution'
   - name: create comment for failed CI
     conditions:
       - 'status-failure=build'
