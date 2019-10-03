@@ -22,7 +22,9 @@ If you are already familiar with git and how to create a pull request on GitHub,
 We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
-- [Check out the Contributing Guide](CONTRIBUTING.md)
+- Check out the Contribution Guides:
+  - [English](CONTRIBUTING.md)
+  - [Español](docs/es/CONTRIBUTING.md)
 
 ## Code of Conduct
 
