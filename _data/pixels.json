@@ -107,7 +107,7 @@
     { "y": 27, "x": 27, "color": "#2BFFB9", "username": "niralpokal"},
     { "y": 4, "x": 20, "color": "#88B04B", "username": "corrinachow" },
     { "y": 15, "x": 25, "color": "#5EB820", "username": "diab3t3s"},
-    { "y": 29, "x": 29, "color": "#ff0000", "username": "IrvinDominin" },    
+    { "y": 29, "x": 29, "color": "#ff0000", "username": "IrvinDominin" },
     { "y": 25, "x": 19, "color": "#AF2800", "username": "Shaedil" },
     { "y": 20, "x": 21, "color": "#348AA7", "username": "kunwar97" },
     { "y": 0, "x": 0, "color": "#ffce00", "username": "masterkn48" },
@@ -118,6 +118,7 @@
     { "y": 17, "x": 17, "color": "#0066cc", "username": "troyanov" },
     { "y": 25, "x": 30, "color": "#fe5186", "username": "rpalaciosg"},
     { "y": 14, "x": 20, "color": "#1183ca", "username": "Tatvam"},
-    { "y": 31, "x": 0, "color": "#64b6d9", "username": "Kerl1310" }
+    { "y": 31, "x": 0, "color": "#64b6d9", "username": "Kerl1310" },
+    { "y": 8, "x": 6, "color": "#BADA55", "username": "JeremyPittard" }
   ]
 }
