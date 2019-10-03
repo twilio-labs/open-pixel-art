@@ -20,14 +20,12 @@ function pixelHover(evt) {
     // the contributer name span to the name
     if (rectName != null) {
       document.getElementById('contributer-name').textContent = rectName;
-    }
-    // If there is no associated name then set the text to nothing
-    else {
+    } else {
+      // If there is no associated name then set the text to nothing
       document.getElementById('contributer-name').textContent = '';
     }
-  }
-  // If the element is not a rect set the text to nothing
-  else {
+  } else {
+    // If the element is not a rect set the text to nothing
     document.getElementById('contributer-name').textContent = '';
   }
 }
