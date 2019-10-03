@@ -1,5 +1,6 @@
 {
   "data": [
+    { "y": 29, "x": 39, "color": "#40a346", "username": "viktor-wolf"},
     { "y": 10, "x": 11, "color": "#b603fc", "username": "smauer" },
     { "y": 39, "x": 20, "color": "#0088cc", "username": "clintdavis" },
     { "y": 10, "x": 5, "color": "#8a2be2", "username": "mfarberbrodsky"},
@@ -23,6 +24,7 @@
     { "y": 5, "x": 3, "color": "#1e22aa", "username": "franciscofsales" },
     { "y": 5, "x": 6, "color": "#990000", "username": "tstolswo" },
     { "y": 5, "x": 8, "color": "#ed1d24", "username": "khuongTiet" },
+    { "y": 6, "x": 6, "color": "#000000", "username": "yashwin" },
     { "y": 7, "x": 3, "color": "#58ad9e", "username": "ConorGrocock" },
     { "y": 7, "x": 4, "color": "#1E90FF", "username": "nmmotus" },
     { "y": 2, "x": 9, "color": "#c12d26", "username": "nsantiagoblair" },
@@ -105,7 +107,7 @@
     { "y": 27, "x": 27, "color": "#2BFFB9", "username": "niralpokal"},
     { "y": 4, "x": 20, "color": "#88B04B", "username": "corrinachow" },
     { "y": 15, "x": 25, "color": "#5EB820", "username": "diab3t3s"},
-    { "y": 29, "x": 29, "color": "#ff0000", "username": "IrvinDominin" },    
+    { "y": 29, "x": 29, "color": "#ff0000", "username": "IrvinDominin" },
     { "y": 25, "x": 19, "color": "#AF2800", "username": "Shaedil" },
     { "y": 20, "x": 21, "color": "#348AA7", "username": "kunwar97" },
     { "y": 0, "x": 0, "color": "#ffce00", "username": "masterkn48" },
@@ -113,6 +115,12 @@
     { "y": 0, "x": 1, "color": "#ffce00", "username": "huntlax" },
     { "y": 11, "x" : 23, "color" : "#34ebc6", "username": "harshsngh07"},
     { "y": 13, "x": 26, "color" : "#00ffff", "username": "Rajchowdhury420"},
+    { "y": 17, "x": 17, "color": "#0066cc", "username": "troyanov" },
+    { "y": 25, "x": 30, "color": "#fe5186", "username": "rpalaciosg"},
+    { "y": 14, "x": 20, "color": "#1183ca", "username": "Tatvam"},
+    { "y": 15, "x": 21, "color": "#1183ca", "username": "prabhu-moorthy"},
+    { "y": 31, "x": 0, "color": "#64b6d9", "username": "Kerl1310" },
+    { "y": 8, "x": 6, "color": "#BADA55", "username": "JeremyPittard" },
     { "y": 30, "x": 13, "color": "#01FF00", "username": "jishnubn" }
   ]
 }
