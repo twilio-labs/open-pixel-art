@@ -27,6 +27,7 @@
     "danger": "^9.2.0",
     "dot-prop": "^5.1.0",
     "jest": "^24.9.0",
+    "json-stringify-pretty-compact": "^2.0.0",
     "prettier": "^1.18.2"
   },
   "dependencies": {
