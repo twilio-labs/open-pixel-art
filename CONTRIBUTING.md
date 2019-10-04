@@ -1,5 +1,7 @@
 # Contributing to Open Pixel Art
 
+¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
+
 There are two ways you can contribute to this project. You can either contribute a single pixel to the canvas or you can contribute to the underlying project. For example by adding tests, updating the HTML template or updating documentation.
 
 For both scenarios the setup is the same, however, the contribution steps differ slightly.
@@ -63,13 +65,16 @@ A new pixel has to be an object with the following four properties:
 - `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
 - `username`: The GitHub username you'll use to create the pull request
 
+The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:json` and it should sort your pixel into the appropriate position.
+
 The change should look like this:
 
 ```diff
 {
   "data": [
-+    { "y": 10, "x": 20, "color": "#FFFF00", "username": "dkundel" },
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
+    {"y": 1, "x": 3, "color": "#F22F46", "username": "twilio-labs"},
++    { "y": 1, "x": 4, "color": "#FFFF00", "username": "dkundel"},
+    {"y": 2, "x": 9, "color": "#F22F46", "username": "twilio"},
     ...
   ]
 }
@@ -166,7 +171,7 @@ The `_data` directory contains the `pixels.json` file that represents every sing
 
 ### `assets`
 
-A directoy for any static assets.
+A directory for any static assets.
 
 ### `dangerfile.js`
 

@@ -1,43 +1,43 @@
-# Open Pixel Art by [Twilio](https://www.twilio.com)
+# Open Pixel Art por [Twilio](https://www.twilio.com)
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
-This is an art project created with the intention to teach you how to create a pull request.
+Este es un proyecto artístico creado con la intención de enseñarte cómo crear un pull request.
 
-Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!
+¡Visita [open-pixel-art.com](https://open-pixel-art.com) para ver los resultados!
 
-Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pix whatever color you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com)
+Todos quienes quieran aprender cómo crear un pull request en GitHub pueden usar este proyecto para contribuir con un pixel y agregarlo al canvas. Solo podrás crear un pixel, pero puedes elegir el color que quieras, siempre y cuando sea un color válido en formato hexadecimal. Por ejemplo, puedes usar: `#F22F46`, uno de los colores oficiales de [Twilio](https://www.twilio.com)
 
-> If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in [TwilioQuest](https://www.twilio.com/quest) for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
-> 🕹 [Download TwilioQuest](https://www.twilio.com/quest/download)
+> Si no tienes experiencia con código abierto, GitHub o usando git, ¡no hay problema!. Creamos un tutorial en [TwilioQuest](https://www.twilio.com/quest) especialmente para ti. Este tutorial te enseñará paso a paso como partir y te guiará en esta aventura de crear un pull request.
+> 🕹 [Descarga TwilioQuest](https://www.twilio.com/quest/download)
 
-The entire project is automated and is largely maintained by a set of bots that will verify any pixel contributions. However, if you'd like to know more about the project or submit other contributions to the project that are not a pixel, feel free to create a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) inside the [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
+Este proyecto está automatizado y en su mayoría es mantenido por bots que verificarán todas las contribuciones de pixeles que recibamos. Sin embargo, si quieres aprender más del proyecto o contribuir de otra forma, no dudes en abrir un [issue de GitHub](https://github.com/twilio-labs/open-pixel-art/issues) dentro del [proyecto Open Pixel Art](https://github.com/twilio-labs/open-pixel-art).
 
-## Contributing
+## Cómo Contribuir
 
-In order to contribute a pixel to the canvas, you'll have to create a [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to the [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
+Para contribuir con un pixel y agregarlo al canvas, puedes crear un [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) al [proyecto Open Pixel Art en GitHub](https://github.com/twilio-labs/open-pixel-art).
 
-If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the [contributing guide](CONTRIBUTING.md).
+Si ya tienes experiencia trabajando con git y sabes cómo crear un pull request en GitHub, te recomendamos revisar nuestra [guía de contribuciones](docs/es/CONTRIBUTING.md).
 
-We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
+Y como sabemos que contribuir a código abierto puede ser intimidante, también creamos una misión nueva en [TwilioQuest](https://www.twilio.com/quest), nuestro videojuego para aprender a programar, que te guiará paso a paso por el proceso de creación de un pull request para este proyecto ¡y te ayudará en esta nueva aventura hacia el código abierto!
 
-- [Download TwilioQuest](https://www.twilio.com/quest/download)
-- Check out the Contribution Guides:
-  - [English](CONTRIBUTING.md)
+- [Descarga TwilioQuest](https://www.twilio.com/quest/download)
+- Revisa nuestras guías de contribución:
   - [Español](docs/es/CONTRIBUTING.md)
+  - [Inglés](CONTRIBUTING.md)
 
-## Code of Conduct
+## Código de Conducta
 
-We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's Code of Conduct:
+Queremos que este proyecto sea lo más acogedor e inclusivo posible hacia todos. Si interactuas con este proyecto, de cualquier forma, aceptas respetar y adoptar nuestro Código de Conducta:
 
-- [English](CODE_OF_CONDUCT.md)
 - [Español](docs/es/CODE_OF_CONDUCT.md)
+- [Inglés](CODE_OF_CONDUCT.md)
 
-If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
+Si sientes que alguien ha atentado contra este Código de Conducta, por favor repórtalo enviando un correo electrónico a [open-source@twilio.com](mailto:open-source@twilio.com).
 
-## Contributors
+## Contribuyentes
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Muchas gracias a toda esta gente maravillosa que ha contribuido a este proyecto ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
@@ -61,20 +61,20 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Este proyecto usa la especificación de [all-contributors](https://github.com/all-contributors/all-contributors), y ¡todas las contribuciones son bienvenidas!
 
-## Technology Thank You
+## Agradecimientos
 
-This project is powered by various open-source projects. Among others:
+Este proyecto es posible gracias a múltiples otros proyectos de código abierto. Entre ellos:
 
-- [Eleventy](https://www.11ty.io/) for the static site generation
-- [Danger](https://danger.systems/js/) for the automated code review
-- [Mergify](https://github.com/mergifyio) for automated PR merging
-- [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot) to recognize the contributions of everyone
-- [Jest](https://jestjs.io/) for Unit Testing
-- [NES.css](https://nostalgic-css.github.io/NES.css/) for the CSS styling
-- [Welcome Bot](https://github.com/behaviorbot/welcome) to welcome new contributors
+- [Eleventy](https://www.11ty.io/) para la generación del sitio Web estático
+- [Danger](https://danger.systems/js/) para la revisión automática de código
+- [Mergify](https://github.com/mergifyio) para incluir los PR automáticamente
+- [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot) para reconocer las contribuciones de todos
+- [Jest](https://jestjs.io/) para los tests unitarios
+- [NES.css](https://nostalgic-css.github.io/NES.css/) para los estilos CSS
+- [Welcome Bot](https://github.com/behaviorbot/welcome) para darle la bienvenida a los nuevos contribuyentes
 
-## License
+## Licencia
 
 MIT
