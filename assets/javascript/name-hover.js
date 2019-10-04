@@ -17,7 +17,7 @@ function pixelHover(evt) {
     // If it is a rect then get the "name" attribute
     rectName = mousedOverEl.getAttribute('name');
     // Then get the "style" attribute
-    rectColor = mousedOverEl.getAttribute('style');
+    rectColor = mousedOverEl.getAttribute('style').substring(6);
     // Check if there is a name associated with that block then set
     // the contributer name span to the name
     if (rectName != null) {
