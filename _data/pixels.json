@@ -178,10 +178,11 @@
     {"y": 39, "x": 10, "color": "#4BBEE3", "username": "gemanepa"},
     {"y": 39, "x": 20, "color": "#0088cc", "username": "clintdavis"},
     {"y": 39, "x": 22, "color": "#00E5FF", "username": "anthemaker"},
+    {"y": 39, "x": 25, "color": "#0f122b", "username": "brecarv"},
     {"y": 39, "x": 30, "color": "#ff0000", "username": "forsas"},
+    {"y": 39, "x": 30, "color": "#0f112a", "username": "subhanshu2"},
     {"y": 39, "x": 38, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 39, "color": "#000080", "username": "rmkubik"},
-    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},
-    {"y": 39, "x": 30, "color": "#0f112a", "username": "subhanshu2"}
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
   ]
 }
