@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  margin-top: 20px;
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -124,7 +124,7 @@ p code {
   margin-right: 10px;
 }
 
-#contributer-name{
-  font-weight:bold;
-  color:#f12e45;
+#contributer-name {
+  font-weight: bold;
+  color: #f12e45;
 }
