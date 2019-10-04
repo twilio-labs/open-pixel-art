@@ -64,4 +64,13 @@ describe('pixels', () => {
         expect(pixel.username).not.toMatch(/^\<.*\>$/);
     }
   });
+
+  test('every pixel should have a unique position', async () => {
+    const pixels = await loadJson('pixels.json');
+    const positionSet = new Set();
+    for (const pixel of pixels.data) {
+      expect(positionSet.has({ x: pixel.x, y: pixel.y })).toBeFalsy();
+      positionSet.add({ x: pixel.x, y: pixel.y });
+    }
+  })
 });
