@@ -124,7 +124,19 @@ p code {
   margin-right: 10px;
 }
 
-#contributer-name {
+#contributor-name {
+  font-color: red;
   font-weight: bold;
-  color: #f12e45;
+  padding: 0 5px;
+  border: 1px solid black;
+}
+
+.tooltip-name {
+  padding: 4px 10px;
+  background: white;
+  color: black;
+  transform: translateX(-100%) translateY(-100%);
+  position: absolute;
+  font-size: 10px;
+  border: 1px solid black;
 }
