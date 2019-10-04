@@ -90,7 +90,7 @@ Afterwards make sure that all tests are still passing by running in a different 
 npm test
 ```
 
-### Branching and Commiting
+### Branching and Committing
 
 Once you are happy with the changes, create a [branch](https://help.github.com/en/articles/about-branches) so we can commit the changes.
 
