@@ -173,6 +173,7 @@
     {"y": 39, "x": 30, "color": "#ff0000", "username": "forsas"},
     {"y": 39, "x": 38, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 39, "color": "#000080", "username": "rmkubik"},
-    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},
+    {"y": 42, "x": 42, "color":  "#FF2D00", "username":  "GeeH"}
   ]
 }
