@@ -16,10 +16,17 @@ function pixelHover(evt) {
   if (mousedOverEl.nodeName == 'rect') {
     // If it is a rect then get the "name" attribute
     rectName = mousedOverEl.getAttribute('name');
+    // Then get the "style" attribute
+    rectColor = mousedOverEl.getAttribute('style');
     // Check if there is a name associated with that block then set
     // the contributer name span to the name
     if (rectName != null) {
       document.getElementById('contributer-name').textContent = rectName;
+      // Check if the pixel's color attribute has enough contrast and prints
+      // rectName in that color
+      if (parseInt(rectColor, 16) < 0xffffff/2) {
+        document.getElementById('contributer-name').style.color = rectColor;
+      }
     } else {
       // If there is no associated name then set the text to nothing
       document.getElementById('contributer-name').textContent = '';
