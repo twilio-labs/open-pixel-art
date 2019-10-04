@@ -20,9 +20,20 @@ function pixelHover(evt) {
     // the contributer name span to the name
     if (rectName != null) {
       document.getElementById('contributer-name').textContent = rectName;
+
+      // Set text and position for contributer hover element
+      document.getElementById('contributer-name-hover').textContent = rectName;
+      document.getElementById('contributer-name-hover').style.display = 'block';
+      document.getElementById('contributer-name-hover').style.left =
+        evt.clientX - 20 + window.pageXOffset + 'px';
+      document.getElementById('contributer-name-hover').style.top =
+        evt.clientY - 110 + window.pageYOffset + 'px';
     } else {
       // If there is no associated name then set the text to nothing
       document.getElementById('contributer-name').textContent = '';
+
+      // Hide hover element
+      document.getElementById('contributer-name-hover').style.display = 'none';
     }
   } else {
     // If the element is not a rect set the text to nothing

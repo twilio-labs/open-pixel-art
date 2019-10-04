@@ -128,3 +128,9 @@ p code {
   font-weight: bold;
   color: #f12e45;
 }
+
+#contributer-name-hover {
+  position: absolute;
+  display: none;
+  z-index: 100;
+}
