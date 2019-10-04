@@ -116,7 +116,7 @@ Push your changes to GitHub by running:
 git push origin add-my-new-pixel
 ```
 
-Afterwards head [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
+Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
 
 ## Contributing other Changes
 
