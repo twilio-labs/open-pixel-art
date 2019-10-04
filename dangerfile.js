@@ -92,6 +92,15 @@ function allPatchesAreForTheSamePixel(jsonPatch) {
   console.log('after', jsonPatch.after.data[10]);
   const diffs = jsonPatch.diff;
 
+  const addOperations = diffs.filter(x => x.op === 'add');
+
+  if (addOperations.length > 1) {
+    fail(
+      'It seems like you are adding more than one pixel. This will require a manual review to make sure this is not a mistake.'
+    );
+    return false;
+  }
+
   if (hasOperation(diffs, 'remove') || hasOperation(diffs, 'replace')) {
     const allRemovePatches = diffs
       .filter(x => x.op === 'remove' || x.op === 'replace')
