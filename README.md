@@ -56,6 +56,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.toddmoy.com"><img src="https://avatars2.githubusercontent.com/u/22126?v=4" width="80px;" alt="Todd Moy"/><br /><sub><b>Todd Moy</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=toddmoy" title="Code">💻</a></td>
     <td align="center"><a href="http://www.samueldurkin.com"><img src="https://avatars3.githubusercontent.com/u/6232253?v=4" width="80px;" alt="Samuel Durkin"/><br /><sub><b>Samuel Durkin</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=FailedSitcom" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/nokenwa"><img src="https://avatars2.githubusercontent.com/u/23080261?v=4" width="80px;" alt="ChatterboxCoder"/><br /><sub><b>ChatterboxCoder</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=nokenwa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/nokenwa"><img src="https://avatars2.githubusercontent.com/u/23080261?v=4" width="80px;" alt="ChatterboxCoder"/><br /><sub><b>ChatterboxCoder</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=nokenwa" title="Code">💻</a></td>
   </tr>
 </table>
 
