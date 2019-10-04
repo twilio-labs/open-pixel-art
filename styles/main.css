@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  margin-top: 20px;          /*px(or pixel) is the standard size in html, so it is optional for use*/
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -124,7 +124,19 @@ p code {
   margin-right: 10px;
 }
 
-#contributer-name{
-  font-weight:bold;
-  color:#f12e45;
+#contributor-name {
+  font-color: red;
+  font-weight: bold;
+  padding: 0 5px;
+  border: 1px solid black;
+}
+
+.tooltip-name {
+  padding: 4px 10px;
+  background: white;
+  color: black;
+  transform: translateX(-100%) translateY(-100%);
+  position: absolute;
+  font-size: 10px;
+  border: 1px solid black;
 }
