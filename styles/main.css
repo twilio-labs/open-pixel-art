@@ -105,7 +105,13 @@ p code {
 }
 
 .screenreader-only {
-  display: none;
+  opacity: 0.01;
+  width: 1px;
+  height: 1px;
+}
+
+.screenreader-only:hover, .screenreader-only:link, .screenreader-only:visited {
+  cursor: arrow;
 }
 
 .twilio-pixel {
