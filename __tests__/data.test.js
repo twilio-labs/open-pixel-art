@@ -72,5 +72,5 @@ describe('pixels', () => {
       expect(positionSet.has({ x: pixel.x, y: pixel.y })).toBeFalsy();
       positionSet.add({ x: pixel.x, y: pixel.y });
     }
-  })
+  });
 });
