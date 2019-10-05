@@ -14,7 +14,7 @@ Ejemplos de comportamiento que contribuyen a crear un ambiente más acogedor inc
 - Enfocarse en el bien de la comunidad
 - Demostrar empatía hacia otros miembros de la comunidad
 
-Algunos ejemplos de comporamientos inaceptables de los participantes incluyen:
+Algunos ejemplos de comportamientos inaceptables de los participantes incluyen:
 
 - Uso de lenguaje, imágenes, acoso y/o acercamientos no solicitados de índole sexual
 - Burlas, insultos y/o comentarios despectivos, así como ataques personales o políticos
@@ -24,7 +24,7 @@ Algunos ejemplos de comporamientos inaceptables de los participantes incluyen:
 
 ## Nuestras Responsabilidades
 
-Los mantenedores de este proyecto son responsables de clarificar los estándares de comporamiento aceptable y se espera que tomen las acciones correspondientes, apropiadas y de corrección, en respuesta a cualquier instancia de comportamiento inapropiado.
+Los mantenedores de este proyecto son responsables de clarificar los estándares de comportamiento aceptable y se espera que tomen las acciones correspondientes, apropiadas y de corrección, en respuesta a cualquier instancia de comportamiento inapropiado.
 
 Los mantenedores del proyecto se reservan el derecho y la responsabilidad de eliminar, editar o rechazar comentarios, commits, código, ediciones a la wiki, issues, y cualquier otra contribución que no esté alineada a este Código de Conducta, o de excluir de manera temporal o permanente a cualquier contribuyente por otros comportamientos que estimen como inapropiados, amenazantes, ofensivos y/o dañinos.
 
@@ -36,7 +36,7 @@ Este Código de Conducta aplica tanto a los espacios de trabajo de este proyecto
 
 Las instancias de abuso, acoso y/o cualquier otro tipo de comportamiento inapropiado pueden ser reportadas al equipo encargado de este proyecto mediante un correo electrónico a open-source@twilio.com. Todos los reportes serán revisados e investigados y tendrán como resultado una respuesta necesaria y apropiada de acuerdo a las circunstancias. El equipo encargado del proyecto está obligado y comprometido a mantener el anonimato de quienes reporten cualquier tipo de incidente. Más detalles de otras políticas de cumplimiento pueden ser publicadas posteriormente de manera separada.
 
-Los mantenedores de este proyecto que no sigan o hagan cumplir este Código de Conducta de buena fe podrán enfrentar repercursiones de manera temporal o permanente, según sea determinado por los otros miembros del equipo a cargo del proyecto.
+Los mantenedores de este proyecto que no sigan o hagan cumplir este Código de Conducta de buena fe podrán enfrentar repercusiones de manera temporal o permanente, según sea determinado por los otros miembros del equipo a cargo del proyecto.
 
 ## Créditos
 
