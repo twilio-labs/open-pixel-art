@@ -110,7 +110,9 @@ p code {
   height: 1px;
 }
 
-.screenreader-only:hover, .screenreader-only:link, .screenreader-only:visited {
+.screenreader-only:hover,
+.screenreader-only:link,
+.screenreader-only:visited {
   cursor: arrow;
 }
 
