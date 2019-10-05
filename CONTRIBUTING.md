@@ -102,10 +102,11 @@ Afterwards you'll have to pick your change and commit it by running:
 
 ```bash
 git add _data/pixels.json
-git commit -m "feat(pixels): add my new pixel"
+git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
-This will create a new commit with the message `feat(pixels): add my new pixel`.
+Replace `(x, y)` with the x-coordinate and y-coordinate of your changed pixel, e.g. `(4, 27)`.
+This will create a new commit with the message `feat(pixels): add my new pixel (4, 27)`.
 The commit message is following the [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ### Push Your Changes and Creating a Pull Request
