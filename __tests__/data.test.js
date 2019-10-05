@@ -64,4 +64,23 @@ describe('pixels', () => {
         expect(pixel.username).not.toMatch(/^\<.*\>$/);
     }
   });
+
+  test('no position should have more than one pixel', async () => {
+    const { data: pixels } = await loadJson('pixels.json');
+
+    const grouped = {};
+    pixels.forEach(pixel => {
+      const key = `{x: ${pixel.x}, y: ${pixel.y}}`;
+      grouped[key] = grouped[key] || [];
+      grouped[key].push(pixel);
+    });
+
+    const multiples = Object.entries(grouped)
+      .filter(([key, arr]) => arr.length > 1)
+      .map(([key, arr]) => arr);
+
+    expect(multiples).toMatchObject([]);
+  });
+
+
 });
