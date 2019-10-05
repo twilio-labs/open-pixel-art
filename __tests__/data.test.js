@@ -52,7 +52,7 @@ describe('pixels', () => {
       const hasColor = typeof pixel.color !== 'undefined';
 
       if (hasColor) {
-        expect(pixel.color).toMatch(/#[0-9a-f]{3,6}/i);
+        expect(pixel.color).toMatch(/^#[0-9a-f]{6}$/i);
       }
     }
   });
