@@ -111,6 +111,8 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). 
+
 Push your changes to GitHub by running:
 
 ```bash
