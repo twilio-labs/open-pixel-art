@@ -65,12 +65,22 @@ describe('pixels', () => {
     }
   });
 
-  test('every pixel should have a unique position', async () => {
-    const pixels = await loadJson('pixels.json');
-    const positionSet = new Set();
-    for (const pixel of pixels.data) {
-      expect(positionSet.has({ x: pixel.x, y: pixel.y })).toBeFalsy();
-      positionSet.add({ x: pixel.x, y: pixel.y });
-    }
+  test('no position should have more than one pixel', async () => {
+    const { data: pixels } = await loadJson('pixels.json');
+
+    const grouped = {};
+    pixels.forEach(pixel => {
+      const key = `{x: ${pixel.x}, y: ${pixel.y}}`;
+      grouped[key] = grouped[key] || [];
+      grouped[key].push(pixel);
+    });
+
+    const multiples = Object.entries(grouped)
+      .filter(([key, arr]) => arr.length > 1)
+      .map(([key, arr]) => arr);
+
+    expect(multiples).toMatchObject([]);
   });
+
+
 });
