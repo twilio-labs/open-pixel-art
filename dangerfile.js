@@ -59,9 +59,13 @@ async function evaluatePixelChanges(jsonPatch) {
       );
     }
   } else {
-    if (!allPatchesAreForTheSamePixel(jsonPatch.diff)) {
+    if (!allPatchesAreForTheSamePixel(jsonPatch)) {
       return false;
     } else {
+      if (jsonPatch.diff.length === 0) {
+        fail('This PR appears to be empty and needs a manual review');
+        return false;
+      }
       return isValidPixelUpdate(jsonPatch, jsonPatch.diff[0], gitHubUsername);
     }
   }
@@ -72,7 +76,54 @@ function getIndexFromPath(diffPath) {
   return parseInt(diffPath.replace('/data/', '').match(/^\d*/)[0], 10);
 }
 
-function allPatchesAreForTheSamePixel(diffs) {
+function hasOperation(diffs, operation) {
+  for (const diff of diffs) {
+    if (diff.op === operation) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function allPatchesAreForTheSamePixel(jsonPatch) {
+  console.log(jsonPatch.diff);
+  console.log('before', jsonPatch.before.data[10]);
+  console.log('after', jsonPatch.after.data[10]);
+  const diffs = jsonPatch.diff;
+
+  const addOperations = diffs.filter(x => x.op === 'add');
+
+  if (addOperations.length > 1) {
+    fail(
+      'It seems like you are adding more than one pixel. This will require a manual review to make sure this is not a mistake.'
+    );
+    return false;
+  }
+
+  if (hasOperation(diffs, 'remove') || hasOperation(diffs, 'replace')) {
+    const allRemovePatches = diffs
+      .filter(x => x.op === 'remove' || x.op === 'replace')
+      .map(x => getIndexFromPath(x.path))
+      .map(idx => jsonPatch.before.data[idx])
+      .map(pixel => pixel.username)
+      .filter(username => username !== '<UNCLAIMED>');
+
+    const removePatches = [...new Set(allRemovePatches)];
+
+    if (removePatches.length > 0) {
+      fail(
+        'It seems like you are accidentally deleting some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
+      );
+      fail(
+        `Make sure that the following usernames are indeed included: ${removePatches.join(
+          ','
+        )}`
+      );
+      return false;
+    }
+  }
+
   let currentPixelIndex = undefined;
   for (let diff of diffs) {
     const idx = getIndexFromPath(diff.path);
@@ -97,13 +148,15 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
     .replace(/\//g, '.');
   const propertyName = specificDiff.path.substr(lastSlash + 1);
   const newEntry = dotProp.get(patch.after, normalizedPath);
+  const entryUsernameLowerCase = newEntry.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
   if (propertyName === 'username') {
     const oldEntry = dotProp.get(patch.before, normalizedPath);
     if (oldEntry.username !== '<UNCLAIMED>') {
       fail(`I'm sorry but you cannot override someone elses pixel.`);
       return false;
-    } else if (newEntry.username !== gitHubUsername) {
+    } else if (entryUsernameLowerCase !== gitHubUsernameLoweCase) {
       fail(
         `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${newEntry.username}" instead.`
       );
@@ -116,8 +169,10 @@ function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
 
 function isValidNewPixelSubmission(pixel, gitHubUsername) {
   let result = true;
+  const pixelUsernameLowerCase = pixel.username.toLowerCase();
+  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
-  if (pixel.username !== gitHubUsername) {
+  if (pixelUsernameLowerCase !== gitHubUsernameLoweCase) {
     fail(
       `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${pixel.username}" instead.`
     );

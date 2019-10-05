@@ -1,5 +1,7 @@
 # Contributing to Open Pixel Art
 
+¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
+
 There are two ways you can contribute to this project. You can either contribute a single pixel to the canvas or you can contribute to the underlying project. For example by adding tests, updating the HTML template or updating documentation.
 
 For both scenarios the setup is the same, however, the contribution steps differ slightly.
@@ -63,13 +65,16 @@ A new pixel has to be an object with the following four properties:
 - `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
 - `username`: The GitHub username you'll use to create the pull request
 
+The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:json` and it should sort your pixel into the appropriate position.
+
 The change should look like this:
 
 ```diff
 {
   "data": [
-+    { "y": 10, "x": 20, "color": "#FFFF00", "username": "dkundel" },
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
+    {"y": 1, "x": 3, "color": "#F22F46", "username": "twilio-labs"},
++    { "y": 1, "x": 4, "color": "#FFFF00", "username": "dkundel"},
+    {"y": 2, "x": 9, "color": "#F22F46", "username": "twilio"},
     ...
   ]
 }
@@ -85,7 +90,7 @@ Afterwards make sure that all tests are still passing by running in a different 
 npm test
 ```
 
-### Branching and Commiting
+### Branching and Committing
 
 Once you are happy with the changes, create a [branch](https://help.github.com/en/articles/about-branches) so we can commit the changes.
 
@@ -97,10 +102,11 @@ Afterwards you'll have to pick your change and commit it by running:
 
 ```bash
 git add _data/pixels.json
-git commit -m "feat(pixels): add my new pixel"
+git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
-This will create a new commit with the message `feat(pixels): add my new pixel`.
+Replace `(x, y)` with the x-coordinate and y-coordinate of your changed pixel, e.g. `(4, 27)`.
+This will create a new commit with the message `feat(pixels): add my new pixel (4, 27)`.
 The commit message is following the [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ### Push Your Changes and Creating a Pull Request
@@ -166,7 +172,7 @@ The `_data` directory contains the `pixels.json` file that represents every sing
 
 ### `assets`
 
-A directoy for any static assets.
+A directory for any static assets.
 
 ### `dangerfile.js`
 
