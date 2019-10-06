@@ -16,7 +16,10 @@ describe('pixels', () => {
     const usernameSet = new Set();
     for (const pixel of pixels.data) {
       if (pixel.username !== '<UNCLAIMED>') {
-        expect(usernameSet.has(pixel.username)).toBeFalsy();
+        let username = usernameSet.has(pixel.username)
+          ? pixel.username
+          : undefined;
+        expect(username).toBeUndefined();
       }
       usernameSet.add(pixel.username);
     }
