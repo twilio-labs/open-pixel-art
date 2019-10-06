@@ -80,14 +80,7 @@
     {"y": 5, "x": 13, "color": "#ff1f40", "username": "yash-garg"},
     {"y": 5, "x": 27, "color": "#ff0000", "username": "adityasrivast"},
     {"y": 5, "x": 35, "color": "#ff33cc", "username": "knpfletcher"},
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-	{"y": 5, "x": 38, "color": "#ff4002", "username": "RohanMenon"},
->>>>>>> Minor Update
-=======
     {"y": 5, "x": 38, "color": "#ff4002", "username": "RohanMenon"},
->>>>>>> 3940c5681d9b32d91da0ed12d224be957713fe39
     {"y": 6, "x": 6, "color": "#000000", "username": "yashwin"},
     {"y": 6, "x": 21, "color": "#32A2D0", "username": "andreasonny83"},
     {"y": 6, "x": 22, "color": "#0038fe", "username": "debsubhro"},
