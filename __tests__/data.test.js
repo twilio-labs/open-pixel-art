@@ -16,7 +16,10 @@ describe('pixels', () => {
     const usernameSet = new Set();
     for (const pixel of pixels.data) {
       if (pixel.username !== '<UNCLAIMED>') {
-        expect(usernameSet.has(pixel.username)).toBeFalsy();
+        let username = usernameSet.has(pixel.username)
+          ? pixel.username
+          : undefined;
+        expect(username).toBeUndefined();
       }
       usernameSet.add(pixel.username);
     }
@@ -52,7 +55,7 @@ describe('pixels', () => {
       const hasColor = typeof pixel.color !== 'undefined';
 
       if (hasColor) {
-        expect(pixel.color).toMatch(/#[0-9a-f]{3,6}/i);
+        expect(pixel.color).toMatch(/^#[0-9a-f]{6}$/i);
       }
     }
   });
@@ -63,5 +66,22 @@ describe('pixels', () => {
       if (pixel.username !== '<UNCLAIMED>')
         expect(pixel.username).not.toMatch(/^\<.*\>$/);
     }
+  });
+
+  test('no position should have more than one pixel', async () => {
+    const { data: pixels } = await loadJson('pixels.json');
+
+    const grouped = {};
+    pixels.forEach(pixel => {
+      const key = `{x: ${pixel.x}, y: ${pixel.y}}`;
+      grouped[key] = grouped[key] || [];
+      grouped[key].push(pixel);
+    });
+
+    const multiples = Object.entries(grouped)
+      .filter(([key, arr]) => arr.length > 1)
+      .map(([key, arr]) => arr);
+
+    expect(multiples).toMatchObject([]);
   });
 });
