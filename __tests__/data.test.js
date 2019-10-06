@@ -84,4 +84,18 @@ describe('pixels', () => {
 
     expect(multiples).toMatchObject([]);
   });
+
+  test('every pixel should be in order', async () => {
+    const pixels = await loadJson('pixels.json');
+    var lastPixel;
+    for (const pixel of pixels.data) {
+      if (lastPixel !== undefined) {
+        // Check if the current pixel is further along in either the x
+        // or the y axis
+        expect(pixel.x > lastPixel.x || pixel.y > lastPixel.y).toBeTruthy();
+      }
+
+      lastPixel = pixel;
+    }
+  });
 });
