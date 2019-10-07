@@ -261,6 +261,7 @@
     {"y": 28, "x": 1, "color": "#2186D4", "username": "Julius-777"},
     {"y": 28, "x": 2, "color": "#D11D6E", "username": "parammittal16"},
     {"y": 28, "x": 20, "color": "#9da4c6", "username": "jishvi"},
+    {"y": 28, "x": 21, "color": "#152a8a", "username": "mrdepontes"},
     {"y": 28, "x": 28, "color": "#00ffff", "username": "JKKim98"},
     {"y": 29, "x": 18, "color": "#5918df", "username": "YasiOnFire"},
     {"y": 29, "x": 29, "color": "#ff0000", "username": "IrvinDominin"},
@@ -346,10 +347,7 @@
     {"y": 39, "x": 10, "color": "#4BBEE3", "username": "gemanepa"},
     {"y": 39, "x": 11, "color": "#f2de3c", "username": "PJijin"},
     {"y": 39, "x": 12, "color": "#02302f", "username": "RohanMenon"},
-<<<<<<< HEAD
     {"y": 39, "x": 13, "color": "#ff7b47", "username": "zodiak2290"},
-=======
->>>>>>> 99d6582... add my new pixel(24, 33)
     {"y": 39, "x": 14, "color": "#1E90FF", "username": "linda-lai"},
     {"y": 39, "x": 15, "color": "#1de9b6", "username": "gerlis18"},
     {"y": 39, "x": 19, "color": "#fc9803", "username": "cjscheller"},
@@ -371,12 +369,6 @@
     {"y": 39, "x": 36, "color": "#0f112a", "username": "subhanshu2"},
     {"y": 39, "x": 37, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 38, "color": "#000080", "username": "rmkubik"},
-<<<<<<< HEAD
     {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},	
-    {"y": 28, "x": 20, "color": "#9da4c6", "username": "jishvi"},
-    {"y": 28, "x": 21, "color": "#152a8a", "username": "mrdepontes"}
-=======
-    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
->>>>>>> 9ab8b26... feat(pixels): add my new pixel (10, 9) (#477)
   ]
 }
