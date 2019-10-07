@@ -108,6 +108,7 @@ p code {
   opacity: 0.01;
   width: 1px;
   height: 1px;
+  z-index: -1;
 }
 
 .screenreader-only:hover,
