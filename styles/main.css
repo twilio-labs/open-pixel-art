@@ -148,3 +148,12 @@ p code {
   font-size: 10px;
   border: 1px solid black;
 }
+
+.menu-btn:hover{
+  background-color:#f22f46;
+}
+
+.is-centered{
+  margin: auto;
+  border:0;
+}
