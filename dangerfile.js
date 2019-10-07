@@ -87,9 +87,6 @@ function hasOperation(diffs, operation) {
 }
 
 function allPatchesAreForTheSamePixel(jsonPatch) {
-  console.log(jsonPatch.diff);
-  console.log('before', jsonPatch.before.data[10]);
-  console.log('after', jsonPatch.after.data[10]);
   const diffs = jsonPatch.diff;
 
   const addOperations = diffs.filter(x => x.op === 'add');
