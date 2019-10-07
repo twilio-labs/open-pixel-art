@@ -88,7 +88,6 @@ function hasOperation(diffs, operation) {
 
 function allPatchesAreForTheSamePixel(jsonPatch) {
   const diffs = jsonPatch.diff;
-
   const addOperations = diffs.filter(x => x.op === 'add');
 
   if (addOperations.length > 1) {
@@ -99,21 +98,20 @@ function allPatchesAreForTheSamePixel(jsonPatch) {
   }
 
   if (hasOperation(diffs, 'remove') || hasOperation(diffs, 'replace')) {
-    const allRemovePatches = diffs
+    const allRemovedUsernames = diffs
       .filter(x => x.op === 'remove' || x.op === 'replace')
       .map(x => getIndexFromPath(x.path))
       .map(idx => jsonPatch.before.data[idx])
       .map(pixel => pixel.username)
       .filter(username => username !== '<UNCLAIMED>');
 
-    const removePatches = [...new Set(allRemovePatches)];
-
-    if (removePatches.length > 0) {
+    if (allRemovedUsernames.length > 0) {
+      const uniqueRemovedUsernames = [...new Set(allRemovedUsernames)];
       fail(
         'It seems like you are accidentally deleting some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
       );
       fail(
-        `Make sure that the following usernames are indeed included: ${removePatches.join(
+        `Make sure that the following usernames are indeed included: ${uniqueRemovedUsernames.join(
           ','
         )}`
       );
