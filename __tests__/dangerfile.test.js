@@ -28,10 +28,12 @@ describe('allPatchesAreForTheSamePixel', () => {
     const jsonPatch = {
       diff: [
         {
-          op: 'add'
+          op: 'add',
+          path: '/data/0/'
         },
         {
-          op: 'add'
+          op: 'add',
+          path: '/data/1/'
         }
       ]
     };
@@ -43,7 +45,7 @@ describe('allPatchesAreForTheSamePixel', () => {
       diff: [
         {
           op: 'remove',
-          path: '/data/0'
+          path: '/data/0/'
         }
       ],
       before: {
@@ -62,7 +64,7 @@ describe('allPatchesAreForTheSamePixel', () => {
       diff: [
         {
           op: 'remove',
-          path: '/data/0'
+          path: '/data/0/'
         }
       ],
       before: {
@@ -81,7 +83,7 @@ describe('allPatchesAreForTheSamePixel', () => {
       diff: [
         {
           op: 'remove',
-          path: '/data/0'
+          path: '/data/0/'
         }
       ],
       before: {
@@ -100,7 +102,7 @@ describe('allPatchesAreForTheSamePixel', () => {
       diff: [
         {
           op: 'remove',
-          path: '/data/0'
+          path: '/data/0/'
         }
       ],
       before: {
@@ -119,11 +121,11 @@ describe('allPatchesAreForTheSamePixel', () => {
       diff: [
         {
           op: 'replace',
-          path: '/data/0'
+          path: '/data/0/'
         },
         {
           op: 'add',
-          path: '/data/1'
+          path: '/data/1/'
         }
       ],
       before: {
