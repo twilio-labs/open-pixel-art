@@ -382,6 +382,7 @@
     {"y": 39, "x": 38, "color": "#000080", "username": "rmkubik"},
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
 =======
 <<<<<<< HEAD
@@ -394,6 +395,9 @@
 >>>>>>> feat(pixels): add my new pixel (10, 9) (#477)
 =======
     {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},	
+>>>>>>> added pixel (y: 28, x: 21)
+=======
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
 >>>>>>> added pixel (y: 28, x: 21)
   ]
 }
