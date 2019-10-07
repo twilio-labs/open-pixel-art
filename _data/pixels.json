@@ -379,6 +379,16 @@
     {"y": 39, "x": 36, "color": "#0f112a", "username": "subhanshu2"},
     {"y": 39, "x": 37, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 38, "color": "#000080", "username": "rmkubik"},
+<<<<<<< HEAD
     {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
+=======
+<<<<<<< HEAD
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},	
+    {"y": 28, "x": 20, "color": "#9da4c6", "username": "jishvi"},
+    {"y": 28, "x": 21, "color": "#152a8a", "username": "mrdepontes"}
+=======
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
+>>>>>>> 9ab8b26... feat(pixels): add my new pixel (10, 9) (#477)
+>>>>>>> feat(pixels): add my new pixel (10, 9) (#477)
   ]
 }
