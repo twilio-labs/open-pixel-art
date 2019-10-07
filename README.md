@@ -2,24 +2,24 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
-This is an art project created with the intention to teach you how to create a pull request.
+This is an art project created to teach you how to create a pull request.
 
 Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!
 
-Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pix whatever color you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com)
+Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pix whatever colour you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com)
 
-> If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in [TwilioQuest](https://www.twilio.com/quest) for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
+> If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in [TwilioQuest](https://www.twilio.com/quest) for you. It will teach you to step by step on how you can get started and will guide you on your quest of creating your pull request.
 > 🕹 [Download TwilioQuest](https://www.twilio.com/quest/download)
 
 The entire project is automated and is largely maintained by a set of bots that will verify any pixel contributions. However, if you'd like to know more about the project or submit other contributions to the project that are not a pixel, feel free to create a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) inside the [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Contributing
 
-In order to contribute a pixel to the canvas, you'll have to create a [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to the [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
+To contribute a pixel to the canvas, you'll have to create a [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to the [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
 
 If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the [contributing guide](CONTRIBUTING.md).
 
-We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
+We understand that contributing to open-source can be intimidating and as a result, we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
 - Check out the Contribution Guides:
@@ -60,7 +60,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
 </table>
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-LIST: END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
