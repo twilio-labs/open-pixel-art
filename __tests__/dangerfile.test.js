@@ -209,7 +209,63 @@ describe('isValidNewPixelSubmission', () => {
 });
 
 describe('isValidPixelUpdate', () => {
-  test('placeholder', () => {
-    expect(true).toBeTruthy();
+  test('fails if diff overrides claimed pixel', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'not_unclaimed' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(false);
+  });
+
+  test('fails if username is wrong', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: '<UNCLAIMED>' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'not_twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(false);
+  });
+
+  test('passes if is valid update', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: '<UNCLAIMED>' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(true);
+  });
+
+  test('passes if is valid new pixel', () => {
+    const jsonPatch = {
+      before: {
+        data: []
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(true);
   });
 });

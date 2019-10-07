@@ -141,18 +141,18 @@ function allPatchesAreForTheSamePixel(jsonPatch) {
   return true;
 }
 
-function isValidPixelUpdate(patch, specificDiff, gitHubUsername) {
+function isValidPixelUpdate(jsonPatch, specificDiff, gitHubUsername) {
   const lastSlash = specificDiff.path.lastIndexOf('/');
   const normalizedPath = specificDiff.path
     .substr(1, lastSlash - 1)
     .replace(/\//g, '.');
   const propertyName = specificDiff.path.substr(lastSlash + 1);
-  const newEntry = dotProp.get(patch.after, normalizedPath);
+  const newEntry = dotProp.get(jsonPatch.after, normalizedPath);
   const entryUsernameLowerCase = newEntry.username.toLowerCase();
   const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
 
   if (propertyName === 'username') {
-    const oldEntry = dotProp.get(patch.before, normalizedPath);
+    const oldEntry = dotProp.get(jsonPatch.before, normalizedPath);
     if (oldEntry.username !== '<UNCLAIMED>') {
       fail(`I'm sorry but you cannot override someone elses pixel.`);
       return false;
