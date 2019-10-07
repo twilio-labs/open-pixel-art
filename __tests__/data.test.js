@@ -16,7 +16,10 @@ describe('pixels', () => {
     const usernameSet = new Set();
     for (const pixel of pixels.data) {
       if (pixel.username !== '<UNCLAIMED>') {
-        expect(usernameSet.has(pixel.username)).toBeFalsy();
+        let username = usernameSet.has(pixel.username)
+          ? pixel.username
+          : undefined;
+        expect(username).toBeUndefined();
       }
       usernameSet.add(pixel.username);
     }
@@ -52,7 +55,7 @@ describe('pixels', () => {
       const hasColor = typeof pixel.color !== 'undefined';
 
       if (hasColor) {
-        expect(pixel.color).toMatch(/#[0-9a-f]{3,6}/i);
+        expect(pixel.color).toMatch(/^#[0-9a-f]{6}$/i);
       }
     }
   });
@@ -81,6 +84,4 @@ describe('pixels', () => {
 
     expect(multiples).toMatchObject([]);
   });
-
-
 });
