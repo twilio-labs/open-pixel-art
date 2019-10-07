@@ -93,7 +93,8 @@ describe('pixels', () => {
         // Check if the current pixel is further along in either the x
         // or the y axis
         let invalidPixel = undefined;
-        if (pixel.y < lastPixel.y || pixel.x < lastPixel.x) {
+        let isValidPixelOrder = pixel.y >= lastPixel.y && pixel.x > lastPixel.x;
+        if (!isValidPixelOrder) {
           invalidPixel = pixel;
         }
         expect(invalidPixel).toBeUndefined();
