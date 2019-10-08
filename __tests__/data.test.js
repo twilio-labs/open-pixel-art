@@ -84,7 +84,7 @@ describe('pixels', () => {
 
     expect(multiples).toMatchObject([]);
   });
-  
+
   test('every pixel should be ordered from smallest to largest in y then x', async () => {
     const pixels = await loadJson('pixels.json');
     var lastPixel;
