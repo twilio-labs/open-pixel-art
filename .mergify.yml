@@ -8,7 +8,7 @@ pull_request_rules:
   - name: automatic merge on CI success for pixel contributions
     conditions:
       - -conflict
-      - 'status-success=ca395085-040a-526b-2ce8-bdc85f692774'
+      - 'status-success=build'
       - files=_data/pixels.json
       - '#files=1'
     actions:
@@ -21,10 +21,10 @@ pull_request_rules:
           - 'pixel-contribution'
   - name: create comment for failed CI
     conditions:
-      - 'status-failure=ca395085-040a-526b-2ce8-bdc85f692774'
+      - 'status-failure=build'
     actions:
       comment:
-        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information.'
+        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information. @dkundel'
       label:
         add:
           - 'hacktoberfest'
@@ -34,7 +34,7 @@ pull_request_rules:
       - '#files>=2'
     actions:
       comment:
-        message: 'This PR touches more than one file and has to be revied manually.'
+        message: 'This PR touches more than one file and has to be revied manually. @dkundel'
       label:
         add:
           - 'needs-review'

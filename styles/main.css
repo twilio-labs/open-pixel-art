@@ -8,11 +8,11 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 header {
-  margin-top: 20px;
+  margin-top: 20px; /*px(or pixel) is the standard sizing unit. You can learn more here: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units */
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -105,7 +105,16 @@ p code {
 }
 
 .screenreader-only {
-  display: none;
+  opacity: 0.01;
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+}
+
+.screenreader-only:hover,
+.screenreader-only:link,
+.screenreader-only:visited {
+  cursor: arrow;
 }
 
 .twilio-pixel {
@@ -124,7 +133,19 @@ p code {
   margin-right: 10px;
 }
 
-#contributer-name{
-  font-weight:bold;
-  color:#f12e45;
+#contributor-name {
+  color: red;
+  font-weight: bold;
+  padding: 0 5px;
+  border: 1px solid black;
+}
+
+.tooltip-name {
+  padding: 4px 10px;
+  background: white;
+  color: black;
+  transform: translateX(-100%) translateY(-100%);
+  position: absolute;
+  font-size: 10px;
+  border: 1px solid black;
 }
