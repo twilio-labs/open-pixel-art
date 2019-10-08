@@ -90,7 +90,7 @@ Afterwards make sure that all tests are still passing by running in a different 
 npm test
 ```
 
-### Branching and Commiting
+### Branching and Committing
 
 Once you are happy with the changes, create a [branch](https://help.github.com/en/articles/about-branches) so we can commit the changes.
 
@@ -102,13 +102,16 @@ Afterwards you'll have to pick your change and commit it by running:
 
 ```bash
 git add _data/pixels.json
-git commit -m "feat(pixels): add my new pixel"
+git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
-This will create a new commit with the message `feat(pixels): add my new pixel`.
+Replace `(x, y)` with the x-coordinate and y-coordinate of your changed pixel, e.g. `(4, 27)`.
+This will create a new commit with the message `feat(pixels): add my new pixel (4, 27)`.
 The commit message is following the [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ### Push Your Changes and Creating a Pull Request
+
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). 
 
 Push your changes to GitHub by running:
 
@@ -116,7 +119,7 @@ Push your changes to GitHub by running:
 git push origin add-my-new-pixel
 ```
 
-Afterwards head [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
+Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
 
 ## Contributing other Changes
 
