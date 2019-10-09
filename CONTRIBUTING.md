@@ -121,6 +121,14 @@ git push origin add-my-new-pixel
 
 Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
 
+### Problems When Creating a Pull Request
+
+When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following command which brings all the required changes to your forked repo.
+
+```bash
+git pull origin master
+```
+
 ## Contributing other Changes
 
 It's great that you want to contribute more than a pixel to this project. Before you start working on the code, make sure to check if there is already a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) for those changes. If there isn't, please open one first. If there is already one, make sure to create a comment to let people know that you are working on a fix for this.
