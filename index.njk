@@ -52,6 +52,15 @@
     </header>
 
     <main role="main">
+        <div>
+          <button class="nes-btn" onClick="random()">Random (r)</button>
+          <button class="nes-btn" onClick="order()">Order (o)</button>
+          <button class="nes-btn" onClick="twist()">Twist (t)</button>
+          <button class="nes-btn" onClick="flip()">Flip (f)</button>
+          <button class="nes-btn" onClick="vert()">V-Flip (v)</button>
+          <button class="nes-btn" onClick="walk()">Walk (w)</button>
+          <button class="nes-btn" onClick="reset()">Reset (Esc)</button>
+        </div>
       <section  id="canvas" class="nes-container with-title" aria-label="You are in the Pixel Art Canvas. Hover over a pixel to hear the github username who contributed it.">
         <div role="heading" aria-level="2" class="screenreader-only">Pixel Art Canvas</div>
         <svg id="pixel-canvas" viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
