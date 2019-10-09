@@ -14,7 +14,7 @@ function onKeyDown(event) {
     const { key } = event
     const keyMap = {
         'Escape': reset,
-        ' ': random,
+        'r': random,
         'o': order,
         't': twist,
         'f': flip,
