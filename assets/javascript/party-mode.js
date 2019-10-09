@@ -8,20 +8,21 @@ pixels.forEach(p => {
 })
 
 
-document.addEventListener('keydown',onKeyDown)
+document.addEventListener('keydown', onKeyDown)
 
 function onKeyDown(event) {
-    const {key} = event
+    const { key } = event
     const keyMap = {
-        'Escape':reset,
+        'Escape': reset,
         ' ': random,
-        'o':order,
-        't':twist,
-        'f':flip,
-        'v':vert,
+        'o': order,
+        't': twist,
+        'f': flip,
+        'v': vert,
+        'w': walk,
     }
     const f = keyMap[key]
-    if(f) {
+    if (f) {
         f()
         event.preventDefault()
     }
@@ -32,36 +33,54 @@ const height = 40
 
 
 function reset() {
-    applyTransform((xCurr, yCurr, xStart, yStart, i) => [xStart, yStart])
+    transform(({ xStart, yStart }) => [xStart, yStart])
 }
 
 function random() {
     const r = () => Math.floor(Math.random() * 40) * 10
-    applyTransform(() => [r(), r()])
+    transform(() => [r(), r()])
 }
 
 function order() {
-    const f= (xCurr, yCurr, xStart, yStart, i) => [(i % width) * 10, (Math.floor(i / width)) * 10]
-    applyTransform(f)
+    const f = ({ i }) => [(i % width) * 10, (Math.floor(i / width)) * 10]
+    transform(f)
 }
 
 function flip() {
-    applyTransform((x,y) => [390-x, y])
+    transform(({ x, y }) => [390 - x, y])
 }
 
 function vert() {
-    applyTransform((x,y) => [x, 390-y])
+    transform(({ x, y }) => [x, 390 - y])
 }
 
 function twist() {
-    applyTransform((x,y) => [390 - y, x])
+    transform(({ x, y }) => [390 - y, x])
 }
 
-function applyTransform(transformFunction) {
-    pixels.forEach((p,i) => {
-        const [xCurr, yCurr, xStart, yStart] = ['x','y','x-start','y-start'].map(j => Number(p.getAttribute(j)))
-        const [x, y] = transformFunction(xCurr, yCurr, xStart, yStart, i)
-        p.setAttribute('x', x) 
-        p.setAttribute('y', y) 
+function walk() {
+    transform(w)
+}
+
+
+const nudges = [
+    [10, 0], [-10, 0], [0, 10], [0, -10]
+]
+const randomElement = arr => arr[Math.floor(Math.random() * arr.length)]
+const between = (min, value, max) => Math.min(Math.max(value, min), max)
+const w = ({ x, y }) => {
+    const [dx, dy] = randomElement(nudges)
+    const newX = between(0, x + dx, 390)
+    const newY = between(0, y + dy, 390) 
+    return ([newX, newY])
+}
+
+
+function transform(transformFunction) {
+    pixels.forEach((p, i) => {
+        const [x, y, xStart, yStart] = ['x', 'y', 'x-start', 'y-start'].map(j => Number(p.getAttribute(j)))
+        const [xNew, yNew] = transformFunction({ x, y, xStart, yStart, i })
+        p.setAttribute('x', xNew)
+        p.setAttribute('y', yNew)
     })
 }
