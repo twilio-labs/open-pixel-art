@@ -69,5 +69,7 @@ typings/
 .settings/
 *.sublime-workspace
 
+# Image Thumbnail cache file
 .DS_Store
 _site
+thumbs.db
