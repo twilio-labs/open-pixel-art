@@ -32,6 +32,9 @@
       </hgroup>
       <nav>
         <ul class="nav-list">
+          <li class="screenreader-only">
+            <a href="#canvas">Go to the Pixel Art Canvas</a>
+          </li>
           <li class="nav-item">
             <a class="nes-btn" href="#about">About the Project</a>
           </li>
@@ -42,19 +45,29 @@
             <a class="nes-btn" href="#contributors">See All Contributors</a>
           </li>
           <li class="nav-item">
-            <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" >View on GitHub</a>
+            <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check on Github">View on GitHub</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main role="main">
-      <section id="canvas" class="nes-container with-title">
-        <svg viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
+        <div>
+          <button class="nes-btn" onClick="random()">Random (r)</button>
+          <button class="nes-btn" onClick="order()">Order (o)</button>
+          <button class="nes-btn" onClick="twist()">Twist (t)</button>
+          <button class="nes-btn" onClick="flip()">Flip (f)</button>
+          <button class="nes-btn" onClick="vert()">V-Flip (v)</button>
+          <button class="nes-btn" onClick="walk()">Walk (w)</button>
+          <button class="nes-btn" onClick="reset()">Reset (Esc)</button>
+        </div>
+      <section  id="canvas" class="nes-container with-title" aria-label="You are in the Pixel Art Canvas. Hover over a pixel to hear the github username who contributed it.">
+        <div role="heading" aria-level="2" class="screenreader-only">Pixel Art Canvas</div>
+        <svg id="pixel-canvas" viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
           <rect x="0" y="0" width="100%" height="100%" style="fill: {{defaults.image.background}}"/>
           {% for pixel in pixels.data %}
             {% if pixel.color %}
-              <rect x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" width="{{defaults.image.scale}}" height="{{defaults.image.scale}}" style="fill: {{pixel.color}}" name="{% if pixel.username %} {{pixel.username}} {% endif %}"/> 
+              <rect class="pixel" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" width="{{defaults.image.scale}}" height="{{defaults.image.scale}}" style="fill: {{pixel.color}}" name="{% if pixel.username %} {{pixel.username}} {% endif %}"/> 
             {% elif pixel.tileName %}
               <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
             {% endif %}
@@ -74,8 +87,8 @@
       </section>
       <section class="nes-container with-title">
         <h2 class="title" id="contributor">Contributor</h2>
-        <p>Hover over any pixel to see the username of the person who contributed it.</p>
-        <p>That pixel was contributed by: <span id="contributor-name">no pixel hovered</span></p>
+        <p aria-label="Hover over any pixel to hear the github username who contributed it.">Hover over any pixel to see the username of the person who contributed it.</p>
+        <p>That pixel was contributed by: <span id="contributor-name" aria-live="polite">no pixel hovered</span></p>
       </section>
       <section class="nes-container with-title">
         <h2 class="title" id="about">About the Project</h2>
@@ -96,7 +109,7 @@
             for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
           </p>
           <p class="text-center">
-            <a class="nes-btn is-primary">Download TwilioQuest</a>
+            <a class="nes-btn is-primary" href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer">Download TwilioQuest</a>
           </p>
         </div>
         <p>
@@ -144,11 +157,10 @@
     </main>
     <footer class="text-center">
       <p class="footer-icons">
-        <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" >
+        <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check Project on Github">
           <i class="nes-icon github" aria-hidden="true"></i>
-          <span class="screenreader-only">View on GitHub</span>
         </a>
-        <a class="external-link" href="https://www.twilio.com/labs?utm_source=hacktoberfest19&utm_campaign=hacktoberfest19" target="_blank" rel="noreferrer" >
+        <a class="external-link" href="https://www.twilio.com/labs?utm_source=hacktoberfest19&utm_campaign=hacktoberfest19" target="_blank" rel="noreferrer" aria-label="Check Twilio's Featured Projects for Contribution">
           <img src="/assets/twilioBug.svg" alt="pixelated Twilio logo" class="twilio-pixel"/>
         </a>
       </p>
@@ -156,5 +168,8 @@
         <a href="https://www.twilio.com/" class="twilio-link external-link" target="_blank" rel="noreferrer" >Twilio</a>
         with and for the community.</a>
       <p></footer>
+
+    <script src="/assets/javascript/party-mode.js"></script>
+
     </body>
   </html>
