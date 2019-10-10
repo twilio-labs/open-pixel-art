@@ -60,7 +60,7 @@ function pixelHover(event) {
       tooltip.style.top = `${topPos}px`;
     }
   } else if (tooltip && name && name.replace(/ /g, '') !== currentName) {
-    // Change only the text name if tooltip is exist and hover on different pixel
+    // Change only the text name if tooltip is existing and hover on different pixel
     tooltip.innerText = name;
   } else if (tooltip) {
     // Change position if tooltip exist and no other things change
