@@ -12,6 +12,12 @@ pixels.forEach(p => {
 document.addEventListener('keydown', onKeyDown);
 
 function onKeyDown(event) {
+  // don't interfere with copy/paste/reload
+  const isControlAction = event.metaKey || event.ctrlKey;
+  if (isControlAction) {
+    return;
+  }
+
   const { key } = event;
   const keyMap = {
     Escape: reset,
