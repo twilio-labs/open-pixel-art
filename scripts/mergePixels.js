@@ -40,6 +40,7 @@ async function run() {
   ] = process.argv;
 
   console.log(process.argv);
+  process.exit(1);
   return;
 
   const oldPixels = await getSortedPixelsFromFile(oldFilePath);
