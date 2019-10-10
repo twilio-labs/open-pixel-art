@@ -34,7 +34,7 @@ pull_request_rules:
       - '#files>=2'
     actions:
       comment:
-        message: 'This PR touches more than one file and has to be revied manually. @dkundel'
+        message: 'This PR touches more than one file and has to be reviewed manually. @dkundel'
       label:
         add:
           - 'needs-review'
