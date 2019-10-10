@@ -26,6 +26,7 @@ We understand that contributing to open-source can be intimidating and as a resu
   - [English](CONTRIBUTING.md)
   - [Español](docs/es/CONTRIBUTING.md)
   - [Deutsch](docs/de/CONTRIBUTING.md)
+  - [Brazilian Portuguese](docs/br/CONTRIBUTING.md)
 
 ## Code of Conduct
 
@@ -34,6 +35,7 @@ We want to make sure that this project is as welcoming to people as possible. By
 - [English](CODE_OF_CONDUCT.md)
 - [Español](docs/es/CODE_OF_CONDUCT.md)
 - [Deutsch](docs/de/CODE_OF_CONDUCT.md)
+- [Brazilian Portuguese](docs/de/CODE_OF_CONDUCT.md)
 
 If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
 
