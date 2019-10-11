@@ -21,8 +21,10 @@ async function getBranch() {
   return branch.replace('* ', '');
 }
 
+let spinner;
+
 async function run() {
-  const spinner = ora('Syncing your fork with the original repo').start();
+  spinner = ora('Syncing your fork with the original repo').start();
 
   spinner.text = 'Getting current branch';
   const currentBranch = await getBranch();
@@ -62,9 +64,14 @@ async function run() {
     ...opts,
     stdio: 'inherit'
   });
+
+  spinner.succeed('Project has been successfully updated');
 }
 
 run().catch(err => {
+  if (spinner) {
+    spinner.fail('Failed to sync');
+  }
   console.log(err);
   console.error(err.stderr);
   process.exit(1);
