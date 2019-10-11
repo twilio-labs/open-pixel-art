@@ -2,11 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const { sortPixels, pixelsToString } = require('../utils/pixels-helper');
+const { image } = require('../_data/defaults.json');
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
 const pixelToId = pixel => `${pixel.x}|${pixel.y}|${pixel.username}`;
+const coordinatesToId = coord => `${coord.x},${coord.y}`;
 
 async function getSortedPixelsFromFile(filePath) {
   const fileContent = await readFile(filePath, 'utf8');
@@ -28,6 +30,54 @@ function findNewPixel(oldPixels, branchPixels) {
   }
 
   return missingPixels[0];
+}
+
+function getNextCoordinate(currentX, currentY, width, height) {
+  let x = currentX + 1;
+  let y = currentY;
+
+  if (x >= width) {
+    x = 0;
+  }
+
+  if (x === 0) {
+    y = currentY + 1;
+
+    if (y >= height) {
+      y = 0;
+    }
+  }
+
+  return { x, y };
+}
+
+function getAlternativePixel(takenPixels, invalidPixel) {
+  const { username, x: preferredX, y: preferredY, color } = invalidPixel;
+
+  const takenCoordinates = new Set(takenPixels.data.map(coordinatesToId));
+
+  let x = preferredX;
+  let y = preferredY;
+
+  do {
+    const { x: newX, y: newY } = getNextCoordinate(
+      x,
+      y,
+      image.width,
+      image.height
+    );
+
+    if (newX === preferredX && newY === preferredY) {
+      throw new Error(
+        'Could not find any free pixel. Please file an issue about increasing the canvas size.'
+      );
+    } else {
+      x = newX;
+      y = newY;
+    }
+  } while (takenCoordinates.has(coordinatesToId({ x, y })));
+
+  return { username, x, y, color };
 }
 
 function isPixelTaken(currentPixels, newPixel) {
@@ -56,10 +106,16 @@ async function run() {
   if (newPixel && !pixelIsTaken) {
     currentPixels.data.push(newPixel);
   } else if (newPixel) {
-    // TODO: This should instead move the pixel to another suitable location
-    throw new Error(
-      'Could not merge automatically because the pixel you provided has already been claimed.'
+    const alternativePixel = getAlternativePixel(currentPixels, newPixel);
+
+    console.warn(
+      `
+Unfortunately your pixel already had been taken. Instead we picked the following pixel for you:
+
+${pixelsToString(alternativePixel)}
+    `.trim()
     );
+    currentPixels.data.push(alternativePixel);
   }
 
   const outputPixels = sortPixels(currentPixels);
