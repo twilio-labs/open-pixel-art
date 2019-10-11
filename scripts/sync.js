@@ -73,7 +73,6 @@ run().catch(err => {
   if (spinner) {
     spinner.fail('Failed to sync');
   }
-  console.log(err);
-  console.error(err.stderr);
+  console.error(err.all);
   process.exit(1);
 });
