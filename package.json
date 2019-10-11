@@ -48,7 +48,7 @@
       "git add"
     ],
     "_data/pixels.json": [
-      "node tasks/sortPixels.js",
+      "node scripts/sortPixels.js",
       "git add"
     ]
   }
