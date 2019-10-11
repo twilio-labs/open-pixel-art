@@ -1,6 +1,6 @@
 # Open Pixel Art by [Twilio](https://www.twilio.com)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
 This is an art project created with the intention to teach you how to create a pull request.
 
@@ -22,11 +22,20 @@ If you are already familiar with git and how to create a pull request on GitHub,
 We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
-- [Check out the Contributing Guide](CONTRIBUTING.md)
+- Check out the Contribution Guides:
+  - [English](CONTRIBUTING.md)
+  - [Español](docs/es/CONTRIBUTING.md)
+  - [Deutsch](docs/de/CONTRIBUTING.md)
 
 ## Code of Conduct
 
-We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's [Code of Conduct](CODE_OF_CONDUCT.md). If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
+We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's Code of Conduct:
+
+- [English](CODE_OF_CONDUCT.md)
+- [Español](docs/es/CODE_OF_CONDUCT.md)
+- [Deutsch](docs/de/CODE_OF_CONDUCT.md)
+
+If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Contributors
 
@@ -49,6 +58,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://www.toddmoy.com"><img src="https://avatars2.githubusercontent.com/u/22126?v=4" width="80px;" alt="Todd Moy"/><br /><sub><b>Todd Moy</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=toddmoy" title="Code">💻</a></td>
     <td align="center"><a href="http://www.samueldurkin.com"><img src="https://avatars3.githubusercontent.com/u/6232253?v=4" width="80px;" alt="Samuel Durkin"/><br /><sub><b>Samuel Durkin</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=FailedSitcom" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/nokenwa"><img src="https://avatars2.githubusercontent.com/u/23080261?v=4" width="80px;" alt="ChatterboxCoder"/><br /><sub><b>ChatterboxCoder</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=nokenwa" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/simeydk"><img src="https://avatars0.githubusercontent.com/u/13088589?v=4" width="80px;" alt="Simey de Klerk"/><br /><sub><b>Simey de Klerk</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=simeydk" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/annthurium"><img src="https://avatars1.githubusercontent.com/u/3781742?v=4" width="80px;" alt="Tilde Ann Thurium"/><br /><sub><b>Tilde Ann Thurium</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=annthurium" title="Code">💻</a> <a href="#review-annthurium" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
