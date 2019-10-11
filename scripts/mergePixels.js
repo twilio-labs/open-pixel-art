@@ -21,13 +21,21 @@ function findNewPixel(oldPixels, branchPixels) {
     pixel => !existingPixels.has(pixelToId(pixel))
   );
 
-  if (missingPixels.length > 0) {
+  if (missingPixels.length > 1) {
     throw new Error(
       'More pixels than one have been added. This requires a manual merge.'
     );
   }
 
   return missingPixels[0];
+}
+
+function isPixelTaken(currentPixels, newPixel) {
+  return (
+    currentPixels.data.find(
+      pixel => pixel.x === newPixel.x && pixel.y === newPixel.y
+    ) !== undefined
+  );
 }
 
 async function run() {
@@ -43,32 +51,23 @@ async function run() {
   const currentPixels = await getSortedPixelsFromFile(currentFilePath);
   const branchPixels = await getSortedPixelsFromFile(branchFilePath);
 
-  console.log(
-    'oldPixels: %O',
-    oldPixels.data.find(x => x.username === 'panda')
-  );
-  console.log(
-    'currentPixels: %O',
-    currentPixels.data.find(x => x.username === 'panda')
-  );
-  console.log(
-    'branchPixels: %O',
-    branchPixels.data.find(x => x.username === 'panda')
-  );
-  process.exit(1);
-  return;
-
   const newPixel = findNewPixel(oldPixels, branchPixels);
-  if (newPixel) {
+  console.log(newPixel);
+  const pixelIsTaken = isPixelTaken(currentPixels, newPixel);
+  if (newPixel && !pixelIsTaken) {
     currentPixels.data.push(newPixel);
+  } else if (newPixel) {
+    throw new Error(
+      'Could not merge automatically because the pixel you provided has already been claimed.'
+    );
   }
 
   const outputPixels = sortPixels(currentPixels);
-  await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
+  // await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
 }
 
 run()
-  .then(() => process.exit(0))
+  .then(() => process.exit(1))
   .catch(err => {
     console.error(err);
     process.exit(1);
