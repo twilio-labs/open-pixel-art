@@ -4,8 +4,12 @@ const os = require('os');
 
 const trim = x => x.trim();
 
+const opts = {
+  shell: true
+};
+
 async function getBranch() {
-  const { stdout: branches } = await exec('git branch');
+  const { stdout: branches } = await exec('git branch', opts);
   const branch = branches
     .split(os.EOL)
     .map(trim)
@@ -24,7 +28,7 @@ async function run() {
   const currentBranch = await getBranch();
 
   spinner.text = 'Checking if remote "twilio-labs" is configured';
-  const { stdout: remotes } = await exec('git remote');
+  const { stdout: remotes } = await exec('git remote', opts);
   const twilioLabsRemoteExists = remotes
     .split(os.EOL)
     .map(trim)
@@ -33,29 +37,28 @@ async function run() {
   if (!twilioLabsRemoteExists) {
     spinner.text = 'Configuring "twilio-labs" remote';
     await exec(
-      'git remote add twilio-labs https://github.com/twilio-labs/open-pixel-art.git'
+      'git remote add twilio-labs https://github.com/twilio-labs/open-pixel-art.git',
+      opts
     );
   }
 
   spinner.text = 'Checking out master branch';
-  await exec('git checkout master');
+  await exec('git checkout master', opts);
 
   spinner.text = 'Pulling latest changes for master';
-  await exec('git pull twilio-labs master');
+  await exec('git pull twilio-labs master', opts);
 
   spinner.text = 'Pushing changes up to your fork (origin)';
-  await exec('git push origin master');
+  await exec('git push origin master', opts);
 
   spinner.text = 'Pushing changes up to your fork (origin)';
-  await exec('git push origin master');
+  await exec('git push origin master', opts);
 
   spinner.text = `Checking out "${currentBranch}" branch`;
-  await exec(`git checkout ${currentBranch}`);
+  await exec(`git checkout ${currentBranch}`, opts);
 
   spinner.text = `Merging in changes from master to ${currentBranch}`;
-  await exec('git merge master -m "chore: merge changes from master"', {
-    uid: process.getuid()
-  });
+  await exec('git merge master -m "chore: merge changes from master"', opts);
 }
 
 run().catch(err => {
