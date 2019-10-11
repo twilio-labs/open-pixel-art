@@ -25,15 +25,15 @@ function findNewPixel(oldPixels, branchPixels) {
   );
 
   if (missingPixels.length > 1) {
-    const msg = stripIndent`
-      More pixels than one have been added or modified. This requires a manual merge.
+    const msg = `
+More pixels than one have been added or modified. This requires a manual merge.
 
-      The following pixels have been added or modified:
+The following pixels have been added or modified:
 
-      ${pixelsToString(missingPixels)}
+${pixelsToString(missingPixels)}
 
-      We are overriding the changes with the latest changes and wrote the conflicting pixels into a file in the project called "pixels-conflict.log"
-    `;
+We are overriding the changes with the latest changes and wrote the conflicting pixels into a file in the project called "pixels-conflict.log"
+    `.trim();
 
     const err = new Error(msg);
     Object.defineProperty(err, 'missingPixels', { value: missingPixels });
@@ -117,18 +117,21 @@ async function run(args) {
     newPixel = findNewPixel(oldPixels, branchPixels);
   } catch (err) {
     if (err.missingPixels) {
-      const content = stripIndent`
-        The following pixels were removed from the _data/pixels.json file due to a conflict. 
-        If this was by accident please place them back into the right location and commit again.
+      const content = `
+The following pixels were removed from the _data/pixels.json file due to a conflict. 
+If this was by accident please place them back into the right location and commit again.
 
-        ${pixelsToString({ data: err.missingPixels })}
-      `;
+${pixelsToString({ data: err.missingPixels })}
+      `.trim();
       await writeFile(
         path.resolve(__dirname, '../pixels-conflict.log'),
         content,
         'utf8'
       );
     }
+    const outputPixels = sortPixels(currentPixels);
+    await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
+
     throw err;
   }
 
@@ -143,13 +146,13 @@ async function run(args) {
     );
 
     console.warn(
-      stripIndent`
-        Unfortunately your pixel already had been taken. Instead we picked the following pixel for you:
-
-        ${pixelsToString(alternativePixel)}
-
-        If you do not like this pixel, feel free to pick another one instead by modifying the file again and commiting the new changes.
       `
+Unfortunately your pixel already had been taken. Instead we picked the following pixel for you:
+
+${pixelsToString(alternativePixel)}
+
+If you do not like this pixel, feel free to pick another one instead by modifying the file again and commiting the new changes.
+      `.trim()
     );
     currentPixels.data.push(alternativePixel);
   }
