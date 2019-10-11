@@ -8,7 +8,8 @@
     "start": "eleventy --serve",
     "build": "eleventy",
     "prettier": "prettier --write \"**/*.js\"",
-    "test": "jest"
+    "test": "jest",
+    "test:pixeldata": "jest data.test.js"
   },
   "repository": {
     "type": "git",
@@ -42,17 +43,19 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "run-s lint-staged test"
+      "pre-commit": "run-s lint-staged"
     }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "git add"
+      "git add",
+      "jest --findRelatedTests"
     ],
     "_data/pixels.json": [
       "node scripts/sortPixels.js",
-      "git add"
+      "git add",
+      "npm run test:pixeldata"
     ]
   }
 }
