@@ -134,6 +134,7 @@ If you do not like this pixel, feel free to pick another one instead by modifyin
 }
 
 if (process.argv.length >= 5 && process.argv[1].includes('mergePixels.js')) {
+  console.log('Merge driver triggered');
   run(process.argv)
     .then(() => process.exit(0))
     .catch(err => {
