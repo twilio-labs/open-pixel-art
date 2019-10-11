@@ -60,7 +60,7 @@ async function run() {
   spinner.text = `Merging in changes from master to ${currentBranch}`;
   await exec('git merge master -m "chore: merge changes from master"', {
     ...opts,
-    stdout: 'inherit'
+    stdio: 'inherit'
   });
 }
 
