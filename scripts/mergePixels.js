@@ -39,13 +39,24 @@ async function run() {
     currentFilePath
   ] = process.argv;
 
-  console.log(process.argv);
-  process.exit(1);
-  return;
-
   const oldPixels = await getSortedPixelsFromFile(oldFilePath);
   const currentPixels = await getSortedPixelsFromFile(currentFilePath);
   const branchPixels = await getSortedPixelsFromFile(branchFilePath);
+
+  console.log(
+    'oldPixels: %O',
+    oldPixels.data.find(x => x.username === 'panda')
+  );
+  console.log(
+    'currentPixels: %O',
+    currentPixels.data.find(x => x.username === 'panda')
+  );
+  console.log(
+    'branchPixels: %O',
+    branchPixels.data.find(x => x.username === 'panda')
+  );
+  process.exit(1);
+  return;
 
   const newPixel = findNewPixel(oldPixels, branchPixels);
   if (newPixel) {
