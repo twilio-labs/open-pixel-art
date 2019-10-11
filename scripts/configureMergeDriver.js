@@ -5,11 +5,11 @@ let spinner;
 async function run() {
   spinner = ora('Configuring custom merge driver').start();
   await exec(
-    `git config --add merge.pixels.name "A custom merge driver for the pixels file"`,
+    `git config merge.pixels.name "A custom merge driver for the pixels file"`,
     { shell: true }
   );
   await exec(
-    `git config --add merge.pixels.driver "node scripts/mergePixels.js %O %A %B"`,
+    `git config merge.pixels.driver "node scripts/mergePixels.js %O %A %B"`,
     { shell: true }
   );
   spinner.succeed('Configured custom merge driver');
