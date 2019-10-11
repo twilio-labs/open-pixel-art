@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const { sortPixels, pixelsToString } = require('../utils/pixels-helper');
-const { image } = require('../_data/defaults.json');
+const appDefaults = require('../_data/defaults.json');
 
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
@@ -24,10 +24,14 @@ function findNewPixel(oldPixels, branchPixels) {
   );
 
   if (missingPixels.length > 1) {
-    console.log(missingPixels);
-    throw new Error(
-      'More pixels than one have been added. This requires a manual merge.'
-    );
+    const msg = `
+More pixels than one have been added or modified. This requires a manual merge.
+
+The following pixels have been added or modified:
+
+${pixelsToString(missingPixels)}
+`.trim();
+    throw new Error(msg);
   }
 
   return missingPixels[0];
@@ -52,7 +56,7 @@ function getNextCoordinate(currentX, currentY, width, height) {
   return { x, y };
 }
 
-function getAlternativePixel(takenPixels, invalidPixel) {
+function getAlternativePixel(takenPixels, invalidPixel, image) {
   const { username, x: preferredX, y: preferredY, color } = invalidPixel;
 
   const takenCoordinates = new Set(takenPixels.data.map(coordinatesToId));
@@ -78,7 +82,7 @@ function getAlternativePixel(takenPixels, invalidPixel) {
     }
   } while (takenCoordinates.has(coordinatesToId({ x, y })));
 
-  return { username, x, y, color };
+  return { y, x, color, username };
 }
 
 function isPixelTaken(currentPixels, newPixel) {
@@ -89,14 +93,14 @@ function isPixelTaken(currentPixels, newPixel) {
   );
 }
 
-async function run() {
+async function run(args) {
   const [
     nodePath,
     scriptPath,
     oldFilePath,
     branchFilePath,
     currentFilePath
-  ] = process.argv;
+  ] = args;
 
   const oldPixels = await getSortedPixelsFromFile(oldFilePath);
   const currentPixels = await getSortedPixelsFromFile(currentFilePath);
@@ -107,13 +111,19 @@ async function run() {
   if (newPixel && !pixelIsTaken) {
     currentPixels.data.push(newPixel);
   } else if (newPixel) {
-    const alternativePixel = getAlternativePixel(currentPixels, newPixel);
+    const alternativePixel = getAlternativePixel(
+      currentPixels,
+      newPixel,
+      appDefaults.image
+    );
 
     console.warn(
       `
 Unfortunately your pixel already had been taken. Instead we picked the following pixel for you:
 
 ${pixelsToString(alternativePixel)}
+
+If you do not like this pixel, feel free to pick another one instead by modifying the file again and commiting the new changes.
     `.trim()
     );
     currentPixels.data.push(alternativePixel);
@@ -123,9 +133,20 @@ ${pixelsToString(alternativePixel)}
   await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
 }
 
-run()
-  .then(() => process.exit(0))
-  .catch(err => {
-    console.error(err.message);
-    process.exit(1);
-  });
+if (process.argv.length >= 5 && process.argv[1].includes('mergePixels.js')) {
+  run(process.argv)
+    .then(() => process.exit(0))
+    .catch(err => {
+      console.error(err.message);
+      process.exit(1);
+    });
+}
+
+module.exports = {
+  getSortedPixelsFromFile,
+  findNewPixel,
+  getNextCoordinate,
+  getAlternativePixel,
+  isPixelTaken,
+  run
+};
