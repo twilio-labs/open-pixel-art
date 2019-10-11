@@ -57,7 +57,7 @@ async function run() {
 }
 
 run().catch(err => {
-  // console.log(err);
+  console.log(err);
   console.error(err.stderr);
   process.exit(1);
 });
