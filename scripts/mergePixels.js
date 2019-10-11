@@ -52,23 +52,23 @@ async function run() {
   const branchPixels = await getSortedPixelsFromFile(branchFilePath);
 
   const newPixel = findNewPixel(oldPixels, branchPixels);
-  console.log(newPixel);
   const pixelIsTaken = isPixelTaken(currentPixels, newPixel);
   if (newPixel && !pixelIsTaken) {
     currentPixels.data.push(newPixel);
   } else if (newPixel) {
+    // TODO: This should instead move the pixel to another suitable location
     throw new Error(
       'Could not merge automatically because the pixel you provided has already been claimed.'
     );
   }
 
   const outputPixels = sortPixels(currentPixels);
-  // await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
+  await writeFile(branchFilePath, pixelsToString(outputPixels), 'utf8');
 }
 
 run()
-  .then(() => process.exit(1))
+  .then(() => process.exit(0))
   .catch(err => {
-    console.error(err);
+    console.error(err.message);
     process.exit(1);
   });
