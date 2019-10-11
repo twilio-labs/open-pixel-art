@@ -58,7 +58,10 @@ async function run() {
   await exec(`git checkout ${currentBranch}`, opts);
 
   spinner.text = `Merging in changes from master to ${currentBranch}`;
-  await exec('git merge master -m "chore: merge changes from master"', opts);
+  await exec('git merge master -m "chore: merge changes from master"', {
+    ...opts,
+    stdout: 'pipe'
+  });
 }
 
 run().catch(err => {
