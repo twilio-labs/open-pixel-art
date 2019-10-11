@@ -4,12 +4,16 @@
   "private": true,
   "description": "A project to teach people how to do their first pull request",
   "scripts": {
+    "configure:merge-driver": "node scripts/configureMergeDriver.js",
+    "sync-fork": "node scripts/sync.js",
+    "format:sort-pixels": "node scripts/sortPixels.js",
     "lint-staged": "lint-staged",
     "start": "eleventy --serve",
     "build": "eleventy",
     "prettier": "prettier --write \"**/*.js\"",
     "test": "jest",
-    "test:pixeldata": "jest data.test.js"
+    "test:pixeldata": "jest data.test.js",
+    "postinstall": "npm run configure:merge-driver"
   },
   "repository": {
     "type": "git",
