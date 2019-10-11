@@ -24,6 +24,7 @@ function findNewPixel(oldPixels, branchPixels) {
   );
 
   if (missingPixels.length > 1) {
+    console.log(missingPixels);
     throw new Error(
       'More pixels than one have been added. This requires a manual merge.'
     );
