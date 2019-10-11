@@ -25,6 +25,8 @@ function pixelSortFunction(a, b) {
     // pixel a is in a higher row
     return -1;
   }
+
+  return 0;
 }
 
 function sortPixels(pixelJson) {
