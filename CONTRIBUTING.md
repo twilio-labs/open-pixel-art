@@ -45,6 +45,28 @@ npm start
 
 5. Open your browser at http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
+----
+
+There is also an option for setting up the project via Docker. To get started with the project by using Docker follow the following steps.
+
+1. Build the Docker image
+
+```bash
+ docker build -t open-pixel-art .`
+```
+
+2. Start the Docker image
+
+```bash
+docker run -d -p 8080:8080 -it open-pixel-art
+```
+
+
+If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is  correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+
+You can also verify if it's running by doing `docker ps --all` You will an imamge called `open-pixel-art` and where it's pointing too.
+
+
 ## Contributing a Pixel
 
 If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
