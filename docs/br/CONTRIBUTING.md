@@ -64,7 +64,7 @@ Um novo pixel deve ser um objeto com as quatro propriedades a seguir:
 - `color`: a cor que seu pixel deve ter como um código hexadecimal (por exemplo, #ff0000 para vermelho)
 - `username`: o nome de usuário do GitHub que você usará para criar a pull request
 
-A linha do seu pixel deve ser classificada primeiro pela coordenada y e depois pela coordenada x. Se você não tiver certeza sobre suas alterações, faça a alteração e execute `npm run format: json` e ele deverá classificar seu pixel na posição apropriada.
+A linha do seu pixel deve ser classificada primeiro pela coordenada y e depois pela coordenada x. Se você não tiver certeza sobre suas alterações, faça a alteração e execute `node tasks/sortPixels.js` e ele deverá classificar seu pixel na posição apropriada.
 
 A mudança deve ficar assim:
 

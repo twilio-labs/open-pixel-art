@@ -62,7 +62,7 @@ Cada nuevo pixel debe ser un objeto que debe contener las siguientes cuatro prop
 - `color`: El color de tu pixel, en formato hexadecimal (Ejemplo: #ff0000 para rojo).
 - `username`: El usuario de GitHub que usarás para abrir el pull request.
 
-La fila de tu pixel va a tomar en cuenta primero la coordenada `y` y luego la coordenada `x`. Si no estás seguro de tus cambios, puedes hacerlos y ejecutar `npm run format:json` y esto ajustará tu pixel a la posición adecuada.
+La fila de tu pixel va a tomar en cuenta primero la coordenada `y` y luego la coordenada `x`. Si no estás seguro de tus cambios, puedes hacerlos y ejecutar `node tasks/sortPixels.js` y esto ajustará tu pixel a la posición adecuada.
 
 El cambio final debería verse así (reemplazando dkundel por tu usuario de GitHub):
 
