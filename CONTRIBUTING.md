@@ -64,8 +64,14 @@ docker run -d -p 8080:8080 -it open-pixel-art
 
 If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is  correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
-You can also verify if it's running by doing `docker ps --all` You will an imamge called `open-pixel-art` and where it's pointing too.
+You can also verify if it's running by doing `docker ps --all` You will see an image called `open-pixel-art` and where you can access it as well.
 
+Example:
+
+```bash
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                     NAMES
+c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes                   0.0.0.0:8080->8080/tcp    sleepy_lamarr
+```
 
 ## Contributing a Pixel
 
