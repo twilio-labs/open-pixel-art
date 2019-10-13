@@ -13,7 +13,7 @@ new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide y
 step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
 it will walk you through every step from cloning the project to creating your pull request.
 
-Enjoy your quest!
+Enjoy your quest!!
 
 ## Requirements
 
@@ -111,7 +111,7 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
-**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). 
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork).
 
 Push your changes to GitHub by running:
 

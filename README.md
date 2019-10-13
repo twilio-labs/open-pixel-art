@@ -4,7 +4,7 @@
 
 This is an art project created with the intention to teach you how to create a pull request.
 
-Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!
+Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!!
 
 Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pix whatever color you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com)
 
@@ -19,7 +19,7 @@ In order to contribute a pixel to the canvas, you'll have to create a [pull requ
 
 If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the [contributing guide](CONTRIBUTING.md).
 
-We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
+We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
 - Check out the Contribution Guides:
@@ -67,7 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!!
 
 ## Technology Thank You
 
