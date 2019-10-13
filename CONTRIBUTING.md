@@ -8,7 +8,7 @@ For both scenarios the setup is the same, however, the contribution steps differ
 
 ## I've Never Contributed to Open Source
 
-Contributing to open source can be intimidating at first. For that reason we created a
+Contributing to open source can be intimidating at first. For that reason, we created a
 new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide you
 step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
 it will walk you through every step from cloning the project to creating your pull request.
@@ -49,11 +49,11 @@ npm start
 
 If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
 
-There's two ways you can contribute a pixel.
+There are two ways you can contribute a pixel.
 
 ### Option 1: "Claim" a pixel
 
-Some entries in the `pixels.json` file exist but have a `username` property of `<UNCLAIMED>`. This means that you can change them to be your pixel. You can change the color to whatever you want. Afterwards change the `username` property to your GitHub username that you'll use to open the pull request with.
+Some entries in the `pixels.json` file exist but have a `username` property of `<UNCLAIMED>`. This means that you can change them to be your pixel. You can change the colour to whatever you want. Afterwards, change the `username` property to your GitHub username that you'll use to open the pull request with.
 
 ### Option 2: Create a new pixel
 
@@ -62,7 +62,7 @@ A new pixel has to be an object with the following four properties:
 
 - `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
 - `y`: The y-coordinate of your pixel. `0` is the bottom-most row of pixels
-- `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
+- `colour`: The colour your pixel should have as a hex code (e.g. #ff0000 for red)
 - `username`: The GitHub username you'll use to create the pull request
 
 The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:json` and it should sort your pixel into the appropriate position.
@@ -82,9 +82,9 @@ The change should look like this:
 
 ### Verifying your changes
 
-Once you did your change, go over to http://localhost:8080 and you should see your new pixel. If you are not happy with the placement, keep changing the `x` and `y` values and if you are not happy with the `color` you can keep changing the `color` property.
+Once you did your change, go over to http://localhost:8080 and you should see your new pixel. If you are not happy with the placement, keep changing the `x` and `y` values and if you are not happy with the `colour` you can keep changing the `colour` property.
 
-Afterwards make sure that all tests are still passing by running in a different terminal:
+Afterwards, make sure that all tests are still passing by running in a different terminal:
 
 ```bash
 npm test
@@ -98,7 +98,7 @@ Once you are happy with the changes, create a [branch](https://help.github.com/e
 git checkout -b add-my-new-pixel
 ```
 
-Afterwards you'll have to pick your change and commit it by running:
+Afterwards, you'll have to pick your change and commit it by running:
 
 ```bash
 git add _data/pixels.json
@@ -119,7 +119,7 @@ Push your changes to GitHub by running:
 git push origin add-my-new-pixel
 ```
 
-Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
+Afterwards, head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
 
 ## Contributing other Changes
 
@@ -127,7 +127,7 @@ It's great that you want to contribute more than a pixel to this project. Before
 
 After making the code changes, please follow the steps outlined above.
 
-Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as reference any issues this is addressing.
+Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as a reference any issues this is addressing.
 
 ## Project Structure
 
@@ -170,7 +170,7 @@ This directory contains all [Jest](https://jestjs.io)-powered unit tests
 
 ### `_data`
 
-The `_data` directory contains the `pixels.json` file that represents every single pixel on the canvas, a `defaults.json` file that contains any default values like the size of the canvas, and the `env.js` file for any environment related values. All data will be automatically available in the `index.njk` file.
+The `_data` directory contains the `pixels.json` file that represents every single pixel on the canvas, a `defaults.json` file that contains any default values like the size of the canvas, and the `env.js` file for any environment-related values. All data will be automatically available in the `index.njk` file.
 
 ### `assets`
 
@@ -194,4 +194,4 @@ We want to make sure that this project is as welcoming to people as possible. By
 
 ## Licensing
 
-All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
+All third party contributors acknowledge that any contributions they provide will be made under the same open-source license that the open-source project is provided under.
