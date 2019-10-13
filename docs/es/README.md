@@ -59,7 +59,7 @@ Muchas gracias a toda esta gente maravillosa que ha contribuido a este proyecto 
   </tr>
 </table>
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- ALL-CONTRIBUTORS-LIST: END -->
 
 Este proyecto usa la especificación de [all-contributors](https://github.com/all-contributors/all-contributors), y ¡todas las contribuciones son bienvenidas!
 
@@ -70,11 +70,11 @@ Este proyecto es posible gracias a múltiples otros proyectos de código abierto
 - [Eleventy](https://www.11ty.io/) para la generación del sitio Web estático
 - [Danger](https://danger.systems/js/) para la revisión automática de código
 - [Mergify](https://github.com/mergifyio) para incluir los PR automáticamente
-- [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot) para reconocer las contribuciones de todos
+- [All Contributors](https://github.com/all-contributors/all-contributors-bot) para reconocer las contribuciones de todos
 - [Jest](https://jestjs.io/) para los tests unitarios
 - [NES.css](https://nostalgic-css.github.io/NES.css/) para los estilos CSS
 - [Welcome Bot](https://github.com/behaviorbot/welcome) para darle la bienvenida a los nuevos contribuyentes
 
 ## Licencia
 
-MIT
+MIT Licence
