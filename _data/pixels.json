@@ -23,9 +23,6 @@
     {"y": 0, "x": 20, "color": "#ffc40c", "username": "arirawr"},
     {"y": 0, "x": 21, "color": "#FBAA0D", "username": "kri99"},
     {"y": 0, "x": 22, "color": "#f542e0", "username": "giacomorebonato"},
-<<<<<<< HEAD
-    {"y": 0, "x": 24, "color": "#000f18", "username": "bauripalash"},
-=======
     {"y": 0, "x": 23, "color": "#FFF554", "username": "priyadhoundiyal"},
     {"y": 0, "x": 24, "color": "#000f18", "username": "bauripalash"},
     {"y": 0, "x": 25, "color": "#000f18", "username": "bearsic"},
@@ -33,7 +30,6 @@
     {"y": 0, "x": 27, "color": "#99ffff", "username": "drmyuu"},
     {"y": 0, "x": 28, "color": "#99ffff", "username": "hungrybear88"},
     {"y": 0, "x": 29, "color": "#99ffff", "username": "ravindra7355100"},
->>>>>>> 58c7af9e6285ea3bf6cd0f593c3124fa4e9478ec
     {"y": 0, "x": 30, "color": "#bad123", "username": "Matthew-Auld"},
     {"y": 0, "x": 31, "color": "#00ffe9", "username": "thackley"},
     {"y": 0, "x": 32, "color": "#C0000D", "username": "gtramontina"},
@@ -161,6 +157,7 @@
     {"y": 5, "x": 5, "color": "#555555", "username": "wkiril"},
     {"y": 5, "x": 6, "color": "#990000", "username": "tstolswo"},
     {"y": 5, "x": 8, "color": "#ed1d24", "username": "khuongTiet"},
+    {"y": 5, "x": 9, "color": "#f58142", "username": "Innovator007"},
     {"y": 5, "x": 13, "color": "#ff1f40", "username": "yash-garg"},
     {"y": 5, "x": 14, "color": "#845EC2", "username": "konbinihack"},
     {"y": 5, "x": 17, "color": "#0d6d6e", "username": "bfgonzalez"},
@@ -168,14 +165,11 @@
     {"y": 5, "x": 27, "color": "#ff0000", "username": "adityasrivast"},
     {"y": 5, "x": 33, "color": "#c7001c", "username": "jordanedmunds10"},
     {"y": 5, "x": 35, "color": "#ff33cc", "username": "knpfletcher"},
-<<<<<<< HEAD
-=======
     {"y": 5, "x": 39, "color": "#f58142", "username": "mohamedsgap"},
     {"y": 6, "x": 0, "color": "#B00713", "username": "kevinhhuynh"},
     {"y": 6, "x": 1, "color": "#845EC2", "username": "preid-iworks"},
     {"y": 6, "x": 3, "color": "#F7E810", "username": "Ckanelin"},
     {"y": 6, "x": 4, "color": "#ce9178", "username": "apritchard-iworks"},
->>>>>>> 58c7af9e6285ea3bf6cd0f593c3124fa4e9478ec
     {"y": 6, "x": 5, "color": "#7B7D7D", "username": "GilbishKosma"},
     {"y": 6, "x": 6, "color": "#000000", "username": "yashwin"},
     {"y": 6, "x": 7, "color": "#FFC0CB", "username": "coryjbergquist"},
@@ -585,9 +579,6 @@
     {"y": 38, "x": 3, "color": "#663399", "username": "mph121"},
     {"y": 38, "x": 4, "color": "#2FF5A1", "username": "zevkershman"},
     {"y": 38, "x": 5, "color": "#624A8D", "username": "jesuslerma"},
-<<<<<<< HEAD
-    {"y": 38, "x": 8, "color": "#8c2568", "username": "thewhiteswan"},
-=======
     {"y": 38, "x": 6, "color": "#DE3CE4", "username": "Biswajee"},
     {"y": 38, "x": 7, "color": "#FFAA00", "username": "dominicduffin1"},
     {"y": 38, "x": 8, "color": "#8c2568", "username": "thewhiteswan"},
@@ -606,7 +597,6 @@
     {"y": 38, "x": 33, "color": "#ed1d20", "username": "aliraza1844"},
     {"y": 38, "x": 34, "color": "#ff6f00", "username": "AdnanMuhib"},
     {"y": 38, "x": 35, "color": "#F22F46", "username": "skysor44"},
->>>>>>> 58c7af9e6285ea3bf6cd0f593c3124fa4e9478ec
     {"y": 38, "x": 36, "color": "#737373", "username": "adiagr"},
     {"y": 38, "x": 37, "color": "#354ea0", "username": "clanghout"},
     {"y": 38, "x": 38, "color": "#0f61c1", "username": "rickyrobinett"},
@@ -627,13 +617,9 @@
     {"y": 39, "x": 13, "color": "#ff7b47", "username": "zodiak2290"},
     {"y": 39, "x": 14, "color": "#1E90FF", "username": "linda-lai"},
     {"y": 39, "x": 15, "color": "#1de9b6", "username": "gerlis18"},
-<<<<<<< HEAD
-    {"y": 39, "x": 16, "color": "#7dafff", "username": "Innovator007"},
-=======
     {"y": 39, "x": 16, "color": "#87CEEB", "username": "kopikob"},
     {"y": 39, "x": 17, "color": "#61ff4f", "username": "deviouscyborg"},
     {"y": 39, "x": 18, "color": "#11AA44", "username": "ssmele"},
->>>>>>> 58c7af9e6285ea3bf6cd0f593c3124fa4e9478ec
     {"y": 39, "x": 19, "color": "#fc9803", "username": "cjscheller"},
     {"y": 39, "x": 20, "color": "#0088cc", "username": "clintdavis"},
     {"y": 39, "x": 21, "color": "#45B39D", "username": "arjun1311"},
