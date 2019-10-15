@@ -186,7 +186,7 @@ Dieses Verzeichnis enthält benutzerdefiniertes CSS. Die Stile für [`index.njk`
 
 ## Code of Conduct
 
-Wir möchten sicherstellen, dass dieses Projekt so freundlich wie möglich ist. Durch die Interaktion mit dem Projekt in beliebiger Form stimmen Sie dem [Verhaltenskodex] des Projekts (CODE_OF_CONDUCT.md) zu. Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoßen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
+Wir möchten sicherstellen, dass dieses Projekt so freundlich wie möglich ist. Durch die Interaktion mit dem Projekt in beliebiger Form stimmen Sie dem [Verhaltenskodex](CODE_OF_CONDUCT.md) des Projekts  zu. Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoßen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Lizenzierung
 
