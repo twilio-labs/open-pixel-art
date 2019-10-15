@@ -154,6 +154,7 @@
     {"y": 4, "x": 27, "color": "#32A2DB", "username": "FailedSitcom"},
     {"y": 4, "x": 30, "color": "#553c8b", "username": "kimSpiegel04"},
     {"y": 4, "x": 32, "color": "#c7001c", "username": "BOTPaul"},
+    {"y": 4, "x": 38, "color": "#bfff00", "username": "decoded-petal"},
     {"y": 4, "x": 39, "color": "#33CEFF", "username": "micaswyers"},
     {"y": 5, "x": 0, "color": "#ff0000", "username": "JBurrows98"},
     {"y": 5, "x": 1, "color": "#FF33C7", "username": "ThaLeprechaun"},
@@ -660,6 +661,6 @@
     {"y": 39, "x": 36, "color": "#0f112a", "username": "subhanshu2"},
     {"y": 39, "x": 37, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 38, "color": "#000080", "username": "rmkubik"},
-    {"y": 39, "x": 39, "color": "#e9e9e9", "username": "decoded-petal"}
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
   ]
 }
