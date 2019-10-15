@@ -36,7 +36,7 @@ function onKeyDown(event) {
   }
 }
 
-const loopTimeout = 500;
+const loopTimeout = 750;
 let isLooping = false;
 let latestCommand = null;
 const width = 40;
