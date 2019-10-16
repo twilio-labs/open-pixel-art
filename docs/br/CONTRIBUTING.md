@@ -2,8 +2,6 @@
 
 ¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
 
-Português do Brasil? Pode encontrar o nosso Guia de Contribuição traduzido [neste link](docs/br/CONTRIBUTING.md).
-
 Existem duas maneiras de contribuir com este projeto. Você pode contribuir com um único pixel na tela ou com o projeto subjacente. Por exemplo, adicionando testes, atualizando o modelo HTML ou a documentação.
 
 Nos dois cenários, a configuração é a mesma, no entanto, as etapas de contribuição diferem ligeiramente.
