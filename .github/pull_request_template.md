@@ -11,7 +11,7 @@
 - [ ] I only edited the `_data/pixels.json` file.
 <!-- Delete this if the PR is for something other than a pixel -->
 - [ ] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
-- [ ] I acknowledge that all my contributions will be made under the project's [license](../../LICENSE.md).
+- [ ] I acknowledge that all my contributions will be made under the project's [license](../LICENSE).
 
 <!-- To check a task, put a "x" between the brackets, similar to [x] -->
 
