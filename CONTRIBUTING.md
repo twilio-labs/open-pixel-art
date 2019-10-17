@@ -93,7 +93,7 @@ A new pixel has to be an object with the following four properties:
 - `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
 - `username`: The GitHub username you'll use to create the pull request
 
-The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:json` and it should sort your pixel into the appropriate position.
+The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:sort-pixels` and it should sort your pixel into the appropriate position.
 
 The change should look like this:
 
@@ -139,7 +139,7 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
-**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). 
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork).
 
 Push your changes to GitHub by running:
 
