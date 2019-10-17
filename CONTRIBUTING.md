@@ -52,7 +52,7 @@ There is also an option for setting up the project via Docker. To get started wi
 1. Build the Docker image
 
 ```bash
- docker build -t open-pixel-art .`
+ docker build -t open-pixel-art .
 ```
 
 2. Start the Docker image
