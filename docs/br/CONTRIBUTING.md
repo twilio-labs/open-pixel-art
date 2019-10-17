@@ -2,13 +2,13 @@
 
 ¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
 
-Existem duas maneiras de contribuir com este projeto. Você pode contribuir com um único pixel na tela ou contribuir com o projeto subjacente. Por exemplo, adicionando testes, atualizando o modelo HTML ou atualizando a documentação.
+Existem duas maneiras de contribuir com este projeto. Você pode contribuir com um único pixel na tela ou com o projeto subjacente. Por exemplo, adicionando testes, atualizando o modelo HTML ou a documentação.
 
 Nos dois cenários, a configuração é a mesma, no entanto, as etapas de contribuição diferem ligeiramente.
 
 ## Nunca contribuí com código aberto
 
-Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma nova missão dentro do [TwilioQuest](https://www.twilio.com/quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
+Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://www.twilio.com/quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
 
 Aproveite sua busca!
 
@@ -52,9 +52,9 @@ Há duas maneiras de contribuir com um pixel.
 
 Algumas entradas no arquivo `pixels.json` existem, mas possuem uma propriedade `username` de `<UNCLAIMED>`. Isso significa que você pode alterá-los para serem seu pixel. Você pode mudar a cor para o que quiser. Depois, altere a propriedade `username` para o nome de usuário do GitHub que você usará para abrir uma pull request.
 
-### Opção 2: criar um novo pixel
+### Opção 2: criar um pixel
 
-Para criar um novo pixel, adicione uma nova linha ao array `data` dentro do `pixels.json`.
+Para criar um pixel, adicione uma nova linha ao array `data` dentro do `pixels.json`.
 Um novo pixel deve ser um objeto com as quatro propriedades a seguir:
 
 - `x`: a coordenada x do seu pixel. `0` é a coluna de pixels mais à esquerda
@@ -62,7 +62,7 @@ Um novo pixel deve ser um objeto com as quatro propriedades a seguir:
 - `color`: a cor que seu pixel deve ter como um código hexadecimal (por exemplo, #ff0000 para vermelho)
 - `username`: o nome de usuário do GitHub que você usará para criar a pull request
 
-A linha do seu pixel deve ser classificada primeiro pela coordenada y e depois pela coordenada x. Se você não tiver certeza sobre suas alterações, faça a alteração e execute `npm run format: json` e ele deverá classificar seu pixel na posição apropriada.
+A linha do seu pixel deve ser classificada primeiro pela coordenada y e depois pela x. Se você não tiver certeza sobre suas alterações, faça a alteração e execute `npm run format: json` e ele deverá classificar seu pixel na posição apropriada.
 
 A mudança deve ficar assim:
 
@@ -81,7 +81,7 @@ A mudança deve ficar assim:
 
 Depois de fazer a alteração, vá para http://localhost:8080 e você verá seu novo pixel. Se você não estiver satisfeito com o posicionamento, continue alterando os valores `x` e `y` e se você não estiver satisfeito com a cor, poderá continuar alterando a propriedade `color`.
 
-Posteriormente, verifique se todos os testes ainda estão passando, executando em uma outra janela de terminal:
+Posteriormente, verifique se todos os testes ainda estão passando, executando em outra janela de terminal:
 
 ```bash
 npm test
@@ -102,12 +102,12 @@ git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
 Substitua `(x, y)` pelas coordenadas xe y do seu pixel alterado, por exemplo `(4, 27)`.
-Isso criará um novo commit com a mensagem `feat(pixels): add my new pixel (4, 27)`.
+Isso criará um commit com a mensagem `feat(pixels): add my new pixel (4, 27)`.
 A mensagem de confirmação está seguindo o [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ### Envie suas alterações e criando uma pull request
 
-**Nota:** Se você estiver com problemas para enviar suas alterações ao GitHub, sua ramificação local do repositório pode não estar atualizada com o repositório atual devido a adições de outros colaboradores. Antes de enviar suas alterações para o GitHub, talvez seja necessário [sincronizar seu fork com o repositório upstream](https://help.github.com/en/articles/syncing-a-fork).
+**Nota:** Se você estiver com problemas para enviar suas alterações ao GitHub, seu branch local do repositório pode não estar atualizada com o repositório atual devido a adições de outros colaboradores. Antes de enviar suas alterações para o GitHub, talvez seja necessário [sincronizar seu fork com o repositório upstream](https://help.github.com/en/articles/syncing-a-fork).
 
 Envie suas alterações para o GitHub executando:
 
@@ -119,11 +119,11 @@ Depois, vá para o GitHub e [siga estas instruções](https://help.github.com/en
 
 ## Contribuindo com outras alterações
 
-É ótimo que você queira contribuir com mais de um pixel para este projeto. Antes de começar a trabalhar no código, verifique se já existe um [problema no GitHub](https://github.com/twilio-labs/open-pixel-art/issues) para essas alterações. Se não houver, abra um primeiro. Se já houver, crie um comentário para que as pessoas saibam que você está trabalhando em uma correção para isso.
+É ótimo que você queira contribuir com mais de um pixel para este projeto. Antes de começar a trabalhar no código, verifique se já existe uma [issue no GitHub](https://github.com/twilio-labs/open-pixel-art/issues) para essas alterações. Se não houver, abra um primeiro. Se já houver, crie um comentário para que as pessoas saibam que você está trabalhando em uma correção para isso.
 
 Depois de fazer as alterações no código, siga as etapas descritas acima.
 
-Depois de abrir uma pull request, certifique-se de descomentar a seção de informações adicionais no modelo de pull request e adicione uma descrição e faça referência a quaisquer problemas que estiver solucionando.
+Depois de abrir uma pull request, certifique-se de descomentar a seção de informações adicionais no modelo de pull request, adicione uma descrição e faça referência a quaisquer problemas que estiver solucionando.
 
 ## Estrutura do projeto
 
