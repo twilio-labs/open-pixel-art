@@ -34,8 +34,10 @@ function onKeyDown(event) {
     f: flip,
     v: vert,
     w: walk,
-    a: toggleImages
+    a: toggleImages,
+    p: preview
   };
+
   const f = keyMap[key];
   if (f) {
     f();
@@ -45,6 +47,22 @@ function onKeyDown(event) {
 
 const width = 40;
 const height = 40;
+
+function preview() {
+  setTimeEffect(order, 1000);
+  setTimeEffect(reset, 2000);
+  setTimeEffect(twist, 3000);
+  setTimeEffect(flip, 4000);
+  setTimeEffect(vert, 5000);
+  setTimeEffect(random, 6000);
+  setTimeEffect(walk, 7000);
+}
+
+function setTimeEffect(effect, time) {
+  setTimeout(() => {
+    effect();
+  }, time);
+}
 
 function reset() {
   transform(({ xStart, yStart }) => [xStart, yStart]);
