@@ -1,12 +1,19 @@
-// get All the pixels into an array
-const pixels = Array.from(
-  document.querySelectorAll('#pixel-canvas rect.pixel')
+const canvas = document.getElementById('pixel-canvas');
+const rects = Array.from(
+  document.querySelectorAll('#pixel-canvas .pixel-rect')
 );
+const images = Array.from(
+  document.querySelectorAll('#pixel-canvas .pixel-image')
+);
+// hide image-pixels on load
+images.forEach(image => image.remove());
+
+let showImages = false;
 
 // add additional 'x-start' and 'y-start' attributes
-pixels.forEach(p => {
-  p.setAttribute('x-start', p.getAttribute('x'));
-  p.setAttribute('y-start', p.getAttribute('y'));
+rects.forEach(rect => {
+  rect.setAttribute('x-start', rect.getAttribute('x'));
+  rect.setAttribute('y-start', rect.getAttribute('y'));
 });
 
 document.addEventListener('keydown', onKeyDown);
@@ -26,7 +33,8 @@ function onKeyDown(event) {
     t: twist,
     f: flip,
     v: vert,
-    w: walk
+    w: walk,
+    a: toggleImages
   };
   const f = keyMap[key];
   if (f) {
@@ -79,12 +87,38 @@ const w = ({ x, y }) => {
 };
 
 function transform(transformFunction) {
-  pixels.forEach((p, i) => {
+  rects.forEach((rect, i) => {
+    const image = images[i];
     const [x, y, xStart, yStart] = ['x', 'y', 'x-start', 'y-start'].map(j =>
-      Number(p.getAttribute(j))
+      Number(rect.getAttribute(j))
     );
     const [xNew, yNew] = transformFunction({ x, y, xStart, yStart, i });
-    p.setAttribute('x', xNew);
-    p.setAttribute('y', yNew);
+    rect.setAttribute('x', xNew);
+    rect.setAttribute('y', yNew);
+    image.setAttribute('x', xNew);
+    image.setAttribute('y', yNew);
   });
+}
+
+function toggleImages() {
+  showImages = !showImages;
+  if (showImages) {
+    // rects.forEach(rect => rect.classList.add('hidden'))
+    rects.forEach(rect => rect.remove());
+    // rects.remove()
+    images.forEach(image => {
+      const name = image.getAttribute('name');
+      image.classList.remove('hidden');
+      image.setAttribute(
+        'xlink:href',
+        `//avatars.githubusercontent.com/${name}?size=20`
+      );
+      canvas.appendChild(image);
+    });
+  } else {
+    rects.forEach(rect => canvas.appendChild(rect));
+    images.forEach(image => image.remove());
+    //     image.classList.add('hidden')
+    // })
+  }
 }
