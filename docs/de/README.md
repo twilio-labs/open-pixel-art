@@ -4,38 +4,38 @@
 
 Dies ist ein Kunstprojekt, das mit der Absicht erstellt wurde, Ihnen das Erstellen einer Pull-Anfrage beizubringen.
 
-Besuchen Sie [open-pixel-art.com](https://open-pixel-art.com), um das vollständige Kunstwerk zu sehen!
+Besuchen Sie [open-pixel-art.com](https://open-pixel-art.com), um das vollstÃ¤ndige Kunstwerk zu sehen!
 
-Jeder, der lernen möchte, wie man eine Pull-Anfrage für ein Projekt auf GitHub erstellt, kann dieses Projekt verwenden, um einen Pixel auf die Leinwand zu bringen. Sie können immer nur ein Pixel erstellen, aber Sie können jede gewünschte Farbe pixen, solange es sich um einen gültigen HEX-Code handelt. Zum Beispiel: `#F22F46` die Markenfarbe von [Twilio](https://www.twilio.com)
+Jeder, der lernen mÃ¶chte, wie man eine Pull-Anfrage fÃ¼r ein Projekt auf GitHub erstellt, kann dieses Projekt verwenden, um einen Pixel auf die Leinwand zu bringen. Sie kÃ¶nnen immer nur ein Pixel erstellen, aber Sie kÃ¶nnen jede gewÃ¼nschte Farbe pixen, solange es sich um einen gÃ¼ltigen HEX-Code handelt. Zum Beispiel: `#F22F46` die Markenfarbe von [Twilio](https://www.twilio.com)
 
-> Wenn Sie neu in Open Source, GitHub oder Git im Allgemeinen sind, haben wir in [TwilioQuest](https://www.twilio.com/quest) ein Tutorial für Sie erstellt. Hier erfahren Sie Schritt für Schritt, wie Sie beginnen können, und werden bei der Erstellung Ihrer Pull-Anfrage unterstützt.
-> ?? [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
+> Wenn Sie neu in Open Source, GitHub oder Git im Allgemeinen sind, haben wir in [TwilioQuest](https://www.twilio.com/quest) ein Tutorial fÃ¼r Sie erstellt. Hier erfahren Sie Schritt fÃ¼r Schritt, wie Sie beginnen kÃ¶nnen, und werden bei der Erstellung Ihrer Pull-Anfrage unterstÃ¼tzt.
+> ðŸ•¹ [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
 
-Das gesamte Projekt ist automatisiert und wird größtenteils von einer Reihe von Bots verwaltet, die alle Pixelbeiträge überprüfen. Wenn Sie jedoch mehr über das Projekt erfahren oder andere Beiträge zum Projekt einreichen möchten, die kein Pixel sind, können Sie ein [GitHub-Issue](https://github.com/twilio-labs/open-pixel-art/issues) im [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
+Das gesamte Projekt ist automatisiert und wird grÃ¶ÃŸtenteils von einer Reihe von Bots verwaltet, die alle PixelbeitrÃ¤ge Ã¼berprÃ¼fen. Wenn Sie jedoch mehr Ã¼ber das Projekt erfahren oder andere BeitrÃ¤ge zum Projekt einreichen mÃ¶chten, die kein Pixel sind, kÃ¶nnen Sie ein [GitHub-Issue](https://github.com/twilio-labs/open-pixel-art/issues) im [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Mitmachen
 
-Um einen Pixel zum Canvas beizutragen, müssen Sie [eine Pull-Anfrage](https://opensource.guide/how-to-contribute/#opening-a-pull-request) an die [Open Pixel Art Projekt auf GitHub](https://github.com/twilio-labs/open-pixel-art).
+Um einen Pixel zum Canvas beizutragen, mÃ¼ssen Sie [eine Pull-Anfrage](https://opensource.guide/how-to-contribute/#opening-a-pull-request) an die [Open Pixel Art Projekt auf GitHub](https://github.com/twilio-labs/open-pixel-art).
 
-Wenn Sie mit GitHub vertraut sind, können Sie sich die [beitragende Anleitung](CONTRIBUTING.md) ansehen.
+Wenn Sie mit GitHub vertraut sind, kÃ¶nnen Sie sich die [beitragende Anleitung](CONTRIBUTING.md) ansehen.
 
-In unserem interaktiven Codierungsspiel [TwilioQuest](https://www.twilio.com/quest) können Sie Schritt für Schritt eine Pull-Anfrage für dieses Projekt erstellen und sich auf die Suche nach Open Source begeben.
+In unserem interaktiven Codierungsspiel [TwilioQuest](https://www.twilio.com/quest) kÃ¶nnen Sie Schritt fÃ¼r Schritt eine Pull-Anfrage fÃ¼r dieses Projekt erstellen und sich auf die Suche nach Open Source begeben.
 
 - [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
 - Schauen Sie sich die Contribution Guides an:
     - [Englisch](CONTRIBUTING.md)
-    - [Español](docs/es/CONTRIBUTING.md)
+    - [EspaÃ±ol](docs/es/CONTRIBUTING.md)
     - [Deutsch](docs/de/CONTRIBUTING.md)
 
 ## Verhaltensregeln
 
-Wir möchten sicherstellen, dass dieses Projekt so freundlich wie möglich ist. Durch die Interaktion mit dem Projekt in irgendeiner Form erklären Sie sich mit dem Verhaltenskodex des Projekts einverstanden:
+Wir mÃ¶chten sicherstellen, dass dieses Projekt so freundlich wie mÃ¶glich ist. Durch die Interaktion mit dem Projekt in irgendeiner Form erklÃ¤ren Sie sich mit dem Verhaltenskodex des Projekts einverstanden:
 
 - [Englisch](CODEOFCONDUCT.md)
-- [Español](docs/es/CODEOFCONDUCT.md)
+- [EspaÃ±ol](docs/es/CODEOFCONDUCT.md)
 - [Deutsch](docs/de/CODEOFCONDUCT.md)
 
-Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoßen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
+Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoÃŸen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Contributors
 
@@ -45,38 +45,38 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://dkundel.com"><img src="https://avatars3.githubusercontent.com/u/1505101?v=4" width="80px;" alt="Dominik Kundel"/><br /><sub><b>Dominik Kundel</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=dkundel" title="Code">??</a> <a href="#ideas-dkundel" title="Ideas, Planning, & Feedback">??</a></td>
-    <td align="center"><a href="https://aimhigherwebdesign.com.au"><img src="https://avatars2.githubusercontent.com/u/15953185?v=4" width="80px;" alt="Amy Kapernick"/><br /><sub><b>Amy Kapernick</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=amykapernick" title="Code">??</a></td>
-    <td align="center"><a href="https://github.com/kwhinnery"><img src="https://avatars3.githubusercontent.com/u/29193?v=4" width="80px;" alt="Kevin Whinnery"/><br /><sub><b>Kevin Whinnery</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=kwhinnery" title="Code">??</a></td>
-    <td align="center"><a href="http://rickyrobinett.com"><img src="https://avatars3.githubusercontent.com/u/838096?v=4" width="80px;" alt="Ricky Robinett"/><br /><sub><b>Ricky Robinett</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=rickyrobinett" title="Code">??</a></td>
-    <td align="center"><a href="https://github.com/andrescalco"><img src="https://avatars1.githubusercontent.com/u/10577705?v=4" width="80px;" alt="André Felipe Scalco"/><br /><sub><b>André Felipe Scalco</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=andrescalco" title="Code">??</a></td>
-    <td align="center"><a href="https://gustiaux.com"><img src="https://avatars0.githubusercontent.com/u/26365722?v=4" width="80px;" alt="Teddy Gustiaux"/><br /><sub><b>Teddy Gustiaux</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=teddy-gustiaux" title="Code">??</a></td>
-    <td align="center"><a href="https://github.com/AidanJSmith"><img src="https://avatars3.githubusercontent.com/u/26717362?v=4" width="80px;" alt="Aidan Smith"/><br /><sub><b>Aidan Smith</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=AidanJSmith" title="Code">??</a></td>
+    <td align="center"><a href="https://dkundel.com"><img src="https://avatars3.githubusercontent.com/u/1505101?v=4" width="80px;" alt="Dominik Kundel"/><br /><sub><b>Dominik Kundel</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=dkundel" title="Code">ðŸ’»</a> <a href="#ideas-dkundel" title="Ideas, Planning, & Feedback">ðŸ¤”</a></td>
+    <td align="center"><a href="https://aimhigherwebdesign.com.au"><img src="https://avatars2.githubusercontent.com/u/15953185?v=4" width="80px;" alt="Amy Kapernick"/><br /><sub><b>Amy Kapernick</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=amykapernick" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://github.com/kwhinnery"><img src="https://avatars3.githubusercontent.com/u/29193?v=4" width="80px;" alt="Kevin Whinnery"/><br /><sub><b>Kevin Whinnery</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=kwhinnery" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="http://rickyrobinett.com"><img src="https://avatars3.githubusercontent.com/u/838096?v=4" width="80px;" alt="Ricky Robinett"/><br /><sub><b>Ricky Robinett</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=rickyrobinett" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://github.com/andrescalco"><img src="https://avatars1.githubusercontent.com/u/10577705?v=4" width="80px;" alt="AndrÃ© Felipe Scalco"/><br /><sub><b>AndrÃ© Felipe Scalco</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=andrescalco" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://gustiaux.com"><img src="https://avatars0.githubusercontent.com/u/26365722?v=4" width="80px;" alt="Teddy Gustiaux"/><br /><sub><b>Teddy Gustiaux</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=teddy-gustiaux" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://github.com/AidanJSmith"><img src="https://avatars3.githubusercontent.com/u/26717362?v=4" width="80px;" alt="Aidan Smith"/><br /><sub><b>Aidan Smith</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=AidanJSmith" title="Code">ðŸ’»</a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/TheHandsomeCoder"><img src="https://avatars0.githubusercontent.com/u/1569604?v=4" width="80px;" alt="Scott O'Malley"/><br /><sub><b>Scott O'Malley</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=TheHandsomeCoder" title="Code">??</a></td>
-    <td align="center"><a href="http://www.toddmoy.com"><img src="https://avatars2.githubusercontent.com/u/22126?v=4" width="80px;" alt="Todd Moy"/><br /><sub><b>Todd Moy</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=toddmoy" title="Code">??</a></td>
-    <td align="center"><a href="http://www.samueldurkin.com"><img src="https://avatars3.githubusercontent.com/u/6232253?v=4" width="80px;" alt="Samuel Durkin"/><br /><sub><b>Samuel Durkin</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=FailedSitcom" title="Code">??</a></td>
-    <td align="center"><a href="https://github.com/nokenwa"><img src="https://avatars2.githubusercontent.com/u/23080261?v=4" width="80px;" alt="ChatterboxCoder"/><br /><sub><b>ChatterboxCoder</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=nokenwa" title="Code">??</a></td>
-    <td align="center"><a href="https://github.com/simeydk"><img src="https://avatars0.githubusercontent.com/u/13088589?v=4" width="80px;" alt="Simey de Klerk"/><br /><sub><b>Simey de Klerk</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=simeydk" title="Code">??</a></td>
+    <td align="center"><a href="https://github.com/TheHandsomeCoder"><img src="https://avatars0.githubusercontent.com/u/1569604?v=4" width="80px;" alt="Scott O'Malley"/><br /><sub><b>Scott O'Malley</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=TheHandsomeCoder" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="http://www.toddmoy.com"><img src="https://avatars2.githubusercontent.com/u/22126?v=4" width="80px;" alt="Todd Moy"/><br /><sub><b>Todd Moy</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=toddmoy" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="http://www.samueldurkin.com"><img src="https://avatars3.githubusercontent.com/u/6232253?v=4" width="80px;" alt="Samuel Durkin"/><br /><sub><b>Samuel Durkin</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=FailedSitcom" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://github.com/nokenwa"><img src="https://avatars2.githubusercontent.com/u/23080261?v=4" width="80px;" alt="ChatterboxCoder"/><br /><sub><b>ChatterboxCoder</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=nokenwa" title="Code">ðŸ’»</a></td>
+    <td align="center"><a href="https://github.com/simeydk"><img src="https://avatars0.githubusercontent.com/u/13088589?v=4" width="80px;" alt="Simey de Klerk"/><br /><sub><b>Simey de Klerk</b></sub></a><br /><a href="https://github.com/twilio-labs/open-pixel-art/commits?author=simeydk" title="Code">ðŸ’»</a></td>
   </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Dieses Projekt folgt der Spezifikation [all-contributors](https://github.com/all-contributors/all-contributors). Beiträge jeglicher Art sind willkommen!
+Dieses Projekt folgt der Spezifikation [all-contributors](https://github.com/all-contributors/all-contributors). BeitrÃ¤ge jeglicher Art sind willkommen!
 
 ## Technologie Vielen Dank
 
 Dieses Projekt wird von verschiedenen Open-Source-Projekten angetrieben. Unter anderen:
 
-- [Eleventy](https://www.11ty.io/) für die statische Site-Generierung
-- [Gefahr](https://danger.systems/js/) für die automatisierte Codeüberprüfung
-- [Mergify](https://github.com/mergifyio) für die automatisierte PR-Zusammenführung
-- [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot), um die Beiträge aller anzuerkennen
-- [Jest](https://jestjs.io/) für Unit Testing
-- [NES.css](https://nostalgic-css.github.io/NES.css/) für das CSS-Styling
-- [Welcome Bot](https://github.com/behaviorbot/welcome), um neue Mitwirkende willkommen zu heißen
+- [Eleventy](https://www.11ty.io/) fÃ¼r die statische Site-Generierung
+- [Dangerr](https://danger.systems/js/) fÃ¼r die automatisierte CodeÃ¼berprÃ¼fung
+- [Mergify](https://github.com/mergifyio) fÃ¼r die automatisierte PR-ZusammenfÃ¼hrung
+- [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot), um die BeitrÃ¤ge aller anzuerkennen
+- [Jest](https://jestjs.io/) fÃ¼r Unit Testing
+- [NES.css](https://nostalgic-css.github.io/NES.css/) fÃ¼r das CSS-Styling
+- [Welcome Bot](https://github.com/behaviorbot/welcome), um neue Mitwirkende willkommen zu heiÃŸen
 
 ## Lizenz
 
