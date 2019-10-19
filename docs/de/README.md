@@ -1,4 +1,4 @@
-# Open Pixel Art von [Twilio](https://www.twilio.com)
+# Open Pixel Art von [Twilio](https://www.twilio.com) 
 
 [![Alle Mitwirkenden](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#mitwirkende) [![Ein Twilio Labs-Projekt](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
