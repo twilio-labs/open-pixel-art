@@ -77,15 +77,10 @@ c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago
 
 If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
 
-There's two ways you can contribute a pixel.
+### Create a new pixel
 
-### Option 1: "Claim" a pixel
-
-Some entries in the `pixels.json` file exist but have a `username` property of `<UNCLAIMED>`. This means that you can change them to be your pixel. You can change the color to whatever you want. Afterwards change the `username` property to your GitHub username that you'll use to open the pull request with.
-
-### Option 2: Create a new pixel
-
-To create a new pixel, add a new row to the `data` array inside the `pixels.json`.
+To create a new pixel, search for a gap between the numbers for either the `x` or `y` coordinates in the `data` array inside the `pixels.json`.
+Once you have found an open position, ag ahead and add a new pixel row.
 A new pixel has to be an object with the following four properties:
 
 - `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
