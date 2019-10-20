@@ -87,4 +87,4 @@ This project is powered by various open-source projects. Among others:
 
 ## License
 
-MIT
+[MIT License](https://github.com/twilio-labs/open-pixel-art/blob/master/LICENSE)
