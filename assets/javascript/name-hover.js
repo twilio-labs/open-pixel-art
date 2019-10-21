@@ -79,6 +79,16 @@ function removeTooltip(event) {
   const tooltip = document.getElementsByClassName('tooltip-name')[0];
   // If exist remove it
   tooltip && tooltip.remove();
+
+  // Gets contributor name on the contributor box
+  let contributorName = document.getElementById('contributor-name');
+  // Replace username with initial state
+  contributorName.innerText = 'no pixel hovered';
+  contributorName.style = {
+    ...contributorName.style,
+    color: '#f00',
+    'background-color': '#000'
+  };
 }
 
 /**
