@@ -103,9 +103,7 @@ function transform(transformFunction) {
 function toggleImages() {
   showImages = !showImages;
   if (showImages) {
-    // rects.forEach(rect => rect.classList.add('hidden'))
     rects.forEach(rect => rect.remove());
-    // rects.remove()
     images.forEach(image => {
       const name = image.getAttribute('name');
       image.classList.remove('hidden');
@@ -118,7 +116,5 @@ function toggleImages() {
   } else {
     rects.forEach(rect => canvas.appendChild(rect));
     images.forEach(image => image.remove());
-    //     image.classList.add('hidden')
-    // })
   }
 }
