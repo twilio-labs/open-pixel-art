@@ -80,7 +80,7 @@ If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_d
 ### Create a new pixel
 
 To create a new pixel, search for a gap between the numbers for either the `x` or `y` coordinates in the `data` array inside the `pixels.json`.
-Once you have found an open position, ag ahead and add a new pixel row.
+Once you have found an open position, go ahead and add a new pixel row.
 A new pixel has to be an object with the following four properties:
 
 - `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
