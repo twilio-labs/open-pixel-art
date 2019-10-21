@@ -2,7 +2,7 @@
 
 ¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
 
-为Open Pixel Art贡献代码的方法有两种， 一是在canvas（画布）上加一个pixel（像素点），再者就是参与项目的开发，例如增加代码测试、更新HTML模板或者更新技术文档。
+为 Open Pixel Art 贡献代码的方法有两种， 一是在 canvas（画布）上加一个 pixel（像素点），再者就是参与项目的开发，例如增加代码测试、更新 HTML 模板或者更新技术文档。
 
 这两个方法的初始设置一样，但提交贡献的步骤稍有不同。
 
@@ -14,8 +14,8 @@
 
 ## 贡献代码的所需条件
 
-- 一个Github账号
-- 电脑上下载了git，[点我进入git的下载教程](https://help.github.com/en/articles/set-up-git)
+- 一个 Github 账号
+- 电脑上下载了 git，[点我进入 git 的下载教程](https://help.github.com/en/articles/set-up-git)
 - [Node.js](https://nodejs.org) 和一个包管理工具（package manager），例如 [npm](https://npmjs.com)
 
 ## 在本地电脑上设置项目（local setup）
@@ -42,11 +42,11 @@ npm start
 
 5. 在浏览器打开 http://localhost:8080. 你应该看到和 https://open-pixel-art.com 一样的内容，只不过画布（canvas）上会有明显的边线来帮助你定位像素点（pixel）。
 
-----
+---
 
-另一个设置方法是使用Docker，你可以根据以下步骤进行设置。
+另一个设置方法是使用 Docker，你可以根据以下步骤进行设置。
 
-1. 建立Docker镜像（Docker Image）
+1. 建立 Docker 镜像（Docker Image）
 
 ```bash
  docker build -t open-pixel-art .
@@ -77,19 +77,19 @@ c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago
 
 ### 方法一: "领养" 一个像素点
 
-文件`pixels.json`里有一些数据中用户名（`username`）的值是待领养（`<UNCLAIMED>`）。这代表你可以领养它，只需把`username`的值换成你的Github用户名（请使用你提交代码的账号）并把颜色换成你喜欢的颜色。
+文件`pixels.json`里有一些数据中用户名（`username`）的值是待领养（`<UNCLAIMED>`）。这代表你可以领养它，只需把`username`的值换成你的 Github 用户名（请使用你提交代码的账号）并把颜色换成你喜欢的颜色。
 
 ### 方法二：创造一个像素点
 
 在`pixels.json`文件里的`data`数组（array）新增一行即可创造一个像素点。
-一个新的像素点必须是一个有下面这四个properties的object：
+一个新的像素点必须是一个有下面这四个 properties 的 object：
 
-- `x`: 像素点的x坐标。`0` 代表最左列。
-- `y`: 像素点的y坐标。`0` 代表最底行。
-- `color`: 像素点的颜色，应是hex code (例如 #ff0000 就会是红色)
-- `username`: 你将用来提交代码的Github账号用户名
+- `x`: 像素点的 x 坐标。`0` 代表最左列。
+- `y`: 像素点的 y 坐标。`0` 代表最底行。
+- `color`: 像素点的颜色，应是 hex code (例如 #ff0000 就会是红色)
+- `username`: 你将用来提交代码的 Github 账号用户名
 
-你所增加的那一行数据应该以“先y坐标，后x坐标”进行排序。如果不确定，可以通过指令`npm run format:sort-pixels`来进行自动排序。
+你所增加的那一行数据应该以“先 y 坐标，后 x 坐标”进行排序。如果不确定，可以通过指令`npm run format:sort-pixels`来进行自动排序。
 
 你所做的更改应该看起来像酱:
 
@@ -143,20 +143,20 @@ git commit -m "feat(pixels): add my new pixel (x, y)"
 git push origin add-my-new-pixel
 ```
 
-之后，前往GitHub并按照[这个指示](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) 来呈交（pull request）你克隆对比github.com/twilio-labs/open-pixel-art的`master`分支的代码。
+之后，前往 GitHub 并按照[这个指示](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) 来呈交（pull request）你克隆对比 github.com/twilio-labs/open-pixel-art 的`master`分支的代码。
 
 ## 参与项目开发
 
-可喜可乐！你想要为此项目贡献除了像素点以外的代码。在开始之前，请先确认[GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues)是否有相关Issue。如果没有的话，请先创建一个；如果有，记得留言让大家知道你在处理相关Issue。
+可喜可乐！你想要为此项目贡献除了像素点以外的代码。在开始之前，请先确认[GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues)是否有相关 Issue。如果没有的话，请先创建一个；如果有，记得留言让大家知道你在处理相关 Issue。
 
 准备提交时，请遵守上述步骤。
 
-创建pull request时，记得注销（uncomment）“附加资料栏（additional info section）”的注释并且加上一段叙述（description）和附上（reference）任何相关Issue。
+创建 pull request 时，记得注销（uncomment）“附加资料栏（additional info section）”的注释并且加上一段叙述（description）和附上（reference）任何相关 Issue。
 
 ## 项目结构
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -194,11 +194,11 @@ pixel-project-dev
 
 ### `_data`
 
-这个`_data`文件夹里有装有所有像素点的`pixels.json`文件、装有初始值（例如画布的大小）的`defaults.json`文件，还有装有environment related values的`env.js`文件。所有数据都可于`index.njk`获得。
+这个`_data`文件夹里有装有所有像素点的`pixels.json`文件、装有初始值（例如画布的大小）的`defaults.json`文件，还有装有 environment related values 的`env.js`文件。所有数据都可于`index.njk`获得。
 
 ### `assets`
 
-装有static assets的文件夹。
+装有 static assets 的文件夹。
 
 ### `dangerfile.js`
 
@@ -206,11 +206,11 @@ pixel-project-dev
 
 ### `index.njk`
 
-这是用来产网页HTML的模板文件。
+这是用来产网页 HTML 的模板文件。
 
 ### `styles`
 
-这个文件夹装的是我们的CSS。[`index.njk`](index.njk)的CSS在 [`styles/main.css`](styles/main.css)里。
+这个文件夹装的是我们的 CSS。[`index.njk`](index.njk)的 CSS 在 [`styles/main.css`](styles/main.css)里。
 
 ## 行为准则（Code of Conduct）
 

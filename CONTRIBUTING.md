@@ -154,7 +154,7 @@ Once you open a pull request, make sure to uncomment the additional info section
 ## Project Structure
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
