@@ -15,7 +15,7 @@ let currentName;
  */
 function pixelHover(event) {
   const node = event.target; // Get Node element of current target
-  const fill = node.style.fill; // Get fill style of node
+  const fill = node.style.fill || node.getAttribute('color'); // Get fill style of node
   const name = node.getAttribute('name'); // Check if attribute name is in node
 
   // Calculate top position and put in variable
@@ -25,7 +25,8 @@ function pixelHover(event) {
   let contributorName = document.getElementById('contributor-name');
 
   // If node is a rect element and has name attribute in it and the tooltip didn't exist yet
-  if (node.nodeName === 'rect' && name && !tooltip) {
+  // prettier-ignore
+  if ((node.nodeName === 'rect' || node.nodeName === 'image') && name && !tooltip) {
     currentName = name.replace(/ /g, '');
     const textName = document.createTextNode(`@${currentName}`);
     tooltip = document.createElement('div');
@@ -94,11 +95,17 @@ function styleElem(elem, style = {}) {
  * @param  {String} rgb String of rgb color
  */
 function getContrastYIQ(rgb) {
-  // Split rgb string into an array by ', '
-  const rgbS = rgb.substring(4, rgb.length - 1).split(', ');
-  const r = rgbS[0],
-    g = rgbS[1],
-    b = rgbS[2];
+  let r, g, b;
+  if (rgb.startsWith('#')) {
+    const hex = rgb.slice(1);
+    r = parseInt(hex.substring(0, 2), 16);
+    g = parseInt(hex.substring(2, 4), 16);
+    b = parseInt(hex.substring(4, 6), 16);
+  } else {
+    // Split rgb string into an array by ', '
+    const rgbS = rgb.substring(4, rgb.length - 1).split(', ');
+    [r, g, b] = rgbS;
+  }
   const yiq = (r * 299 + g * 587 + b * 114) / 1000;
   return yiq >= 128 ? true : false;
 }
