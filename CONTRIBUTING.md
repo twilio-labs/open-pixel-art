@@ -45,7 +45,7 @@ npm start
 
 5. Open your browser at http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
-----
+---
 
 There is also an option for setting up the project via Docker. To get started with the project by using Docker follow the following steps.
 
@@ -61,8 +61,7 @@ There is also an option for setting up the project via Docker. To get started wi
 docker run -d -p 8080:8080 -it open-pixel-art
 ```
 
-
-If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is  correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
 You can also verify if it's running by doing `docker ps --all` You will see an image called `open-pixel-art` and where you can access it as well.
 
@@ -134,7 +133,7 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
-**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork).
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). Try run `npm run sync-fork` to sync your fork automatically.
 
 Push your changes to GitHub by running:
 

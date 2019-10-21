@@ -33,11 +33,11 @@ These are some guides on how to deal with those PRs
    - there should not be any other files touched
    - the coordinates of the pixel should be less than `40`
      - if this is the case, you can use the following message template to request changes
-       > Hey @dkundel it seems like that someone unfortunately already grabbed the pixel you are trying to contribute. Could you please [sync your fork](https://help.github.com/en/articles/syncing-a-fork) or run `npm run sync` and contribute a different pixel instead? Thank you for your contribution!
+       > Hey @dkundel it seems like that someone unfortunately already grabbed the pixel you are trying to contribute. Could you please [sync your fork](https://help.github.com/en/articles/syncing-a-fork) or run `npm run sync-fork` and contribute a different pixel instead? Thank you for your contribution!
    - the `username` should be the same as their GitHub username they are using to open the PR
    - they are not overriding another person's pixel
      - if this is the case, you can use the following message template to request changes
-       > Hey @dkundel it seems like that you grabbed the pixel that is outside of the canvas. Any coordinate needs to be smaller than 40. Could you please [sync your fork](https://help.github.com/en/articles/syncing-a-fork) or run `npm run sync` and contribute a different pixel instead? Thank you for your contribution!
+       > Hey @dkundel it seems like that you grabbed the pixel that is outside of the canvas. Any coordinate needs to be smaller than 40. Could you please [sync your fork](https://help.github.com/en/articles/syncing-a-fork) or run `npm run sync-fork` and contribute a different pixel instead? Thank you for your contribution!
 3. Check if the PR has a merge conflict. You can see it at the bottom of the page. If there is a merge conflict:
    1. Press the `Resolve conflict` button
    2. Generally press `Accept Current`. The only exception is if the conflict involves the user who created the PR. In that case:
