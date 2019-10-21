@@ -83,6 +83,11 @@ function removeTooltip(event) {
   let contributorName = document.getElementById('contributor-name');
   // Replace username with initial state
   contributorName.innerText = 'no pixel hovered';
+  contributorName.style = {
+    ...contributorName.style,
+    color: '#f00',
+    'background-color': '#000'
+  };
 }
 
 /**
