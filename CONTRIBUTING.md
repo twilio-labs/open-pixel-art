@@ -151,6 +151,21 @@ After making the code changes, please follow the steps outlined above.
 
 Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as reference any issues this is addressing.
 
+### Documentation Contribution Guidelines
+
+Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
+
+Examples of unwanted contributions include but are not limited to:
+- adding unnecessary commas, hyphens, or exclamation points
+- rewording sentences that are already clear enough
+- changing spelling from American English to British English
+
+These kinds of documentation contributions are welcome and appreciated:
+- adding translations into new languages
+- Fixing broken links
+- Fixing broken markdown formatting
+- Fixing typos or misspelled words
+
 ## Project Structure
 
 ```
