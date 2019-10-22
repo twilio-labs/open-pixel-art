@@ -17,6 +17,9 @@ header {
   padding-left: 20px;
   padding-right: 20px;
 }
+header > .nes-container {
+  margin:  0 auto;
+}
 
 .logo {
   max-width: 800px;

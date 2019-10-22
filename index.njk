@@ -30,29 +30,33 @@
       <hgroup>
         <h1><img class="logo" src="/assets/open-pixel-art-logo.svg" alt="Open Pixel Art by Twilio"/></h1>
       </hgroup>
-      <nav>
-        <ul class="nav-list">
-          <li class="screenreader-only">
-            <a href="#canvas">Go to the Pixel Art Canvas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nes-btn" href="#about">About the Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nes-btn" href="#contributing">Contribute a Pixel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nes-btn" href="#contributors">See All Contributors</a>
-          </li>
-          <li class="nav-item">
-            <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check on Github">View on GitHub</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="nes-container">
+        <h2 class="title" id="navigation">Navigation</h2>
+          <nav>
+            <ul class="nav-list">
+              <li class="screenreader-only">
+                <a href="#canvas">Go to the Pixel Art Canvas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nes-btn" href="#about">About the Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nes-btn" href="#contributing">Contribute a Pixel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nes-btn" href="#contributors">See All Contributors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check on Github">View on GitHub</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
     </header>
 
     <main role="main">
-        <div>
+        <div class="nes-container with-title">
+          <h2 class="title" id="actions">Actions</h2>
           <button class="nes-btn" onClick="random()">Random (r)</button>
           <button class="nes-btn" onClick="order()">Order (o)</button>
           <button class="nes-btn" onClick="twist()">Twist (t)</button>
@@ -68,25 +72,25 @@
           <rect x="0" y="0" width="100%" height="100%" style="fill: {{defaults.image.background}}"/>
           {% for pixel in pixels.data %}
             {% if pixel.color %}
-              <rect 
-                class="pixel-rect pixel" 
-                x="{{pixel.x * defaults.image.scale}}" 
-                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
-                width="{{defaults.image.scale}}" 
-                height="{{defaults.image.scale}}" 
-                style="fill: {{pixel.color}}" 
-                name="{% if pixel.username %}{{pixel.username}} {% endif %}"
-              /> 
-              <image 
-                class="pixel-image pixel hidden"
-                x="{{pixel.x * defaults.image.scale}}" 
-                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
-                width="{{defaults.image.scale}}" 
+              <rect
+                class="pixel-rect pixel"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}"
+                width="{{defaults.image.scale}}"
                 height="{{defaults.image.scale}}"
-                xlink:href="#" 
-                color="{{pixel.color}}" 
-                name="{% if pixel.username %}{{pixel.username}}{% endif %}" 
-              /> 
+                style="fill: {{pixel.color}}"
+                name="{% if pixel.username %}{{pixel.username}} {% endif %}"
+              />
+              <image
+                class="pixel-image pixel hidden"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}"
+                width="{{defaults.image.scale}}"
+                height="{{defaults.image.scale}}"
+                xlink:href="#"
+                color="{{pixel.color}}"
+                name="{% if pixel.username %}{{pixel.username}}{% endif %}"
+              />
             {% elif pixel.tileName %}
               <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
             {% endif %}
