@@ -45,7 +45,7 @@ npm start
 
 5. Open your browser at http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
-----
+---
 
 There is also an option for setting up the project via Docker. To get started with the project by using Docker follow the following steps.
 
@@ -61,8 +61,7 @@ There is also an option for setting up the project via Docker. To get started wi
 docker run -d -p 8080:8080 -it open-pixel-art
 ```
 
-
-If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is  correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
 You can also verify if it's running by doing `docker ps --all` You will see an image called `open-pixel-art` and where you can access it as well.
 
@@ -77,15 +76,10 @@ c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago
 
 If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
 
-There's two ways you can contribute a pixel.
+### Create a new pixel
 
-### Option 1: "Claim" a pixel
-
-Some entries in the `pixels.json` file exist but have a `username` property of `<UNCLAIMED>`. This means that you can change them to be your pixel. You can change the color to whatever you want. Afterwards change the `username` property to your GitHub username that you'll use to open the pull request with.
-
-### Option 2: Create a new pixel
-
-To create a new pixel, add a new row to the `data` array inside the `pixels.json`.
+To create a new pixel, search for a gap between the numbers for either the `x` or `y` coordinates in the `data` array inside the `pixels.json`.
+Once you have found an open position, go ahead and add a new pixel row.
 A new pixel has to be an object with the following four properties:
 
 - `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
@@ -139,7 +133,7 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
-**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork).
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). Try run `npm run sync-fork` to sync your fork automatically.
 
 Push your changes to GitHub by running:
 
@@ -160,7 +154,7 @@ Once you open a pull request, make sure to uncomment the additional info section
 ## Project Structure
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
