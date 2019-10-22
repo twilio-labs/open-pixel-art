@@ -94,6 +94,7 @@ Quando estiver satisfeito com as alterações, crie um [branch](https://help.git
 ```bash
 git checkout -b add-my-new-pixel
 ```
+
 Posteriormente, você terá que escolher sua alteração e confirmá-la executando:
 
 ```bash
@@ -128,7 +129,7 @@ Depois de abrir uma pull request, certifique-se de descomentar a seção de info
 ## Estrutura do projeto
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -187,7 +188,6 @@ Este diretório contém qualquer CSS personalizado gravado. Os estilos para [`in
 ## Código de conduta
 
 Queremos garantir que este projeto seja o mais acolhedor possível. Ao interagir com o projeto de qualquer forma ou formato, você concorda com o [Código de Conduta](CODE_OF_CONDUCT.md) do projeto. Se você sentir que outra pessoa violou o código de conduta, envie uma reclamação para [open-source@twilio.com](mailto: open-source@twilio.com).
-
 
 ## Licenciamento
 
