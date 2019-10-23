@@ -13,6 +13,7 @@ Anyone who wishes to learn how to create a pull request for a project on GitHub 
 
 The entire project is automated and is largely maintained by a set of bots that will verify any pixel contributions. However, if you'd like to know more about the project or submit other contributions to the project that are not a pixel, feel free to create a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) inside the [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
+
 ## Contributing
 
 In order to contribute a pixel to the canvas, you'll have to create a [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to the [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
@@ -29,6 +30,7 @@ We understand that contributing to open-source can be intimidating and as a resu
   - [Brazilian Portuguese](docs/br/CONTRIBUTING.md)
   - [Chinese Mandarin](docs/zh/CONTRIBUTING.md)
 
+
 ## Code of Conduct
 
 We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's Code of Conduct:
@@ -39,6 +41,7 @@ We want to make sure that this project is as welcoming to people as possible. By
 - [Brazilian Portuguese](docs/br/CODE_OF_CONDUCT.md)
 
 If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
+
 
 ## Contributors
 
@@ -74,6 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+
 ## Technology Thank You
 
 This project is powered by various open-source projects. Among others:
@@ -85,6 +89,7 @@ This project is powered by various open-source projects. Among others:
 - [Jest](https://jestjs.io/) for Unit Testing
 - [NES.css](https://nostalgic-css.github.io/NES.css/) for the CSS styling
 - [Welcome Bot](https://github.com/behaviorbot/welcome) to welcome new contributors
+
 
 ## License
 
