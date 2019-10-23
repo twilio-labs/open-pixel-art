@@ -159,7 +159,7 @@ O projeto é desenvolvido por [Eleventy](https://11ty.io). Estes são os arquivo
 
 ### `.mergify.yml`
 
-O projeto usa o Mergify para mesclar automaticamente determinados PRs com base em algumas condições.
+O projeto usa o [Mergify](https://mergify.io) para mesclar automaticamente determinados PRs com base em algumas condições.
 
 ### `__tests__`
 

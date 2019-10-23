@@ -159,7 +159,7 @@ Das Projekt wird von [Eleventy](https://11ty.io) betrieben. Dies sind die Konfig
 
 ### `.mergify.yml`
 
-Das Projekt verwendet Mergify, um bestimmte PRs basierend auf bestimmten Bedingungen automatisch zusammenzuführen.
+Das Projekt verwendet [Mergify](https://mergify.io), um bestimmte PRs basierend auf bestimmten Bedingungen automatisch zusammenzuführen.
 
 ### `__tests__`
 

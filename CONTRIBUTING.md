@@ -199,7 +199,7 @@ The project is powered by [Eleventy](https://11ty.io). These are the configurati
 
 ### `.mergify.yml`
 
-The project uses Mergify to auto-merge certain PRs based on some conditions.
+The project uses [Mergify](https://mergify.io) to auto-merge certain PRs based on some conditions.
 
 ### `__tests__`
 
