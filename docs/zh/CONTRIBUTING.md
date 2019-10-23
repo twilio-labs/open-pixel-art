@@ -186,7 +186,7 @@ open-pixel-art
 
 ### `.mergify.yml`
 
-此项目使用 Mergify 来自动整合（auto-merge）某些特定的代码提交。
+此项目使用 [Mergify](https://mergify.io) 来自动整合（auto-merge）某些特定的代码提交。
 
 ### `__tests__`
 

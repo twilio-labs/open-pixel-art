@@ -155,7 +155,7 @@ Este proyecto usa [Eleventy](https://11ty.io). Estos son los archivos de configu
 
 ### `.mergify.yml`
 
-Este proyecto usa Mergify para incluir automáticamente ciertos PRs, basados en condiciones definidas internamente.
+Este proyecto usa [Mergify](https://mergify.io) para incluir automáticamente ciertos PRs, basados en condiciones definidas internamente.
 
 ### `__tests__`
 
