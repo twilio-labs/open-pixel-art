@@ -196,6 +196,7 @@
     {"y": 5, "x": 16, "color": "#ff0000", "username": "thisaccountodesnotmatter"},
     {"y": 5, "x": 17, "color": "#0d6d6e", "username": "bfgonzalez"},
     {"y": 5, "x": 20, "color": "#001931", "username": "VishalS99"},
+    {"y": 5, "x": 21, "color": "#33b5e5", "username": "karanrajpal14"},
     {"y": 5, "x": 25, "color": "#2F4F4F", "username": "tomzmyslo"},
     {"y": 5, "x": 27, "color": "#ff0000", "username": "adityasrivast"},
     {"y": 5, "x": 29, "color": "#dda0dd", "username": "joaovitorml"},
@@ -840,7 +841,6 @@
     {"y": 39, "x": 36, "color": "#0f112a", "username": "subhanshu2"},
     {"y": 39, "x": 37, "color": "#00b2e2", "username": "duncanleung"},
     {"y": 39, "x": 38, "color": "#000080", "username": "rmkubik"},
-    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"},
-    {"y": 14, "x": 0, "color": "#33b5e5", "username": "karanrajpal14"}
+    {"y": 39, "x": 39, "color": "#0f111a", "username": "PrateekPunetha"}
   ]
 }
