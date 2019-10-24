@@ -10,10 +10,11 @@ images.forEach(image => image.remove());
 
 let showImages = false;
 
-// add additional 'x-start' and 'y-start' attributes
-rects.forEach(rect => {
+// add additional 'x-start' and 'y-start' and original index attributes
+rects.forEach((rect, i) => {
   rect.setAttribute('x-start', rect.getAttribute('x'));
   rect.setAttribute('y-start', rect.getAttribute('y'));
+  rect.setAttribute('key', i)
 });
 
 document.addEventListener('keydown', onKeyDown);
@@ -34,7 +35,8 @@ function onKeyDown(event) {
     f: flip,
     v: vert,
     w: walk,
-    a: toggleImages
+    a: toggleImages,
+    g: gravity,
   };
   const f = keyMap[key];
   if (f) {
@@ -72,6 +74,21 @@ function twist() {
   transform(({ x, y }) => [390 - y, x]);
 }
 
+function gravity() {
+  // create an array of arrays for every column
+  const cols = Array.from({length:width},() => []) 
+  rects.forEach(rect => cols[rectToObj(rect).x / 10].push(rect))
+  cols.forEach(col => {
+    col.sort((b,a) => rectToObj(a).y - rectToObj(b).y)
+    col.forEach((rect, i) => {
+      const y = (height-i-1) * 10
+      const key = rect.getAttribute('key')
+      rect.setAttribute('y', y)
+      images[key].setAttribute('y', y)
+    })
+  })
+}
+
 function walk() {
   transform(w);
 }
@@ -85,6 +102,13 @@ const w = ({ x, y }) => {
   const newY = between(0, y + dy, 390);
   return [newX, newY];
 };
+
+function rectToObj(rect) {
+  const [x, y, xStart, yStart] = ['x', 'y', 'x-start', 'y-start'].map(
+    key => rect.getAttribute(key)
+  );
+  return {x, y, xStart, yStart};
+}
 
 function transform(transformFunction) {
   rects.forEach((rect, i) => {
