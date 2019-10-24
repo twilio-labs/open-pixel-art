@@ -10,7 +10,7 @@ window.onload = () => {
 let currentName;
 
 /**
- * Print the contributer of a pixel on the canvas
+ * Print the contributor of a pixel on the canvas
  * @param  {Event} evt MouseEvent from onmousemove event
  */
 function pixelHover(event) {
