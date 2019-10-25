@@ -29,6 +29,10 @@ Enjoy your quest!
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
+If you've set up this device with SSH, you can do this instead:
+```bash
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
+```
 
 3. Install the dependencies for local development
 
