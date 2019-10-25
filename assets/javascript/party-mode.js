@@ -51,8 +51,8 @@ function reset() {
 }
 
 function random() {
-  const r = () => Math.floor(Math.random() * 40) * 10;
-  transform(() => [r(), r()]);
+  const coords = allCells().sort(() => Math.random() - 0.5)
+  transform(({ i }) => [coords[i].x, coords[i].y]);
 }
 
 function order() {
@@ -117,4 +117,14 @@ function toggleImages() {
     rects.forEach(rect => canvas.appendChild(rect));
     images.forEach(image => image.remove());
   }
+}
+
+function allCells() {
+  const all = []
+  for (let j = 0; j < height; j++) {
+    for (let i = 0; i < width; i++) {
+      all.push({ x: i * 10, y: j * 10 })
+    }
+  }
+  return all
 }
