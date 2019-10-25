@@ -23,6 +23,7 @@ function pixelHover(event) {
 
   let tooltip = document.getElementsByClassName('tooltip-name')[0];
   let contributorName = document.getElementById('contributor-name');
+  const contributorCoords = document.getElementById('contributor-coords');
 
   // If node is a rect element and has name attribute in it and the tooltip didn't exist yet
   // prettier-ignore
@@ -34,7 +35,9 @@ function pixelHover(event) {
     const isLightColor = getContrastYIQ(fill);
 
     tooltip.className = 'tooltip-name';
+    contributorName.classList.remove('hidden')
     contributorName.innerText = `${currentName}`;
+    contributorCoords.innerText = `[${node.getAttribute('x') / 10}, ${node.getAttribute('y') / 10}]`
     // Same style so save in one variable
     const contrastStyle = {
       color: fill,
@@ -82,8 +85,11 @@ function removeTooltip(event) {
 
   // Gets contributor name on the contributor box
   let contributorName = document.getElementById('contributor-name');
+  let contributorCoords = document.getElementById('contributor-coords');
   // Replace username with initial state
-  contributorName.innerText = 'no pixel hovered';
+  contributorName.innerText = '';
+  contributorName.classList.add('hidden')
+  contributorCoords.innerText = '';
   contributorName.style = {
     ...contributorName.style,
     color: '#f00',
