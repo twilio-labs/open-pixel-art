@@ -76,6 +76,8 @@
                 height="{{defaults.image.scale}}" 
                 style="fill: {{pixel.color}}" 
                 name="{% if pixel.username %}{{pixel.username}} {% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}"
               /> 
               <image 
                 class="pixel-image pixel hidden"
@@ -85,10 +87,19 @@
                 height="{{defaults.image.scale}}"
                 xlink:href="#" 
                 color="{{pixel.color}}" 
-                name="{% if pixel.username %}{{pixel.username}}{% endif %}" 
+                name="{% if pixel.username %}{{pixel.username}}{% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}" 
               /> 
             {% elif pixel.tileName %}
-              <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
+              <image xlink:href="assets/tiles/{{pixel.tileName}}.png"
+                width="{{defaults.image.scale * 5}}"
+                height="{{defaults.image.scale * 5}}"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}"
+                name="{% if pixel.username %}{{pixel.username}}{% endif %} 
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}""/>
             {% endif %}
           {% endfor %}
           {% if env.isLocal %}
