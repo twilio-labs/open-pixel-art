@@ -29,6 +29,10 @@ Enjoy your quest!
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
+If you've set up this device with SSH, you can do this instead:
+```bash
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
+```
 
 3. Install the dependencies for local development
 
@@ -151,6 +155,21 @@ After making the code changes, please follow the steps outlined above.
 
 Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as reference any issues this is addressing.
 
+### Documentation Contribution Guidelines
+
+Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
+
+Examples of unwanted contributions include but are not limited to:
+- adding unnecessary commas, hyphens, or exclamation points
+- rewording sentences that are already clear enough
+- changing spelling from American English to British English
+
+These kinds of documentation contributions are welcome and appreciated:
+- adding translations into new languages
+- Fixing broken links
+- Fixing broken markdown formatting
+- Fixing typos or misspelled words
+
 ## Project Structure
 
 ```
@@ -184,7 +203,7 @@ The project is powered by [Eleventy](https://11ty.io). These are the configurati
 
 ### `.mergify.yml`
 
-The project uses Mergify to auto-merge certain PRs based on some conditions.
+The project uses [Mergify](https://mergify.io) to auto-merge certain PRs based on some conditions.
 
 ### `__tests__`
 
