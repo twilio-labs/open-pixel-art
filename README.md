@@ -6,10 +6,6 @@ This is an art project created with the intention to teach you how to create a p
 
 Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!
 
-Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pick whatever color you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com).
-
-> If you are new to open-source, GitHub or git in general, fear not! We have created a tutorial in [TwilioQuest](https://www.twilio.com/quest) for you. It will teach you step by step on how you can get started and will guide you on your quest for creating your pull request.
-
 Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pick whatever color you prefer as long as it is a valid HEX code. For example: `#F22F46` the brand color of [Twilio](https://www.twilio.com)
 
 > If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in [TwilioQuest](https://twil.io/hacktoberfest-quest) for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
@@ -24,8 +20,6 @@ In order to contribute a pixel to the canvas, you'll have to create a [pull requ
 
 If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the [contributing guide](CONTRIBUTING.md).
 
-
-We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://www.twilio.com/quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest in open-source!
 We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game [TwilioQuest](https://twil.io/hacktoberfest-quest) that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
 
 
