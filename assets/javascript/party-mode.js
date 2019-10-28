@@ -34,8 +34,10 @@ function onKeyDown(event) {
     f: flip,
     v: vert,
     w: walk,
-    a: toggleImages
+    a: toggleImages,
+    p: runAll
   };
+
   const f = keyMap[key];
   if (f) {
     f();
@@ -46,13 +48,30 @@ function onKeyDown(event) {
 const width = 40;
 const height = 40;
 
+function runAll() {
+  setTimeEffect(order, 1000);
+  setTimeEffect(reset, 2000);
+  setTimeEffect(twist, 3000);
+  setTimeEffect(flip, 4000);
+  setTimeEffect(vert, 5000);
+  setTimeEffect(random, 6000);
+  setTimeEffect(walk, 7000);
+  setTimeEffect(reset, 8000);
+}
+
+function setTimeEffect(effect, time) {
+  setTimeout(() => {
+    effect();
+  }, time);
+}
+
 function reset() {
   transform(({ xStart, yStart }) => [xStart, yStart]);
 }
 
 function random() {
-  const r = () => Math.floor(Math.random() * 40) * 10;
-  transform(() => [r(), r()]);
+  const coords = allCells().sort(() => Math.random() - 0.5)
+  transform(({ i }) => [coords[i].x, coords[i].y]);
 }
 
 function order() {
@@ -117,4 +136,14 @@ function toggleImages() {
     rects.forEach(rect => canvas.appendChild(rect));
     images.forEach(image => image.remove());
   }
+}
+
+function allCells() {
+  const all = []
+  for (let j = 0; j < height; j++) {
+    for (let i = 0; i < width; i++) {
+      all.push({ x: i * 10, y: j * 10 })
+    }
+  }
+  return all
 }
