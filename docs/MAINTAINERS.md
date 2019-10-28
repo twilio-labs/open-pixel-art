@@ -19,9 +19,9 @@ The following people are the current maintainers. Feel free to reach out to them
 
 ## Process Steps For Maintainers
 
-The project is powered by [GitHub Actions](https://github.com/features/actions) and ideally Pixel Contributions should be merged automatically by [`mergify`](https://mergify.io/) but sometimes things go wrong and we need to manually review.
+The project is powered by [GitHub Actions](https://github.com/features/actions) and ideally, Pixel Contributions should be merged automatically by [`mergify`](https://mergify.io/) but sometimes things go wrong and we need to manually review.
 
-![screenshot of GitHub checks output with arrows pointing at two details links for different tasks](images/github-actions-check.png)
+![screenshot of GitHub checks the output with arrows pointing at two details links for different tasks](images/github-actions-check.png)
 
 These are some guides on how to deal with those PRs
 
@@ -54,6 +54,6 @@ These are some guides on how to deal with those PRs
 2. Make sure the changes build and deploy. You can see this if the `deploy/netlify` task is marked green.
    a. [if applicable] Click the `Details` link for the `deploy/netlify` link to see the deploy preview page. This allows you to manually test the changes on the website
 3. Make sure Unit Tests pass by clicking the `Details` link on `Code Review / build (pull_request)`. The `Danger` part of this is intended to fail, but every other task especially `npm install, build and test` should pass
-4. Review the code and request any changes if necessary. Otherwise click the `Approve` button under `Review changes` in the `Files changed` tab
+4. Review the code and request any changes if necessary. Otherwise, click the `Approve` button under `Review changes` in the `Files changed` tab
 5. Squash the changes and if necessary update the commit message to fit the [conventional commit message style](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit)
 6. Make sure any related issues are closed
