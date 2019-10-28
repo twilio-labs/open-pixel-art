@@ -157,3 +157,7 @@ p code {
 .hidden {
   display: none;
 }
+
+#search-results > li {
+  margin-top: 10px;
+}

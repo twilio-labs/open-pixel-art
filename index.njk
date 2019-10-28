@@ -24,6 +24,7 @@
     <link href="/assets/nes.css/nes.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/main.css"/>
     <script src="/assets/javascript/name-hover.js"></script>
+    <script src="/assets/javascript/pixel-search.js"></script>
   </head>
   <body>
     <header>
@@ -108,6 +109,13 @@
         <h2 class="title" id="contributor">Contributor</h2>
         <p aria-label="Hover over any pixel to hear the github username who contributed it.">Hover over any pixel to see the username of the person who contributed it.</p>
         <p>That pixel was contributed by: <span id="contributor-name" aria-live="polite">no pixel hovered</span></p>
+      </section>
+      <section class="nes-container with-title">
+        <h2 class="title" id="search">Search</h2>
+        <p aria-label="Enter a github username or an x or y coordinate to search the pixel grid">Enter a github username or coordinates to search the pixel grid.</p>
+        <input class="nes-input" id="search-input" name="search-input" />
+        <ul class="nes-list is-disc" id="search-results" aria-live="polite" aria-relevant="additions removals">
+        </ul>
       </section>
       <section class="nes-container with-title">
         <h2 class="title" id="about">About the Project</h2>

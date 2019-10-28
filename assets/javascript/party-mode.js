@@ -25,6 +25,13 @@ function onKeyDown(event) {
     return;
   }
 
+  // don't intefere with search input
+  const searchHasFocus =
+    document.getElementById('search-input') === document.activeElement;
+  if (searchHasFocus) {
+    return;
+  }
+
   const { key } = event;
   const keyMap = {
     Escape: reset,
