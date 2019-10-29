@@ -123,10 +123,16 @@ Afterwards head to GitHub and [follow these instructions](https://help.github.co
 
 ### Problems When Creating a Pull Request
 
-When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following command which brings all the required changes to your forked repo.
+When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following commands which brings all the required changes to your forked repo.
+
+Make sure you have the latest changes by running this command
 
 ```bash
-git pull origin master
+npm install
+```
+Now you can just sync it with the fork by running this command
+```bash
+npm run sync-fork
 ```
 
 ## Contributing other Changes
