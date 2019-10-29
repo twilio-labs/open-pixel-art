@@ -64,7 +64,7 @@ function runAll() {
 
   isRunningAll = true;
 
-  const effects = [order, reset, twist, flip, vert, random, walk, reset];
+  const effects = [order, reset, twist, flip, vert, random, walk, reset, gravity];
 
   runningTimeout = runFirst(effects);
 }
