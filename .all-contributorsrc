@@ -11,15 +11,6 @@
   "commitConvention": "angular",
   "contributors": [
     {
-      "login": "vani",
-      "name": "Vani Taneja",
-      "avatar_url": "https://avatars0.githubusercontent.com/u/32182321?s=460&v=4"
-      "profile": "https://github.com/vanitaneja22",
-      "contributions": [
-        "doc"
-      ]
-    },
-    {
       "login": "dkundel",
       "name": "Dominik Kundel",
       "avatar_url": "https://avatars3.githubusercontent.com/u/1505101?v=4",
