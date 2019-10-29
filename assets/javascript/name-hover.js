@@ -10,13 +10,15 @@ window.onload = () => {
 let currentName;
 
 /**
- * Print the contributer of a pixel on the canvas
+ * Print the contributor of a pixel on the canvas
  * @param  {Event} evt MouseEvent from onmousemove event
  */
 function pixelHover(event) {
   const node = event.target; // Get Node element of current target
   const fill = node.style.fill || node.getAttribute('color'); // Get fill style of node
   const name = node.getAttribute('name'); // Check if attribute name is in node
+  const x = node.getAttribute('data-pixel-x'); // Check if attribute data-pixel-x is in node
+  const y = node.getAttribute('data-pixel-y'); // Check if attribute data-pixel-y is in node
 
   // Calculate top position and put in variable
   const topPos = event.clientY - 3 + window.scrollY;
@@ -28,7 +30,9 @@ function pixelHover(event) {
   // prettier-ignore
   if ((node.nodeName === 'rect' || node.nodeName === 'image') && name && !tooltip) {
     currentName = name.replace(/ /g, '');
-    const textName = document.createTextNode(`@${currentName}`);
+    currentX = x.replace(/ /g, '');
+    currentY = y.replace(/ /g, '');
+    const textName = document.createTextNode(`[${currentY},${currentX}] @${currentName}`);
     tooltip = document.createElement('div');
     // Check if color fill is a light color
     const isLightColor = getContrastYIQ(fill);
