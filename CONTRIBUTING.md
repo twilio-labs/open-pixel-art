@@ -8,6 +8,8 @@ For both scenarios the setup is the same, however, the contribution steps differ
 
 ## I've Never Contributed to Open Source
 
+![decorative banner image for TwilioQuest mission](./docs/twilio-quest-oss-banner.png)
+
 Contributing to open source can be intimidating at first. For that reason we created a
 new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide you
 step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
@@ -29,7 +31,9 @@ Enjoy your quest!
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
+
 If you've set up this device with SSH, you can do this instead:
+
 ```bash
 git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
@@ -160,11 +164,13 @@ Once you open a pull request, make sure to uncomment the additional info section
 Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
 
 Examples of unwanted contributions include but are not limited to:
+
 - adding unnecessary commas, hyphens, or exclamation points
 - rewording sentences that are already clear enough
 - changing spelling from American English to British English
 
 These kinds of documentation contributions are welcome and appreciated:
+
 - adding translations into new languages
 - Fixing broken links
 - Fixing broken markdown formatting

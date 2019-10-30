@@ -1,4 +1,4 @@
-# Open Pixel Art von [Twilio](https://www.twilio.com) 
+# Open Pixel Art von [Twilio](https://www.twilio.com)
 
 [![Alle Mitwirkenden](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#mitwirkende) [![Ein Twilio Labs-Projekt](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
@@ -8,6 +8,7 @@ Besuchen Sie [open-pixel-art.com](https://open-pixel-art.com), um das vollständ
 
 Jeder, der lernen möchte, wie man eine Pull-Anfrage für ein Projekt auf GitHub erstellt, kann dieses Projekt verwenden, um einen Pixel auf die Leinwand zu bringen. Sie können immer nur ein Pixel erstellen, aber Sie können jede gewünschte Farbe pixen, solange es sich um einen gültigen HEX-Code handelt. Zum Beispiel: `#F22F46` die Markenfarbe von [Twilio](https://www.twilio.com)
 
+> ![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
 > Wenn Sie neu in Open Source, GitHub oder Git im Allgemeinen sind, haben wir in [TwilioQuest](https://www.twilio.com/quest) ein Tutorial für Sie erstellt. Hier erfahren Sie Schritt für Schritt, wie Sie beginnen können, und werden bei der Erstellung Ihrer Pull-Anfrage unterstützt.
 > 🕹 [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
 
@@ -23,9 +24,9 @@ In unserem interaktiven Codierungsspiel [TwilioQuest](https://www.twilio.com/que
 
 - [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
 - Schauen Sie sich die Contribution Guides an:
-    - [Englisch](CONTRIBUTING.md)
-    - [Español](docs/es/CONTRIBUTING.md)
-    - [Deutsch](docs/de/CONTRIBUTING.md)
+  - [Englisch](CONTRIBUTING.md)
+  - [Español](docs/es/CONTRIBUTING.md)
+  - [Deutsch](docs/de/CONTRIBUTING.md)
 
 ## Verhaltensregeln
 
