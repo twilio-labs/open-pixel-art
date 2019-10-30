@@ -8,7 +8,7 @@
 
 ## 这是我第一次为开源项目贡献代码
 
-> ![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
 
 为了使你第一次为开源项目贡献代码更顺利，我们在[TwilioQuest](https://twil.io/hacktoberfest-quest)里增加了一个“手把手为这个项目贡献代码”的教程任务。只需[下载这个游戏](https://www.twilio.com/quest/download)即可选择此任务，教程涵盖从克隆项目（cloning）到提交代码（pull request）的每一步骤。
 
