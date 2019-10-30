@@ -50,11 +50,11 @@ Es gibt zwei Möglichkeiten, wie Du einen Pixel beitragen kannst.
 
 ### Option 1: Einen Pixel "beanspruchen"
 
-Einige Einträge in der Datei `pixels.json` existieren, haben jedoch die Eigenschaft` username` von `<UNCLAIMED>`. Dies bedeutet, dass Du sie als Pixel festlegen kannst. Du kannst die Farbe nach Belieben ändern. Ändere anschließend die Eigenschaft "Benutzername" in Deinen GitHub-Benutzernamen, mit dem Du den Pull-Request öffnest.
+Einige Einträge in der Datei `pixels.json` existieren, haben jedoch die Eigenschaft`username` von `<UNCLAIMED>`. Dies bedeutet, dass Du sie als Pixel festlegen kannst. Du kannst die Farbe nach Belieben ändern. Ändere anschließend die Eigenschaft "Benutzername" in Deinen GitHub-Benutzernamen, mit dem Du den Pull-Request öffnest.
 
 ### Option 2: Erstellen Sie ein neues Pixel
 
-Um ein neues Pixel zu erstellen, füge dem `data`-Array in der` pixels.json` eine neue Zeile hinzu.
+Um ein neues Pixel zu erstellen, füge dem `data`-Array in der`pixels.json` eine neue Zeile hinzu.
 Ein neues Pixel muss ein Objekt mit den folgenden vier Eigenschaften sein:
 
 - `x`: Die x-Koordinate deines Pixels. `0` ist die am weitesten links stehende Pixelspalte
@@ -94,6 +94,7 @@ Wenn Du mit der Änderungen zufrieden bist, erstelle einen [branch](https://help
 ```bash
 git checkout -b add-my-new-pixel
 ```
+
 Anschließend musst Du deine Änderung auswählen und mache einen Commit:
 
 ```bash
@@ -128,7 +129,7 @@ Wenn Du einen Pull-Request öffnest, musst Du den Abschnitt mit den zusätzliche
 ## Projekt Struktur
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -158,7 +159,7 @@ Das Projekt wird von [Eleventy](https://11ty.io) betrieben. Dies sind die Konfig
 
 ### `.mergify.yml`
 
-Das Projekt verwendet Mergify, um bestimmte PRs basierend auf bestimmten Bedingungen automatisch zusammenzuführen.
+Das Projekt verwendet [Mergify](https://mergify.io), um bestimmte PRs basierend auf bestimmten Bedingungen automatisch zusammenzuführen.
 
 ### `__tests__`
 
@@ -166,7 +167,7 @@ Dieses Verzeichnis enthält alle [Jest](https://jestjs.io) - gesteuerten Kompone
 
 ### `_data`
 
-Das Verzeichnis "_data" enthält die Datei "pixels.json", die jedes einzelne Pixel auf der Zeichenfläche darstellt, eine Datei "defaults.json", die Standardwerte wie die Größe der Zeichenfläche enthält, und die Datei "env.js" für Beliebige umweltbezogene Werte. Alle Daten stehen automatisch in der Datei "index.njk" zur Verfügung.
+Das Verzeichnis "\_data" enthält die Datei "pixels.json", die jedes einzelne Pixel auf der Zeichenfläche darstellt, eine Datei "defaults.json", die Standardwerte wie die Größe der Zeichenfläche enthält, und die Datei "env.js" für Beliebige umweltbezogene Werte. Alle Daten stehen automatisch in der Datei "index.njk" zur Verfügung.
 
 ### `assets`
 
@@ -186,7 +187,7 @@ Dieses Verzeichnis enthält benutzerdefiniertes CSS. Die Stile für [`index.njk`
 
 ## Code of Conduct
 
-Wir möchten sicherstellen, dass dieses Projekt so freundlich wie möglich ist. Durch die Interaktion mit dem Projekt in beliebiger Form stimmen Sie dem [Verhaltenskodex](CODE_OF_CONDUCT.md) des Projekts  zu. Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoßen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
+Wir möchten sicherstellen, dass dieses Projekt so freundlich wie möglich ist. Durch die Interaktion mit dem Projekt in beliebiger Form stimmen Sie dem [Verhaltenskodex](CODE_OF_CONDUCT.md) des Projekts zu. Wenn Sie der Meinung sind, dass eine andere Person gegen den Verhaltenskodex verstoßen hat, wenden Sie sich bitte an [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Lizenzierung
 
