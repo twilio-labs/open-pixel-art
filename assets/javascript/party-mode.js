@@ -34,8 +34,11 @@ function onKeyDown(event) {
     f: flip,
     v: vert,
     w: walk,
-    a: toggleImages
+    l: loop,
+    a: toggleImages,
+    p: runAll
   };
+
   const f = keyMap[key];
   if (f) {
     f();
@@ -43,37 +46,109 @@ function onKeyDown(event) {
   }
 }
 
+const loopTimeoutPeriod = 750;
+let isLooping = false;
+let isRunningAll = false;
+let latestCommand = null;
+let loopingTimeout = null;
+let runningAllTimeout = null;
 const width = 40;
 const height = 40;
 
+function runAll() {
+  isLooping = false;
+  latestCommand = null;
+  clearTimeout(loopingTimeout);
+
+  isRunningAll = true;
+
+  const effects = [order, reset, twist, flip, vert, random, walk, reset];
+
+  runningTimeout = runFirst(effects);
+}
+
+function runFirst(effects) {
+  if (!isRunningAll) {
+    // running all was cancelled
+    return;
+  }
+
+  const [firstEffect, ...remainingEffects] = effects;
+
+  firstEffect();
+
+  if (remainingEffects.length === 0) {
+    // there are no remainig effects to queue
+    return;
+  }
+
+  return setTimeout(() => {
+    runFirst(remainingEffects);
+  }, loopTimeoutPeriod);
+}
+
+function setTimeEffect(effect, time) {
+  setTimeout(() => {
+    effect();
+  }, time);
+}
+
 function reset() {
+  latestCommand = null;
   transform(({ xStart, yStart }) => [xStart, yStart]);
 }
 
 function random() {
-  const r = () => Math.floor(Math.random() * 40) * 10;
-  transform(() => [r(), r()]);
+  latestCommand = random;
+  const coords = allCells().sort(() => Math.random() - 0.5);
+  transform(({ i }) => [coords[i].x, coords[i].y]);
 }
 
 function order() {
+  latestCommand = order;
   const f = ({ i }) => [(i % width) * 10, Math.floor(i / width) * 10];
   transform(f);
 }
 
 function flip() {
+  latestCommand = flip;
   transform(({ x, y }) => [390 - x, y]);
 }
 
 function vert() {
+  latestCommand = vert;
   transform(({ x, y }) => [x, 390 - y]);
 }
 
 function twist() {
+  latestCommand = twist;
   transform(({ x, y }) => [390 - y, x]);
 }
 
 function walk() {
+  latestCommand = walk;
   transform(w);
+}
+
+function loop() {
+  isLooping = !isLooping;
+
+  isRunningAll = false;
+  clearTimeout(runningAllTimeout);
+
+  loopFunction();
+}
+
+function loopFunction() {
+  if (!isLooping) {
+    return;
+  }
+
+  if (latestCommand) {
+    latestCommand();
+  }
+
+  loopingTimeout = setTimeout(loopFunction, loopTimeoutPeriod);
 }
 
 const nudges = [[10, 0], [-10, 0], [0, 10], [0, -10]];
@@ -117,4 +192,14 @@ function toggleImages() {
     rects.forEach(rect => canvas.appendChild(rect));
     images.forEach(image => image.remove());
   }
+}
+
+function allCells() {
+  const all = [];
+  for (let j = 0; j < height; j++) {
+    for (let i = 0; i < width; i++) {
+      all.push({ x: i * 10, y: j * 10 });
+    }
+  }
+  return all;
 }
