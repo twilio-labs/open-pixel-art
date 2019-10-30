@@ -6,8 +6,10 @@ Für beide Szenarien ist der Aufbau gleich, jedoch unterscheiden sich die Beitra
 
 ## Ich habe noch nie zu Open Source beigetragen
 
+![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+
 Einen Beitrag zu Open Source zu leisten, kann zunächst einschüchternd sein. Aus diesem Grund haben wir eine
-Neue Mission in [TwilioQuest](https://www.twilio.com/quest), die dich
+Neue Mission in [TwilioQuest](https://twil.io/hacktoberfest-quest), die dich
 Schritt für Schritt durch das Erstellen eines Beitrags für dieses Projekt führt. Sobald Du [das Spiel heruntergeladen](https://www.twilio.com/quest/download) hast, kannst Du die Mission auswählen und Du wirst durch alle Schritte durchgeführt, vom Klonen des Projekts bis zur Erstellung deines Pull-Requests.
 
 Viel Spaß beim Quest!
