@@ -82,6 +82,7 @@
                 name="{% if pixel.username %}{{pixel.username}} {% endif %}"
                 data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
                 data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}"
+                onClick = "{% if pixel.username%} gotoPage( '{{pixel.username}}' ) {% endif %}"
               /> 
               <image 
                 class="pixel-image pixel hidden"
