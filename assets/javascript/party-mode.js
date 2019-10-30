@@ -5,10 +5,8 @@ const rects = Array.from(
 const images = Array.from(
   document.querySelectorAll('#pixel-canvas .pixel-image')
 );
-// hide image-pixels on load
-images.forEach(image => image.remove());
 
-let showImages = false;
+let imagesInitialized = false;
 
 // add additional 'x-start' and 'y-start' attributes
 rects.forEach(rect => {
@@ -176,22 +174,20 @@ function transform(transformFunction) {
 }
 
 function toggleImages() {
-  showImages = !showImages;
-  if (showImages) {
-    rects.forEach(rect => rect.remove());
+  // If switching to images for the first time, initialize.
+  if (!imagesInitialized) {
+    imagesInitialized = true;
     images.forEach(image => {
       const name = image.getAttribute('name');
-      image.classList.remove('hidden');
       image.setAttribute(
         'xlink:href',
         `//avatars.githubusercontent.com/${name}?size=20`
       );
-      canvas.appendChild(image);
     });
-  } else {
-    rects.forEach(rect => canvas.appendChild(rect));
-    images.forEach(image => image.remove());
   }
+  // Toggle display of rects and images.
+  rects.forEach(rect => rect.classList.toggle('hidden'));
+  images.forEach(image => image.classList.toggle('hidden'));
 }
 
 function allCells() {
