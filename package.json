@@ -43,6 +43,7 @@
     "prettier": "^1.18.2"
   },
   "dependencies": {
+    "download": "^7.1.0",
     "nes.css": "^2.2.0"
   },
   "husky": {
