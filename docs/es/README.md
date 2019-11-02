@@ -8,6 +8,7 @@ Este es un proyecto artístico creado con la intención de enseñarte cómo crea
 
 Quienes quieran aprender cómo crear un pull request en GitHub pueden usar este proyecto para contribuir con un pixel y agregarlo al canvas. Solo podrás crear un pixel, pero puedes elegir el color que quieras, siempre y cuando sea un color válido en formato hexadecimal. Por ejemplo, puedes usar: `#F22F46`, uno de los colores oficiales de [Twilio](https://www.twilio.com)
 
+> ![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
 > Si no tienes experiencia con código abierto, GitHub o usando git, ¡no hay problema!. Creamos un tutorial en [TwilioQuest](https://www.twilio.com/quest) especialmente para ti. Este tutorial te enseñará paso a paso como partir y te guiará en esta aventura de crear un pull request.
 > 🕹 [Descarga TwilioQuest](https://www.twilio.com/quest/download)
 
@@ -24,7 +25,7 @@ Y como sabemos que contribuir a código abierto puede ser intimidante, también 
 - [Descarga TwilioQuest](https://www.twilio.com/quest/download)
 - Revisa nuestras guías de contribución:
   - [Español](CONTRIBUTING.md)
-  - [Inglés](https://github.com/twilio-labs/open-pixel-art/blob/master/CONTRIBUTING.md) 
+  - [Inglés](https://github.com/twilio-labs/open-pixel-art/blob/master/CONTRIBUTING.md)
 
 ## Código de Conducta
 
