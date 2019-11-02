@@ -8,7 +8,9 @@ Nos dois cenários, a configuração é a mesma, no entanto, as etapas de contri
 
 ## Nunca contribuí com código aberto
 
-Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://www.twilio.com/quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
+![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+
+Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://twil.io/hacktoberfest-quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
 
 Aproveite sua busca!
 
@@ -94,6 +96,7 @@ Quando estiver satisfeito com as alterações, crie um [branch](https://help.git
 ```bash
 git checkout -b add-my-new-pixel
 ```
+
 Posteriormente, você terá que escolher sua alteração e confirmá-la executando:
 
 ```bash
@@ -128,7 +131,7 @@ Depois de abrir uma pull request, certifique-se de descomentar a seção de info
 ## Estrutura do projeto
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -158,7 +161,7 @@ O projeto é desenvolvido por [Eleventy](https://11ty.io). Estes são os arquivo
 
 ### `.mergify.yml`
 
-O projeto usa o Mergify para mesclar automaticamente determinados PRs com base em algumas condições.
+O projeto usa o [Mergify](https://mergify.io) para mesclar automaticamente determinados PRs com base em algumas condições.
 
 ### `__tests__`
 
@@ -187,7 +190,6 @@ Este diretório contém qualquer CSS personalizado gravado. Os estilos para [`in
 ## Código de conduta
 
 Queremos garantir que este projeto seja o mais acolhedor possível. Ao interagir com o projeto de qualquer forma ou formato, você concorda com o [Código de Conduta](CODE_OF_CONDUCT.md) do projeto. Se você sentir que outra pessoa violou o código de conduta, envie uma reclamação para [open-source@twilio.com](mailto: open-source@twilio.com).
-
 
 ## Licenciamento
 
