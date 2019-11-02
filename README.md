@@ -29,6 +29,7 @@ We understand that contributing to open-source can be intimidating and as a resu
   - [Deutsch](docs/de/CONTRIBUTING.md)
   - [Brazilian Portuguese](docs/br/CONTRIBUTING.md)
   - [Chinese Mandarin](docs/zh/CONTRIBUTING.md)
+  - [Dutch](docs/nl/CONTRIBUTING.md)
 
 ## Code of Conduct
 
