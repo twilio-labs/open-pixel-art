@@ -1,10 +1,16 @@
 // Wait until the window has loaded to add the event handler
-window.onload = () => {
+/*window.onload = () => {
   // Add a mouse move event handler to the canvas
   document.getElementById('canvas').onmousemove = pixelHover;
   // Add a mouse out event handler to the canvas
   document.getElementById('canvas').onmouseout = removeTooltip;
-};
+};*/
+window.addEventListener('load', () => {
+  // Add a mouse move event handler to the canvas
+  document.getElementById('canvas').onmousemove = pixelHover;
+  // Add a mouse out event handler to the canvas
+  document.getElementById('canvas').onmouseout = removeTooltip;
+});
 
 // To save name that currently in the tooltip
 let currentName;
