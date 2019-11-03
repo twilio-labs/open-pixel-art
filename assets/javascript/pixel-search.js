@@ -1,9 +1,4 @@
 // Wait until the window has loaded to add the event handler
-/*window.onload = () => {
-  // Add a mouse move event handler to the canvas
-  document.getElementById('search-input').oninput = debounce(pixelSearch, 100);
-};*/
-
 window.addEventListener('load', () => {
   // Add a mouse move event handler to the canvas
   document.getElementById('search-input').oninput = debounce(pixelSearch, 100);
