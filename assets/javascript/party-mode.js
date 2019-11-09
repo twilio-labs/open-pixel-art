@@ -223,8 +223,3 @@ function allCells() {
   }
   return all;
 }
-
-function gotoPage(username){
-  var base_url = "https://github.com/";
-  window.open(url = base_url+username,target = "_blank");
-}
