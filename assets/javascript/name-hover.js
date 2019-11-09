@@ -123,3 +123,12 @@ function getContrastYIQ(rgb) {
   const yiq = (r * 299 + g * 587 + b * 114) / 1000;
   return yiq >= 128 ? true : false;
 }
+
+/**
+ * Takes you to that respective pixel owner's GitHub profile
+ * @param {String} username 
+ */
+function gotoPage(username){
+  var base_url = "https://github.com/";
+  window.open(url = base_url+username,target = "_blank");
+}
