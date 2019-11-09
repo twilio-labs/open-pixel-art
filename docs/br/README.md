@@ -2,41 +2,42 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors) [![A Twilio Labs Project](https://img.shields.io/static/v1?label=&message=Twilio-Labs&color=F22F46&labelColor=0D122B&logo=twilio&style=flat-square)](https://www.twilio.com/labs) [![Netlify Status](https://api.netlify.com/api/v1/badges/611ac0f9-4ae9-48a2-9769-26c32cb5f9e8/deploy-status)](https://app.netlify.com/sites/pixel-project-dev/deploys)
 
-Este é um projeto de arte criado com a intenção de ensiná-lo a criar uma pull 
+Este é um projeto de arte criado com a intenção de ensiná-lo a criar uma pull
 request.
 
-Visite [open-pixel-art.com](https://open-pixel-art.com) para ver a obra de arte 
+Visite [open-pixel-art.com](https://open-pixel-art.com) para ver a obra de arte
 completa!
 
-Qualquer pessoa que deseje aprender como criar uma pull request para um projeto 
-no GitHub pode usar esse projeto para contribuir com um pixel na tela. Você só 
-poderá criar um pixel, mas poderá escolher a cor que preferir, desde que seja um 
+Qualquer pessoa que deseje aprender como criar uma pull request para um projeto
+no GitHub pode usar esse projeto para contribuir com um pixel na tela. Você só
+poderá criar um pixel, mas poderá escolher a cor que preferir, desde que seja um
 código HEX válido. Por exemplo: `#F22F46` a cor da marca de [Twilio](https://www.twilio.com)
 
-> Se você é novo no código-fonte aberto, no GitHub ou no git em geral, não tenha 
-medo, criamos um tutorial em [TwilioQuest](https://www.twilio.com/quest) para 
-você. Ele ensinará passo a passo sobre como você pode começar e o guiará na sua 
-busca de criar sua solicitação de recebimento.
+> ![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+> Se você é novo no código-fonte aberto, no GitHub ou no git em geral, não tenha
+> medo, criamos um tutorial em [TwilioQuest](https://www.twilio.com/quest) para
+> você. Ele ensinará passo a passo sobre como você pode começar e o guiará na sua
+> busca de criar sua solicitação de recebimento.
 > 🕹 [Download TwilioQuest](https://www.twilio.com/quest/download)
 
-Todo o projeto é automatizado e é amplamente mantido por um conjunto de bots que 
-verificará qualquer contribuição de pixel. No entanto, se você quiser saber mais 
-sobre o projeto ou enviar outras contribuições ao projeto que não sejam um pixel, 
-sinta-se à vontade para criar um [problema no GitHub](https://github.com/twilio-labs/open-pixel-art/issues) 
+Todo o projeto é automatizado e é amplamente mantido por um conjunto de bots que
+verificará qualquer contribuição de pixel. No entanto, se você quiser saber mais
+sobre o projeto ou enviar outras contribuições ao projeto que não sejam um pixel,
+sinta-se à vontade para criar um [problema no GitHub](https://github.com/twilio-labs/open-pixel-art/issues)
 dentro do [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Contribuindo
 
-Para contribuir com um pixel na tela, você deverá criar uma [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) 
+Para contribuir com um pixel na tela, você deverá criar uma [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 para o [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
 
-Se você já conhece o git e como criar uma solicitação pull no GitHub, pode seguir 
+Se você já conhece o git e como criar uma solicitação pull no GitHub, pode seguir
 em frente e conferir o [guia de contribuição](CONTRIBUTING.md).
 
-Entendemos que contribuir com o código aberto pode ser intimidador e, como 
-resultado, criamos uma missão em nosso jogo de codificação interativo 
-[TwilioQuest](https://www.twilio.com/quest) que o orientará passo a passo na 
-criação de um puxe a solicitação para este projeto e ajude você a embarcar em 
+Entendemos que contribuir com o código aberto pode ser intimidador e, como
+resultado, criamos uma missão em nosso jogo de codificação interativo
+[TwilioQuest](https://www.twilio.com/quest) que o orientará passo a passo na
+criação de um puxe a solicitação para este projeto e ajude você a embarcar em
 sua nova busca no código-fonte aberto!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
@@ -48,8 +49,8 @@ sua nova busca no código-fonte aberto!
 
 ## Código de conduta
 
-Queremos garantir que este projeto seja o mais acolhedor possível. Ao interagir 
-com o projeto de qualquer forma ou formato, você concorda com o Código de 
+Queremos garantir que este projeto seja o mais acolhedor possível. Ao interagir
+com o projeto de qualquer forma ou formato, você concorda com o Código de
 Conduta do projeto:
 
 - [Inglês](CODE_OF_CONDUCT.md)
@@ -86,7 +87,7 @@ Obrigado vai a essas pessoas maravilhosas ([emoji key](https://allcontributors.o
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Este projeto segue a especificação [todos os colaboradores](https://github.com/all-contributors/all-contributors). 
+Este projeto segue a especificação [todos os colaboradores](https://github.com/all-contributors/all-contributors).
 Contribuições de qualquer tipo são bem-vindas!
 
 ## Agradecimentos
