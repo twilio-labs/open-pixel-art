@@ -54,9 +54,9 @@ function findPixelNodes(input) {
   const query = input.replace(/ /g, '');
 
   return document.querySelectorAll(
-    `.pixel[name^="${query}"],
-    .pixel[data-pixel-x^="${query}"],
-    .pixel[data-pixel-y^="${query}"]`
+    `image.pixel[name^="${query}"],
+    image.pixel[data-pixel-x^="${query}"],
+    image.pixel[data-pixel-y^="${query}"]`
   );
 }
 
