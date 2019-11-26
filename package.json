@@ -45,11 +45,6 @@
   "dependencies": {
     "nes.css": "^2.2.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "run-s lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "prettier --write",
