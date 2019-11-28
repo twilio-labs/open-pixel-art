@@ -1,4 +1,4 @@
-const { message, fail, markdown, danger } = require('danger');
+//const { message, fail, markdown, danger } = require('danger');
 const { stripIndent } = require('common-tags');
 const dotProp = require('dot-prop');
 
