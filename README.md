@@ -89,6 +89,7 @@ This project is powered by various open-source projects. Among others:
 - [NES.css](https://nostalgic-css.github.io/NES.css/) for the CSS styling
 - [Welcome Bot](https://github.com/behaviorbot/welcome) to welcome new contributors
 
-## License
+## Licence
 
+- some small changes to see if I can push my branch to my fork
 MIT
