@@ -6,8 +6,6 @@ newIssueWelcomeComment: |
 firstPRMergeComment: >
   Congratulations on your first contribution to the Open Pixel Art project!
 
-  We'd love to say thank you and send you some swag. If you are interested please fill out this form at https://twil.io/hacktoberfest-swag
-
   If you are on the look out for more ways to contribute to open-source, 
   check out a list of some of our repositories at https://github.com/twilio/opensource.
 
