@@ -12,7 +12,7 @@ let imagesInitialized = false;
 rects.forEach((rect, i) => {
   rect.setAttribute('x-start', rect.getAttribute('x'));
   rect.setAttribute('y-start', rect.getAttribute('y'));
-  rect.setAttribute('key', i)
+  rect.setAttribute('key', i);
 });
 
 document.addEventListener('keydown', onKeyDown);
@@ -52,8 +52,11 @@ let isRunningAll = false;
 let latestCommand = null;
 let loopingTimeout = null;
 let runningAllTimeout = null;
-const width = 40;
-const height = 40;
+const width = 60;
+const height = 60;
+const pixelSize = 10;
+const widthInPixels = width * pixelSize;
+const heightInPixels = height * pixelSize;
 
 function runAll() {
   isLooping = false;
@@ -62,7 +65,17 @@ function runAll() {
 
   isRunningAll = true;
 
-  const effects = [order, reset, twist, flip, vert, random, walk, reset, gravity];
+  const effects = [
+    order,
+    reset,
+    twist,
+    flip,
+    vert,
+    random,
+    walk,
+    reset,
+    gravity
+  ];
 
   runningTimeout = runFirst(effects);
 }
@@ -106,38 +119,41 @@ function random() {
 
 function order() {
   latestCommand = order;
-  const f = ({ i }) => [(i % width) * 10, Math.floor(i / width) * 10];
+  const f = ({ i }) => [
+    (i % width) * pixelSize,
+    Math.floor(i / width) * pixelSize
+  ];
   transform(f);
 }
 
 function flip() {
   latestCommand = flip;
-  transform(({ x, y }) => [390 - x, y]);
+  transform(({ x, y }) => [widthInPixels - pixelSize - x, y]);
 }
 
 function vert() {
   latestCommand = vert;
-  transform(({ x, y }) => [x, 390 - y]);
+  transform(({ x, y }) => [x, heightInPixels - pixelSize - y]);
 }
 
 function twist() {
   latestCommand = twist;
-  transform(({ x, y }) => [390 - y, x]);
+  transform(({ x, y }) => [widthInPixels - pixelSize - y, x]);
 }
 
 function gravity() {
   // create an array of arrays for every column
-  const cols = Array.from({length:width},() => []) 
-  rects.forEach(rect => cols[rectToObj(rect).x / 10].push(rect))
+  const cols = Array.from({ length: width }, () => []);
+  rects.forEach(rect => cols[rectToObj(rect).x / pixelSize].push(rect));
   cols.forEach(col => {
-    col.sort((b,a) => rectToObj(a).y - rectToObj(b).y)
+    col.sort((b, a) => rectToObj(a).y - rectToObj(b).y);
     col.forEach((rect, i) => {
-      const y = (height-i-1) * 10
-      const key = rect.getAttribute('key')
-      rect.setAttribute('y', y)
-      images[key].setAttribute('y', y)
-    })
-  })
+      const y = (height - i - 1) * pixelSize;
+      const key = rect.getAttribute('key');
+      rect.setAttribute('y', y);
+      images[key].setAttribute('y', y);
+    });
+  });
 }
 
 function walk() {
@@ -166,21 +182,26 @@ function loopFunction() {
   loopingTimeout = setTimeout(loopFunction, loopTimeoutPeriod);
 }
 
-const nudges = [[10, 0], [-10, 0], [0, 10], [0, -10]];
+const nudges = [
+  [pixelSize, 0],
+  [-pixelSize, 0],
+  [0, pixelSize],
+  [0, -pixelSize]
+];
 const randomElement = arr => arr[Math.floor(Math.random() * arr.length)];
 const between = (min, value, max) => Math.min(Math.max(value, min), max);
 const w = ({ x, y }) => {
   const [dx, dy] = randomElement(nudges);
-  const newX = between(0, x + dx, 390);
-  const newY = between(0, y + dy, 390);
+  const newX = between(0, x + dx, widthInPixels - pixelSize);
+  const newY = between(0, y + dy, heightInPixels - pixelSize);
   return [newX, newY];
 };
 
 function rectToObj(rect) {
-  const [x, y, xStart, yStart] = ['x', 'y', 'x-start', 'y-start'].map(
-    key => rect.getAttribute(key)
+  const [x, y, xStart, yStart] = ['x', 'y', 'x-start', 'y-start'].map(key =>
+    rect.getAttribute(key)
   );
-  return {x, y, xStart, yStart};
+  return { x, y, xStart, yStart };
 }
 
 function transform(transformFunction) {
@@ -218,7 +239,7 @@ function allCells() {
   const all = [];
   for (let j = 0; j < height; j++) {
     for (let i = 0; i < width; i++) {
-      all.push({ x: i * 10, y: j * 10 });
+      all.push({ x: i * pixelSize, y: j * pixelSize });
     }
   }
   return all;
