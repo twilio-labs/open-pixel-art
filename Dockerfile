@@ -15,4 +15,5 @@ RUN npm test
 EXPOSE 8080
 
 # Turn on Web Server
-CMD ["npm", "start"]
+CMD ["npm", "start"i]
+# New line in dockerfile as I am really not into toying :D
