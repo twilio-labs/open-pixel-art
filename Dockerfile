@@ -1,4 +1,4 @@
-## Set the base image as the latest node alpine version
+# Set the base image as the latest node alpine version
 FROM node:lts-alpine
 
 # Copy the work directory so we can use it
