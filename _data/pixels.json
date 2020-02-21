@@ -1164,6 +1164,7 @@
     {"y": 41, "x": 1, "color": "#0080FF", "username": "batsona"},
     {"y": 41, "x": 2, "color": "#007fff", "username": "seajhawk"},
     {"y": 42, "x": 1, "color": "#51FF31", "username": "markoshiva"},
-    {"y": 42, "x": 2, "color": "#02C2E6", "username": "ilytrevino"}
+    {"y": 42, "x": 2, "color": "#02C2E6", "username": "ilytrevino"},
+    {"y": 43, "x": 3, "color": "#007bff", "username": "ekozlowski"}
   ]
 }
