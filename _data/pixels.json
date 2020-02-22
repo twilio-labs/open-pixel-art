@@ -1169,6 +1169,7 @@
     {"y": 42, "x": 4, "color": "#02C2E6", "username": "drivez"},
     {"y": 43, "x": 2, "color": "#FFD133", "username": "tarmosillajoe"},
     {"y": 43, "x": 3, "color": "#007bff", "username": "ekozlowski"},
-    {"y": 43, "x": 5, "color": "#443355", "username": "llamapope"}
+    {"y": 43, "x": 5, "color": "#443355", "username": "llamapope"},
+    {"y": 55, "x": 20, "color": "#ff0066", "username": "phil-harmston"}
   ]
 }
