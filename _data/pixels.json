@@ -1174,6 +1174,7 @@
     {"y": 43, "x": 3, "color": "#007bff", "username": "ekozlowski"},
     {"y": 43, "x": 5, "color": "#443355", "username": "llamapope"},
     {"y": 43, "x": 6, "color": "#ABCDEF", "username": "rhino12343"},
+    {"y": 48, "x": 31, "color": "#e69420", "username": "alcognito"},
     {"y": 55, "x": 20, "color": "#ff0066", "username": "phil-harmston"}
   ]
 }
