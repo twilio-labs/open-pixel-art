@@ -30,7 +30,7 @@
     "@11ty/eleventy": "^0.9.0",
     "@types/jest": "^24.0.18",
     "common-tags": "^1.8.0",
-    "danger": "^9.2.10",
+    "danger": "^10.0.0",
     "dot-prop": "^5.1.0",
     "execa": "^2.1.0",
     "husky": "^3.0.8",
