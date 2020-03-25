@@ -181,16 +181,24 @@ function isValidNewPixelSubmission(pixel, gitHubUsername) {
     result = false;
   }
 
-  if (typeof pixel.x !== 'number' || pixel.x < 0) {
+  if (
+    typeof pixel.x !== 'number' ||
+    pixel.x < 0 ||
+    !Number.isInteger(pixel.x)
+  ) {
     fail(
-      'Please make sure your pixel submission has a valid positive `x` coordinate as a number.'
+      'Please make sure your pixel submission has a valid positive `x` coordinate as an integer.'
     );
     result = false;
   }
 
-  if (typeof pixel.y !== 'number' || pixel.y < 0) {
+  if (
+    typeof pixel.y !== 'number' ||
+    pixel.y < 0 ||
+    !Number.isInteger(pixel.y)
+  ) {
     fail(
-      'Please make sure your pixel submission has a valid positive `y` coordinate as a number.'
+      'Please make sure your pixel submission has a valid positive `y` coordinate as an integer.'
     );
     result = false;
   }

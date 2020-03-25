@@ -1,10 +1,10 @@
 # Código de Conduta do Colaborador
 
-¿Español? Puedes encontrar nuestro Código de Conducta traducido en [este enlace](docs/es/CODE_OF_CONDUCT.md).
+¿Español? Puedes encontrar nuestro Código de Conducta traducido en [este enlace](../../docs/es/CODE_OF_CONDUCT.md).
 
-Deutsch? Du kannst unsere Verhaltensregeln [hier finden](docs/de/CODE_OF_CONDUCT.md).
+Deutsch? Du kannst unsere Verhaltensregeln [hier finden](../../docs/de/CODE_OF_CONDUCT.md).
 
-Português do Brasil? Pode encontrar o nosso Codigo de Conduta traduzido em [neste link](docs/br/CODE_OF_CONDUCT.md)
+Português do Brasil? Pode encontrar o nosso Codigo de Conduta traduzido em [neste link](../../docs/br/CODE_OF_CONDUCT.md)
 
 ## Nosso compromisso
 
