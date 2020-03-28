@@ -1191,11 +1191,11 @@
     {"y": 48, "x": 31, "color": "#e69420", "username": "alcognito"},
     {"y": 50, "x": 50, "color": "#000080", "username": "mke414"},
     {"y": 51, "x": 51, "color": "#006400", "username": "smm10"},
+    {"y": 51, "x": 55, "color": "#006400", "username": "toremoro21"},
     {"y": 55, "x": 20, "color": "#ff0066", "username": "phil-harmston"},
     {"y": 56, "x": 25, "color": "#800080", "username": "adace123"},
     {"y": 57, "x": 26, "color": "#800080", "username": "dkundel"},
     {"y": 59, "x": 0, "color": "#0029cf", "username": "kungfuphil"},
-    {"y": 59, "x": 1, "color": "#000000", "username": "toremoro21"},
     {"y": 59, "x": 59, "color": "#000000", "username": "curtca"}
   ]
 }
