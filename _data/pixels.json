@@ -1026,6 +1026,7 @@
     {"y": 36, "x": 17, "color": "#00799b", "username": "lazav94"},
     {"y": 36, "x": 18, "color": "#800000", "username": "davebrine"},
     {"y": 36, "x": 19, "color": "#8080FF", "username": "jebreen"},
+    {"y": 36, "x": 20, "color": "#FF0000", "username": "daveydevs"},
     {"y": 36, "x": 21, "color": "#277fcc", "username": "Srihari44"},
     {"y": 36, "x": 22, "color": "#277fcc", "username": "gasts"},
     {"y": 36, "x": 23, "color": "#1E6341", "username": "veressmikloska123"},
@@ -1195,6 +1196,8 @@
     {"y": 56, "x": 25, "color": "#800080", "username": "adace123"},
     {"y": 57, "x": 26, "color": "#800080", "username": "dkundel"},
     {"y": 59, "x": 0, "color": "#0029cf", "username": "kungfuphil"},
+    {"y": 59, "x": 1, "color": "#0029cf", "username": "twskj"},
+    {"y": 59, "x": 40, "color": "#02C2E6", "username": "mmarcuse"},
     {"y": 59, "x": 57, "color": "#123456", "username": "jaiveersingh1"},
     {"y": 59, "x": 59, "color": "#000000", "username": "curtca"}
   ]
