@@ -13,6 +13,8 @@ const {
 
 const readFile = promisify(fs.readFile);
 
+jest.setTimeout(10000);
+
 describe('getSortedPixelsFromFile', () => {
   beforeEach(() => {
     mockFs({
