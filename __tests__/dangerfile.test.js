@@ -24,8 +24,119 @@ const {
 } = require('../dangerfile');
 
 describe('allPatchesAreForTheSamePixel', () => {
-  test('placeholder', () => {
-    expect(true).toBeTruthy();
+  test('fails with multiple add operations', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'add',
+          path: '/data/0/'
+        },
+        {
+          op: 'add',
+          path: '/data/1/'
+        }
+      ]
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('fails if remove operation on claimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('fails if replace operation on claimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('succeeds if remove operation on unclaimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: '<UNCLAIMED>'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(true);
+  });
+
+  test('succeeds if replace operation on unclaimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: '<UNCLAIMED>'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(true);
+  });
+
+  test('fails if multiple pixels affected by diffs', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'replace',
+          path: '/data/0/'
+        },
+        {
+          op: 'add',
+          path: '/data/1/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
   });
 });
 
@@ -209,7 +320,63 @@ describe('isValidNewPixelSubmission', () => {
 });
 
 describe('isValidPixelUpdate', () => {
-  test('placeholder', () => {
-    expect(true).toBeTruthy();
+  test('fails if diff overrides claimed pixel', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'not_unclaimed' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(false);
+  });
+
+  test('fails if username is wrong', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: '<UNCLAIMED>' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'not_twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(false);
+  });
+
+  test('passes if is valid update', () => {
+    const jsonPatch = {
+      before: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: '<UNCLAIMED>' }]
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/username'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(true);
+  });
+
+  test('passes if is valid new pixel', () => {
+    const jsonPatch = {
+      before: {
+        data: []
+      },
+      after: {
+        data: [{ y: 0, x: 0, color: '#F22F46', username: 'twilio' }]
+      }
+    };
+    const specificDiff = {
+      path: '/data/0/'
+    };
+    expect(isValidPixelUpdate(jsonPatch, specificDiff, 'twilio')).toBe(true);
   });
 });

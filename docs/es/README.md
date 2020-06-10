@@ -6,8 +6,9 @@ Este es un proyecto artístico creado con la intención de enseñarte cómo crea
 
 ¡Visita [open-pixel-art.com](https://open-pixel-art.com) para ver los resultados!
 
-Todos quienes quieran aprender cómo crear un pull request en GitHub pueden usar este proyecto para contribuir con un pixel y agregarlo al canvas. Solo podrás crear un pixel, pero puedes elegir el color que quieras, siempre y cuando sea un color válido en formato hexadecimal. Por ejemplo, puedes usar: `#F22F46`, uno de los colores oficiales de [Twilio](https://www.twilio.com)
+Quienes quieran aprender cómo crear un pull request en GitHub pueden usar este proyecto para contribuir con un pixel y agregarlo al canvas. Solo podrás crear un pixel, pero puedes elegir el color que quieras, siempre y cuando sea un color válido en formato hexadecimal. Por ejemplo, puedes usar: `#F22F46`, uno de los colores oficiales de [Twilio](https://www.twilio.com)
 
+> ![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
 > Si no tienes experiencia con código abierto, GitHub o usando git, ¡no hay problema!. Creamos un tutorial en [TwilioQuest](https://www.twilio.com/quest) especialmente para ti. Este tutorial te enseñará paso a paso como partir y te guiará en esta aventura de crear un pull request.
 > 🕹 [Descarga TwilioQuest](https://www.twilio.com/quest/download)
 
@@ -17,21 +18,21 @@ Este proyecto está automatizado y en su mayoría es mantenido por bots que veri
 
 Para contribuir con un pixel y agregarlo al canvas, puedes crear un [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) al [proyecto Open Pixel Art en GitHub](https://github.com/twilio-labs/open-pixel-art).
 
-Si ya tienes experiencia trabajando con git y sabes cómo crear un pull request en GitHub, te recomendamos revisar nuestra [guía de contribuciones](docs/es/CONTRIBUTING.md).
+Si ya tienes experiencia trabajando con git y sabes cómo crear un pull request en GitHub, te recomendamos revisar nuestra [guía de contribuciones](CONTRIBUTING.md).
 
 Y como sabemos que contribuir a código abierto puede ser intimidante, también creamos una misión nueva en [TwilioQuest](https://www.twilio.com/quest), nuestro videojuego para aprender a programar, que te guiará paso a paso por el proceso de creación de un pull request para este proyecto ¡y te ayudará en esta nueva aventura hacia el código abierto!
 
 - [Descarga TwilioQuest](https://www.twilio.com/quest/download)
 - Revisa nuestras guías de contribución:
-  - [Español](docs/es/CONTRIBUTING.md)
-  - [Inglés](CONTRIBUTING.md)
+  - [Español](CONTRIBUTING.md)
+  - [Inglés](https://github.com/twilio-labs/open-pixel-art/blob/master/CONTRIBUTING.md)
 
 ## Código de Conducta
 
 Queremos que este proyecto sea lo más acogedor e inclusivo posible hacia todos. Si interactuas con este proyecto, de cualquier forma, aceptas respetar y adoptar nuestro Código de Conducta:
 
-- [Español](docs/es/CODE_OF_CONDUCT.md)
-- [Inglés](CODE_OF_CONDUCT.md)
+- [Español](CODE_OF_CONDUCT.md)
+- [Inglés](https://github.com/twilio-labs/open-pixel-art/blob/master/CODE_OF_CONDUCT.md)
 
 Si sientes que alguien ha atentado contra este Código de Conducta, por favor repórtalo enviando un correo electrónico a [open-source@twilio.com](mailto:open-source@twilio.com).
 
