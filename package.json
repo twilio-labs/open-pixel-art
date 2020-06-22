@@ -7,6 +7,7 @@
     "configure:merge-driver": "node scripts/configureMergeDriver.js",
     "sync-fork": "node scripts/sync.js",
     "format:sort-pixels": "node scripts/sortPixels.js",
+    "sort:open-pixels": "node scripts/sortPixels.js",
     "lint-staged": "lint-staged",
     "start": "eleventy --serve",
     "build": "eleventy",
