@@ -1340,6 +1340,8 @@
     {"y": 59, "x": 15, "color": "#FFFF00", "username": "pmusolino-rms"},
     {"y": 59, "x": 24, "color": "#00FF00", "username": "pshanew"},
     {"y": 59, "x": 25, "color": "#E32FFA", "username": "brycekahle"},
+    {"y": 59, "x": 26, "color": "#ff0000", "username": "fakename123123"},
+    {"y": 59, "x": 27, "color": "#ff0000", "username": "fakename123123-2"},
     {"y": 59, "x": 29, "color": "#000000", "username": "DarkTerra"},
     {"y": 59, "x": 30, "color": "#00e600", "username": "hieutle2011"},
     {"y": 59, "x": 35, "color": "#26F9EF", "username": "depechcode"},
