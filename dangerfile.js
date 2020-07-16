@@ -1,6 +1,5 @@
 const { message, fail, markdown, danger } = require('danger');
-const { stripIndent } = require('common-tags');
-const dotProp = require('dot-prop');
+const { stripIndent, stripIndents } = require('common-tags');
 
 function handleMultipleFileChanges(gitChanges) {
   fail(
@@ -32,44 +31,100 @@ function handleSuccessfulSubmission() {
   message('Thank you so much for contributing your pixel! 💖');
 }
 
+function doesJsonMatchSchema(json) {
+  const expectedKeys = ['data'];
+  const actualKeys = Object.keys(json);
+
+  const doesJsonHaveExpectedNumberOfKeys =
+    expectedKeys.length === actualKeys.length;
+
+  const doesJsonContainExpectedKeys = expectedKeys.every(expectedKey =>
+    actualKeys.includes(expectedKey)
+  );
+
+  return doesJsonHaveExpectedNumberOfKeys && doesJsonContainExpectedKeys;
+}
+
+function convertJsonToPixelSet({ data }) {
+  const pixelSet = new Set();
+  data.forEach(pixel => pixelSet.add(JSON.stringify(pixel)));
+
+  return pixelSet;
+}
+
 async function evaluatePixelChanges(jsonPatch) {
-  const gitHubUsername = danger.github.pr.user.login;
-  if (jsonPatch.diff.length === 1) {
-    // Only one pixel has been modified
+  if (!doesJsonMatchSchema(jsonPatch.after)) {
+    fail(stripIndents`Your pixels.json file does not match the expected schema.
 
-    const linePatch = jsonPatch.diff[0];
-    if (linePatch.op === 'add') {
-      // a new pixel has been added
-
-      if (isValidNewPixelSubmission(linePatch.value, gitHubUsername)) {
-        return true;
-      }
-    } else if (linePatch.op === 'remove') {
-      // a pixel has been removed
-
-      fail(
-        `I'm sorry but you can't remove a pixel that someone else contributed`
-      );
-      return false;
-    } else if (linePatch.op === 'replace' || linePatch.op === 'test') {
-      return isValidPixelUpdate(jsonPatch, linePatch, gitHubUsername);
-    } else {
-      fail(
-        `I'm sorry but you can only contribute one pixel per GitHub username.`
-      );
+    expected schema: 
+    {
+      data: [
+        // pixels go here
+      ]
     }
-  } else {
-    if (!allPatchesAreForTheSamePixel(jsonPatch)) {
-      return false;
-    } else {
-      if (jsonPatch.diff.length === 0) {
-        fail('This PR appears to be empty and needs a manual review');
-        return false;
-      }
-      return isValidPixelUpdate(jsonPatch, jsonPatch.diff[0], gitHubUsername);
-    }
+    `);
+    return false;
   }
-  return false;
+
+  const isDiffEmpty = jsonPatch.diff.length === 0;
+  if (isDiffEmpty) {
+    fail('This PR appears to be empty and needs a manual review.');
+    return false;
+  }
+
+  const beforePixels = convertJsonToPixelSet(jsonPatch.before);
+  const afterPixels = convertJsonToPixelSet(jsonPatch.after);
+
+  const areMultipleNewPixels = afterPixels.size - beforePixels.size > 1;
+  if (areMultipleNewPixels) {
+    fail(`You can not add more than one pixel.`);
+    return false;
+  }
+
+  const pixelsNotInAfter = [...beforePixels].filter(
+    pixel => !afterPixels.has(pixel)
+  );
+
+  const arePixelsMissingFromAfter = pixelsNotInAfter.length > 0;
+  if (arePixelsMissingFromAfter) {
+    const removedUserNames = pixelsNotInAfter.map(
+      pixelString => JSON.parse(pixelString).username
+    );
+
+    fail(
+      'It seems like you are accidentally deleting or editing some contributions of others. Please make sure you have pulled the latest changes from the master branch and resolved any merge conflicts. https://help.github.com/en/articles/syncing-a-fork'
+    );
+    fail(
+      stripIndents`Make sure that the following usernames are indeed included and unchanged: ${removedUserNames.join(
+        ','
+      )}`
+    );
+    return false;
+  }
+
+  const gitHubUsername = danger.github.pr.user.login;
+
+  const pixelsWithGitHubUsername = jsonPatch.after.data.filter(
+    pixel => pixel.username.toLowerCase() === gitHubUsername.toLowerCase()
+  );
+
+  if (pixelsWithGitHubUsername.length > 1) {
+    fail(stripIndents`
+    You cannot create more than one pixel per GitHub username.
+
+    These are the pixels at the following locations for the GitHub username "${gitHubUsername}" in the pixels.json file:
+    ${pixelsWithGitHubUsername
+      .map(pixel => `{ x: ${pixel.x}, y: ${pixel.y} }`)
+      .join('\n')}
+    `);
+    return false;
+  }
+
+  const newPixel = jsonPatch.after.data.find(
+    pixel => !beforePixels.has(JSON.stringify(pixel))
+  );
+
+  return isValidNewPixelSubmission(newPixel, gitHubUsername);
 }
 
 function getIndexFromPath(diffPath) {
@@ -134,32 +189,6 @@ function allPatchesAreForTheSamePixel(jsonPatch) {
     }
   }
   return true;
-}
-
-function isValidPixelUpdate(jsonPatch, specificDiff, gitHubUsername) {
-  const lastSlash = specificDiff.path.lastIndexOf('/');
-  const normalizedPath = specificDiff.path
-    .substr(1, lastSlash - 1)
-    .replace(/\//g, '.');
-  const propertyName = specificDiff.path.substr(lastSlash + 1);
-  const newEntry = dotProp.get(jsonPatch.after, normalizedPath);
-  const entryUsernameLowerCase = newEntry.username.toLowerCase();
-  const gitHubUsernameLoweCase = gitHubUsername.toLowerCase();
-
-  if (propertyName === 'username') {
-    const oldEntry = dotProp.get(jsonPatch.before, normalizedPath);
-    if (oldEntry.username !== '<UNCLAIMED>') {
-      fail(`I'm sorry but you cannot override someone elses pixel.`);
-      return false;
-    } else if (entryUsernameLowerCase !== gitHubUsernameLoweCase) {
-      fail(
-        `The username in your pixel submission needs to match your username of "${gitHubUsername}". You submitted "${newEntry.username}" instead.`
-      );
-      return false;
-    }
-  }
-
-  return isValidNewPixelSubmission(newEntry, gitHubUsername);
 }
 
 function isValidNewPixelSubmission(pixel, gitHubUsername) {
@@ -240,6 +269,5 @@ module.exports = {
   handleMultipleFileChanges,
   handleSuccessfulSubmission,
   hasOnlyPixelChanges,
-  isValidNewPixelSubmission,
-  isValidPixelUpdate
+  isValidNewPixelSubmission
 };
