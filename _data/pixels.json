@@ -1338,6 +1338,7 @@
     {"y": 55, "x": 45, "color": "#fc600a", "username": "antonedvard"},
     {"y": 55, "x": 55, "color": "#CC5500", "username": "geewey"},
     {"y": 56, "x": 0, "color": "#0f9d58", "username": "bowclaw"},
+    {"y": 56, "x": 15, "color": "#0f9dff", "username": "martinroseis"},
     {"y": 56, "x": 25, "color": "#800080", "username": "adace123"},
     {"y": 56, "x": 56, "color": "#7F6DD1", "username": "deathau"},
     {"y": 56, "x": 59, "color": "#FFF333", "username": "infok1c"},
