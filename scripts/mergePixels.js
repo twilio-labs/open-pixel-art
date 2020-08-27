@@ -1,4 +1,5 @@
 const fs = require('fs');
+const { stripIndent } = require('common-tags');
 const path = require('path');
 const { promisify } = require('util');
 const { sortPixels, pixelsToString } = require('../utils/pixels-helper');
