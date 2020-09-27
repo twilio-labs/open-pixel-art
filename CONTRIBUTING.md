@@ -256,8 +256,3 @@ We want to make sure that this project is as welcoming to people as possible. By
 ## Licensing
 
 All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
-
-
-## Mock changes
-
-This are mock changes
