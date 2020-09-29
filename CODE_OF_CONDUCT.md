@@ -1,5 +1,9 @@
 # Contributor Covenant Code of Conduct
 
+¿Español? Puedes encontrar nuestro Código de Conducta traducido en [este enlace](docs/es/CODE_OF_CONDUCT.md).
+
+Deutsch? Du kannst unsere Verhaltensregeln [hier finden](docs/de/CODE_OF_CONDUCT.md).
+
 ## Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as
