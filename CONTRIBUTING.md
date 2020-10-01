@@ -8,6 +8,8 @@ For both scenarios the setup is the same, however, the contribution steps differ
 
 ## I've Never Contributed to Open Source
 
+![decorative banner image for TwilioQuest mission](./docs/twilio-quest-oss-banner.png)
+
 Contributing to open source can be intimidating at first. For that reason we created a
 new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide you
 step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
@@ -29,7 +31,9 @@ Enjoy your quest!
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
+
 If you've set up this device with SSH, you can do this instead:
+
 ```bash
 git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
@@ -147,6 +151,20 @@ git push origin add-my-new-pixel
 
 Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
 
+### Problems When Creating a Pull Request
+
+When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following commands which brings all the required changes to your forked repo.
+
+Make sure you have the latest changes by running this command
+
+```bash
+npm install
+```
+Now you can just sync it with the fork by running this command
+```bash
+npm run sync-fork
+```
+
 ## Contributing other Changes
 
 It's great that you want to contribute more than a pixel to this project. Before you start working on the code, make sure to check if there is already a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) for those changes. If there isn't, please open one first. If there is already one, make sure to create a comment to let people know that you are working on a fix for this.
@@ -160,11 +178,13 @@ Once you open a pull request, make sure to uncomment the additional info section
 Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
 
 Examples of unwanted contributions include but are not limited to:
+
 - adding unnecessary commas, hyphens, or exclamation points
 - rewording sentences that are already clear enough
 - changing spelling from American English to British English
 
 These kinds of documentation contributions are welcome and appreciated:
+
 - adding translations into new languages
 - Fixing broken links
 - Fixing broken markdown formatting
