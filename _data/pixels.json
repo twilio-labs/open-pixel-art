@@ -31,7 +31,7 @@
     {"y": 39, "x": 0, "color": "#623CE4", "username": "toddmoy"},
     {"y": 39, "x": 3, "color": "#F22F46", "username": "memitaru"},
     {"y": 39, "x": 39, "color": "#000080", "username": "rmkubik"},
-    {"y": 42, "x": 42, "color": "#9440A0", "username": "amykapernick"},
-    {"y": 45, "x": 15, "color": "#ffa500", "username": "AhDev15"}
+    {"y": 45, "x": 15, "color": "#ffa500", "username": "AhDev15"},
+    {"y": 45, "x": 16, "color": "#ffa500", "username": "AhDev15"}
   ]
 }
