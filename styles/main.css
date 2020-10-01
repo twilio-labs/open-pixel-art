@@ -8,7 +8,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 header {
@@ -108,9 +108,12 @@ p code {
   opacity: 0.01;
   width: 1px;
   height: 1px;
+  z-index: -1;
 }
 
-.screenreader-only:hover, .screenreader-only:link, .screenreader-only:visited {
+.screenreader-only:hover,
+.screenreader-only:link,
+.screenreader-only:visited {
   cursor: arrow;
 }
 
@@ -131,7 +134,7 @@ p code {
 }
 
 #contributor-name {
-  font-color: red;
+  color: red;
   font-weight: bold;
   padding: 0 5px;
   border: 1px solid black;
@@ -145,4 +148,12 @@ p code {
   position: absolute;
   font-size: 10px;
   border: 1px solid black;
+}
+
+.pixel {
+  transition: all 0.4s ease-in-out;
+}
+
+.hidden {
+  display: none;
 }

@@ -6,8 +6,10 @@ Para ambos escenarios la configuración es la misma, pero los pasos para contrib
 
 ## Si nunca has contribuido a código abierto
 
-Contribuir a código abierto puede ser intimidante. Por esa misma razón, creamos una misión nueva en [TwilioQuest](https://www.twilio.com/quest) que te guiará
-paso a paso para crear una contribución a este proyecto. Después de [descargar el juego](https://www.twilio.com/quest/download), podrás elegir la misión y 
+![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+
+Contribuir a código abierto puede ser intimidante. Por esa misma razón, creamos una misión nueva en [TwilioQuest](https://twil.io/hacktoberfest-quest) que te guiará
+paso a paso para crear una contribución a este proyecto. Después de [descargar el juego](https://www.twilio.com/quest/download), podrás elegir la misión y
 ésta te guiará a través de todos los pasos necesarios, desde clonar el proyecto hasta crear tu pull request.
 
 ¡Disfruta la aventura!
@@ -44,7 +46,7 @@ npm start
 
 ## Contribuyendo con un Pixel
 
-Si quieres contribuir con un pixel, deberás modificar el archivo que reside en [`_data/pixels.json`] (_data/pixels.json). Este archivo contiene todos los pixeles que están actualmente en el canvas.
+Si quieres contribuir con un pixel, deberás modificar el archivo que reside en [`_data/pixels.json`](_data/pixels.json). Este archivo contiene todos los pixeles que están actualmente en el canvas.
 
 Hay dos formas diferentes para contribuir con un pixel:
 
@@ -125,7 +127,7 @@ Cuando abras tu pull request, asegúrate de descomentar la sección de "addition
 ## Estructura del proyecto
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -155,7 +157,7 @@ Este proyecto usa [Eleventy](https://11ty.io). Estos son los archivos de configu
 
 ### `.mergify.yml`
 
-Este proyecto usa Mergify para incluir automáticamente ciertos PRs, basados en condiciones definidas internamente.
+Este proyecto usa [Mergify](https://mergify.io) para incluir automáticamente ciertos PRs, basados en condiciones definidas internamente.
 
 ### `__tests__`
 
@@ -188,4 +190,3 @@ Queremos que este proyecto sea lo más amigable y acogedor posible. Si interactu
 ## Licencia
 
 Todos las contribuciones realizadas serán integradas bajo la misma licencia de código abierto que utiliza este proyecto.
-

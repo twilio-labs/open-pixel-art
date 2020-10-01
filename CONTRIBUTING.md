@@ -8,6 +8,8 @@ For both scenarios the setup is the same, however, the contribution steps differ
 
 ## I've Never Contributed to Open Source
 
+![decorative banner image for TwilioQuest mission](./docs/twilio-quest-oss-banner.png)
+
 Contributing to open source can be intimidating at first. For that reason we created a
 new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide you
 step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
@@ -30,6 +32,12 @@ Enjoy your quest!
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
 
+If you've set up this device with SSH, you can do this instead:
+
+```bash
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
+```
+
 3. Install the dependencies for local development
 
 ```bash
@@ -45,19 +53,41 @@ npm start
 
 5. Open your browser at http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
 
+---
+
+There is also an option for setting up the project via Docker. To get started with the project by using Docker follow the following steps.
+
+1. Build the Docker image
+
+```bash
+ docker build -t open-pixel-art .
+```
+
+2. Start the Docker image
+
+```bash
+docker run -d -p 8080:8080 -it open-pixel-art
+```
+
+If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+
+You can also verify if it's running by doing `docker ps --all` You will see an image called `open-pixel-art` and where you can access it as well.
+
+Example:
+
+```bash
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                     NAMES
+c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes                   0.0.0.0:8080->8080/tcp    sleepy_lamarr
+```
+
 ## Contributing a Pixel
 
 If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
 
-There's two ways you can contribute a pixel.
+### Create a new pixel
 
-### Option 1: "Claim" a pixel
-
-Some entries in the `pixels.json` file exist but have a `username` property of `<UNCLAIMED>`. This means that you can change them to be your pixel. You can change the color to whatever you want. Afterwards change the `username` property to your GitHub username that you'll use to open the pull request with.
-
-### Option 2: Create a new pixel
-
-To create a new pixel, add a new row to the `data` array inside the `pixels.json`.
+To create a new pixel, search for a gap between the numbers for either the `x` or `y` coordinates in the `data` array inside the `pixels.json`.
+Once you have found an open position, go ahead and add a new pixel row.
 A new pixel has to be an object with the following four properties:
 
 - `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
@@ -65,7 +95,7 @@ A new pixel has to be an object with the following four properties:
 - `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
 - `username`: The GitHub username you'll use to create the pull request
 
-The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:json` and it should sort your pixel into the appropriate position.
+The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:sort-pixels` and it should sort your pixel into the appropriate position.
 
 The change should look like this:
 
@@ -111,6 +141,8 @@ The commit message is following the [Conventional Commits Standard](https://www.
 
 ### Push Your Changes and Creating a Pull Request
 
+**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). Try run `npm run sync-fork` to sync your fork automatically.
+
 Push your changes to GitHub by running:
 
 ```bash
@@ -118,6 +150,20 @@ git push origin add-my-new-pixel
 ```
 
 Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
+
+### Problems When Creating a Pull Request
+
+When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following commands which brings all the required changes to your forked repo.
+
+Make sure you have the latest changes by running this command
+
+```bash
+npm install
+```
+Now you can just sync it with the fork by running this command
+```bash
+npm run sync-fork
+```
 
 ## Contributing other Changes
 
@@ -127,10 +173,27 @@ After making the code changes, please follow the steps outlined above.
 
 Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as reference any issues this is addressing.
 
+### Documentation Contribution Guidelines
+
+Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
+
+Examples of unwanted contributions include but are not limited to:
+
+- adding unnecessary commas, hyphens, or exclamation points
+- rewording sentences that are already clear enough
+- changing spelling from American English to British English
+
+These kinds of documentation contributions are welcome and appreciated:
+
+- adding translations into new languages
+- Fixing broken links
+- Fixing broken markdown formatting
+- Fixing typos or misspelled words
+
 ## Project Structure
 
 ```
-pixel-project-dev
+open-pixel-art
 ├── .all-contributorsrc
 ├── .eleventy.js
 ├── .eleventyignore
@@ -160,7 +223,7 @@ The project is powered by [Eleventy](https://11ty.io). These are the configurati
 
 ### `.mergify.yml`
 
-The project uses Mergify to auto-merge certain PRs based on some conditions.
+The project uses [Mergify](https://mergify.io) to auto-merge certain PRs based on some conditions.
 
 ### `__tests__`
 

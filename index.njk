@@ -52,15 +52,59 @@
     </header>
 
     <main role="main">
+        <div>
+          <button class="nes-btn" onClick="random()">Random (r)</button>
+          <button class="nes-btn" onClick="order()">Order (o)</button>
+          <button class="nes-btn" onClick="twist()">Twist (t)</button>
+          <button class="nes-btn" onClick="flip()">Flip (f)</button>
+          <button class="nes-btn" onClick="vert()">V-Flip (v)</button>
+          <button class="nes-btn" onClick="walk()">Walk (w)</button>
+          <button class="nes-btn" onClick="gravity()">Gravity (g)</button>
+        </div>
+        <div>
+          <button class="nes-btn" onClick="loop()">Loop (l)</button>
+          <button class="nes-btn" onClick="reset()">Reset (Esc)</button>
+          <button class="nes-btn" onClick="toggleImages()">Avatars (a)</button>
+          <button class="nes-btn" onClick="runAll()">Run All (p)</button>
+        </div>
       <section  id="canvas" class="nes-container with-title" aria-label="You are in the Pixel Art Canvas. Hover over a pixel to hear the github username who contributed it.">
         <div role="heading" aria-level="2" class="screenreader-only">Pixel Art Canvas</div>
-        <svg viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
+        <svg id="pixel-canvas" viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
           <rect x="0" y="0" width="100%" height="100%" style="fill: {{defaults.image.background}}"/>
           {% for pixel in pixels.data %}
             {% if pixel.color %}
-              <rect x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" width="{{defaults.image.scale}}" height="{{defaults.image.scale}}" style="fill: {{pixel.color}}" name="{% if pixel.username %} {{pixel.username}} {% endif %}"/> 
+              <rect 
+                class="pixel-rect pixel" 
+                x="{{pixel.x * defaults.image.scale}}" 
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
+                width="{{defaults.image.scale}}" 
+                height="{{defaults.image.scale}}" 
+                style="fill: {{pixel.color}}" 
+                name="{% if pixel.username %}{{pixel.username}} {% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}"
+              /> 
+              <image 
+                class="pixel-image pixel hidden"
+                x="{{pixel.x * defaults.image.scale}}" 
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
+                width="{{defaults.image.scale}}" 
+                height="{{defaults.image.scale}}"
+                xlink:href="#" 
+                color="{{pixel.color}}" 
+                name="{% if pixel.username %}{{pixel.username}}{% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}" 
+              /> 
             {% elif pixel.tileName %}
-              <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
+              <image xlink:href="assets/tiles/{{pixel.tileName}}.png"
+                width="{{defaults.image.scale * 5}}"
+                height="{{defaults.image.scale * 5}}"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}"
+                name="{% if pixel.username %}{{pixel.username}}{% endif %} 
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}""/>
             {% endif %}
           {% endfor %}
           {% if env.isLocal %}
@@ -96,11 +140,11 @@
         <div class="nes-container is-dark">
           <p>
             If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in
-            <a href="https://www.twilio.com/quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
+            <a href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
             for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
           </p>
           <p class="text-center">
-            <a class="nes-btn is-primary">Download TwilioQuest</a>
+            <a class="nes-btn is-primary" href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer">Download TwilioQuest</a>
           </p>
         </div>
         <p>
@@ -124,7 +168,7 @@
         </p>
         <p>
           We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game
-          <a class="external-link" href="https://www.twilio.com/quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
+          <a class="external-link" href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
           that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
         </p>
         <p class="text-center">
@@ -154,10 +198,22 @@
         <a class="external-link" href="https://www.twilio.com/labs?utm_source=hacktoberfest19&utm_campaign=hacktoberfest19" target="_blank" rel="noreferrer" aria-label="Check Twilio's Featured Projects for Contribution">
           <img src="/assets/twilioBug.svg" alt="pixelated Twilio logo" class="twilio-pixel"/>
         </a>
+        <a class="external-link" href="https://www.facebook.com/TeamTwilio/" target="_blank" rel="noreferrer" aria-label="Check twilio facebook account">
+          <i class="nes-icon facebook" aria-hidden="true"></i>
+        </a>
+        <a class="external-link" href="https://twitter.com/twilio" target="_blank" rel="noreferrer" aria-label="Check twilio twitter account">
+          <i class="nes-icon twitter" aria-hidden="true"></i>
+        </a>
+        <a class="external-link" href="https://www.linkedin.com/company/twilio-inc-" target="_blank" rel="noreferrer" aria-label="Check twilio LinkedIn account">
+          <i class="nes-icon linkedin" aria-hidden="true"></i>
+        </a>
       </p>
       <p>Created by
         <a href="https://www.twilio.com/" class="twilio-link external-link" target="_blank" rel="noreferrer" >Twilio</a>
         with and for the community.</a>
       <p></footer>
+
+    <script src="/assets/javascript/party-mode.js"></script>
+
     </body>
   </html>

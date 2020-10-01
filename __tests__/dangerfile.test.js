@@ -19,13 +19,123 @@ const {
   handleMultipleFileChanges,
   handleSuccessfulSubmission,
   hasOnlyPixelChanges,
-  isValidNewPixelSubmission,
-  isValidPixelUpdate
+  isValidNewPixelSubmission
 } = require('../dangerfile');
 
 describe('allPatchesAreForTheSamePixel', () => {
-  test('placeholder', () => {
-    expect(true).toBeTruthy();
+  test('fails with multiple add operations', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'add',
+          path: '/data/0/'
+        },
+        {
+          op: 'add',
+          path: '/data/1/'
+        }
+      ]
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('fails if remove operation on claimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('fails if replace operation on claimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
+  });
+
+  test('succeeds if remove operation on unclaimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: '<UNCLAIMED>'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(true);
+  });
+
+  test('succeeds if replace operation on unclaimed pixel', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'remove',
+          path: '/data/0/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: '<UNCLAIMED>'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(true);
+  });
+
+  test('fails if multiple pixels affected by diffs', () => {
+    const jsonPatch = {
+      diff: [
+        {
+          op: 'replace',
+          path: '/data/0/'
+        },
+        {
+          op: 'add',
+          path: '/data/1/'
+        }
+      ],
+      before: {
+        data: [
+          {
+            username: 'not_unclaimed'
+          }
+        ]
+      }
+    };
+    expect(allPatchesAreForTheSamePixel(jsonPatch)).toBe(false);
   });
 });
 
@@ -205,11 +315,5 @@ describe('isValidNewPixelSubmission', () => {
       x: 0
     };
     expect(isValidNewPixelSubmission(pixel, 'dkundel')).toBe(true);
-  });
-});
-
-describe('isValidPixelUpdate', () => {
-  test('placeholder', () => {
-    expect(true).toBeTruthy();
   });
 });

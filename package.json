@@ -4,12 +4,17 @@
   "private": true,
   "description": "A project to teach people how to do their first pull request",
   "scripts": {
+    "configure:merge-driver": "node scripts/configureMergeDriver.js",
+    "sync-fork": "node scripts/sync.js",
+    "format:sort-pixels": "node scripts/sortPixels.js",
+    "sort:open-pixels": "node scripts/sortPixels.js",
+    "lint-staged": "lint-staged",
     "start": "eleventy --serve",
     "build": "eleventy",
-    "format:json": "node tasks/sortPixels.js",
     "prettier": "prettier --write \"**/*.js\"",
-    "pretest": "run-s format:json prettier",
-    "test": "jest"
+    "test": "jest",
+    "test:pixeldata": "jest data.test.js",
+    "postinstall": "npm run configure:merge-driver"
   },
   "repository": {
     "type": "git",
@@ -23,17 +28,39 @@
   },
   "homepage": "https://github.com/twilio-labs/open-pixel-art#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^0.11.0",
     "@types/jest": "^24.0.18",
     "common-tags": "^1.8.0",
-    "danger": "^9.2.0",
+    "danger": "^10.0.0",
     "dot-prop": "^5.1.0",
-    "jest": "^24.9.0",
+    "execa": "^2.1.0",
+    "husky": "^3.0.8",
+    "jest": "^26.0.1",
     "json-stringify-pretty-compact": "^2.0.0",
+    "lint-staged": "^9.4.1",
+    "mock-fs": "^4.10.1",
     "npm-run-all": "^4.1.5",
+    "ora": "^4.0.2",
     "prettier": "^1.18.2"
   },
   "dependencies": {
-    "nes.css": "^2.2.0"
+    "nes.css": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "git add",
+      "jest --findRelatedTests"
+    ],
+    "_data/pixels.json": [
+      "node scripts/sortPixels.js",
+      "git add",
+      "npm run test:pixeldata"
+    ]
   }
 }
