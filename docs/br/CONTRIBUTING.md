@@ -29,6 +29,12 @@ Aproveite sua busca!
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
 
+Se você configurou este dispositivo com SSH, pode fazer o seguinte:
+
+```bash
+git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
+```
+
 3. Instale as dependências para desenvolvimento local
 
 ```bash
@@ -43,6 +49,31 @@ npm start
 ```
 
 5. Abra seu navegador em http://localhost:8080. Você deve ver o mesmo conteúdo que em https://open-pixel-art.com apenas com uma grade na tela que ajuda a posicionar melhor seu pixel.
+
+Também existe uma opção para configurar o projeto via Docker. Para começar o projeto usando o Docker, siga as etapas a seguir.
+
+1. Construir a imagem Docker
+
+```bash
+ docker build -t open-pixel-art .
+```
+
+2. Inicie a imagem Docker
+
+```bash
+docker run -d -p 8080:8080 -it open-pixel-art
+```
+
+Se a imagem do docker falhar na construção, há provavelmente um erro no seu código e os testes não serão aprovados. Se tudo estiver correto, você pode conectar-se facilmente visitando a seguinte url http://localhost:8080. Você deve ver o mesmo conteúdo que em https://open-pixel-art.com, apenas com uma grade na tela que ajuda a posicionar melhor o seu pixel.
+
+Você também pode verificar se ele está rodando executando `docker ps --all`. Você verá uma imagem chamada `open-pixel-art` e onde você também pode acessá-la.
+
+Exemplo:
+
+```bash
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                     NAMES
+c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes                   0.0.0.0:8080->8080/tcp    sleepy_lamarr
+```
 
 ## Contribuindo com um pixel
 
