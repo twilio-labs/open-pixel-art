@@ -13,8 +13,7 @@
     "build": "eleventy",
     "prettier": "prettier --write \"**/*.js\"",
     "test": "jest",
-    "test:pixeldata": "jest data.test.js",
-    "postinstall": "npm run configure:merge-driver"
+    "test:pixeldata": "jest data.test.js"
   },
   "repository": {
     "type": "git",
