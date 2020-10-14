@@ -1,7 +1,10 @@
 {
   "data": [
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
+    {"y": 0, "x": 2, "color": "#50325B", "username": "jesuslerma"},
+    {"y": 0, "x": 3, "color": "#FFFF00", "username": "Beowulfdgo"},
     {"y": 0, "x": 34, "color": "#ff2052", "username": "TheHandsomeCoder"},
+    {"y": 0, "x": 57, "color": "#2cdf63", "username": "lnetza"},
     {"y": 0, "x": 58, "color": "#111111", "username": "dennisurtubia"},
     {"y": 0, "x": 59, "color": "#9429ff", "username": "pedrogfx"},
     {"y": 1, "x": 1, "color": "#990099", "username": "rafael-rosseto"},
@@ -53,9 +56,11 @@
     {"y": 14, "x": 25, "color": "#00e600", "username": "jayant0jha"},
     {"y": 15, "x": 39, "color": "#808080", "username": "kingpinzs"},
     {"y": 21, "x": 8, "color": "#3100E8", "username": "xaviac"},
+    {"y": 18, "x": 18, "color": "#564D80", "username": "aaroncgoidel"},
     {"y": 21, "x": 21, "color": "#dbfc03", "username": "bgraw3"},
     {"y": 23, "x": 23, "color": "#663399", "username": "BtM909"},
     {"y": 25, "x": 25, "color": "#252525", "username": "markolo25"},
+    {"y": 26, "x": 26, "color": "#a5e3e2", "username": "dactionx"},
     {"y": 27, "x": 27, "color": "#a30202", "username": "deadbeatlopes"},
     {"y": 28, "x": 28, "color": "#B48EAD", "username": "yenly"},
     {"y": 28, "x": 59, "color": "#00997A", "username": "DevTony101"},
