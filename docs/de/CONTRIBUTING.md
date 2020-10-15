@@ -84,7 +84,7 @@ Ein neues Pixel muss ein Objekt mit den folgenden vier Eigenschaften sein:
 - `color`: Die Farbe, die dein Pixel als Hex-Code haben sollte (z. B. # ff0000 für Rot)
 - `username`: Der GitHub-Benutzername, mit dem du den Pull-Request erstellst.
 
-Die Zeile für dein Pixel sollte zuerst nach der y-Koordinate und dann nach der x-Koordinate sortiert werden. Wenn du dir bei deinen Änderungen unsicher bist, nehme deine Änderungen vor und führe anschließend `npm run format: json` aus. Dies sollte dein Pixel an der entsprechenden Position einsortieren.
+Die Zeile für dein Pixel sollte zuerst nach der y-Koordinate und dann nach der x-Koordinate sortiert werden. Wenn du dir bei deinen Änderungen unsicher bist, nehme deine Änderungen vor und führe anschließend `npm run format:sort-pixels` aus. Dies sollte dein Pixel an der entsprechenden Position einsortieren.
 
 Die Änderung sollte folgendermaßen aussehen:
 
