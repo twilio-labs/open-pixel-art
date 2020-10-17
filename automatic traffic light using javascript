@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<img id="Change Lights" src="red.gif" width="36" height="98"> 
+
+ <br><button onclick="nxt()" id="button">Change colour</button></br>
+
+ <script>
+
+var img = new Array("red.gif","redamber.gif","green.gif","yellow.gif");
+
+
+
+var imgElement = document.getElementById("Change Lights");
+var lights = 0;
+var imgLen = img.length;
+
+             function nxt()
+        {
+            if(lights < imgLen-1)
+                {
+                    lights++;
+                }
+            else{
+                    lights=0;                
+                }
+
+                imgElement.src = img[lights];                    
+        }
+
+
+
+</script>
+</body>
+</html>
