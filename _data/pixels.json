@@ -146,6 +146,8 @@
     {"y": 59, "x": 52, "color": "#fc03be", "username": "DimmyJing"},
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
     {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
+    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"},
+    { "y": 1, "x": 2, "color": "#FFFF00", "username": "jepher" }
+
   ]
 }
