@@ -8,7 +8,9 @@ Nos dois cenários, a configuração é a mesma, no entanto, as etapas de contri
 
 ## Nunca contribuí com código aberto
 
-Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://www.twilio.com/quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
+![decorative banner image for TwilioQuest mission](../twilio-quest-oss-banner.png)
+
+Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://twil.io/hacktoberfest-quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
 
 Aproveite sua busca!
 

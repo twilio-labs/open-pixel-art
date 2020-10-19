@@ -59,8 +59,13 @@
           <button class="nes-btn" onClick="flip()">Flip (f)</button>
           <button class="nes-btn" onClick="vert()">V-Flip (v)</button>
           <button class="nes-btn" onClick="walk()">Walk (w)</button>
+          <button class="nes-btn" onClick="gravity()">Gravity (g)</button>
+        </div>
+        <div>
+          <button class="nes-btn" onClick="loop()">Loop (l)</button>
           <button class="nes-btn" onClick="reset()">Reset (Esc)</button>
           <button class="nes-btn" onClick="toggleImages()">Avatars (a)</button>
+          <button class="nes-btn" onClick="runAll()">Run All (p)</button>
         </div>
       <section  id="canvas" class="nes-container with-title" aria-label="You are in the Pixel Art Canvas. Hover over a pixel to hear the github username who contributed it.">
         <div role="heading" aria-level="2" class="screenreader-only">Pixel Art Canvas</div>
@@ -76,6 +81,8 @@
                 height="{{defaults.image.scale}}" 
                 style="fill: {{pixel.color}}" 
                 name="{% if pixel.username %}{{pixel.username}} {% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}"
               /> 
               <image 
                 class="pixel-image pixel hidden"
@@ -85,10 +92,19 @@
                 height="{{defaults.image.scale}}"
                 xlink:href="#" 
                 color="{{pixel.color}}" 
-                name="{% if pixel.username %}{{pixel.username}}{% endif %}" 
+                name="{% if pixel.username %}{{pixel.username}}{% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}" 
               /> 
             {% elif pixel.tileName %}
-              <image xlink:href="assets/tiles/{{pixel.tileName}}.png" width="{{defaults.image.scale * 5}}" height="{{defaults.image.scale * 5}}" x="{{pixel.x * defaults.image.scale}}" y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}" name="{% if pixel.username %}{{pixel.username}}{% endif %}"/>
+              <image xlink:href="assets/tiles/{{pixel.tileName}}.png"
+                width="{{defaults.image.scale * 5}}"
+                height="{{defaults.image.scale * 5}}"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}"
+                name="{% if pixel.username %}{{pixel.username}}{% endif %} 
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}""/>
             {% endif %}
           {% endfor %}
           {% if env.isLocal %}
