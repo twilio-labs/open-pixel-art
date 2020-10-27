@@ -9,7 +9,7 @@ Português do Brasil? Pode encontrar o nosso Codigo de Conduta traduzido em [nes
 ## Nosso compromisso
 
 No interesse de promover um ambiente aberto e acolhedor, nós, como
-colaboradores e mantenedores comprometem-se a participar do nosso projeto e
+colaboradores e mantenedores nos comprometemos a manter no nosso projeto e
 nossa comunidade uma experiência livre de assédio para todos, independentemente 
 da idade, tamanho do corpo, deficiência, etnia, características sexuais, 
 identidade e expressão de gênero, nível de experiência, educação, 
@@ -21,15 +21,15 @@ orientação sexual.
 Exemplos de comportamento que contribuem para criar um ambiente positivo 
 incluem:
 
-- Usando linguagem acolhedora e inclusiva
+- Usar linguagem acolhedora e inclusiva
 - Ser respeitoso com diferentes pontos de vista e experiências
-- Aceitando graciosamente críticas construtivas
-- Focar o que é melhor para a comunidade
+- Aceitar tranquilamente críticas construtivas
+- Focar no que é melhor para a comunidade
 - Mostrar empatia com outros membros da comunidade
 
 Exemplos de comportamento inaceitável pelos participantes incluem:
 
-- O uso de linguagem ou imagem sexualizada e atenção ou avanços sexuais 
+- O uso de linguagem ou imagem sexual e atenção ou avanços sexuais 
 indesejados.
 - Trolagem, comentários ofensivos / depreciativos e ataques pessoais ou 
 políticos
@@ -72,8 +72,8 @@ obrigada a manter a confidencialidade em relação ao relator de um incidente.
 Detalhes adicionais de políticas específicas de imposição podem ser publicados 
 separadamente.
 
-Os mantenedores do projeto que não seguem ou aplicam o Código de Conduta de boa 
-fé podem enfrentar repercussões temporárias ou permanentes, conforme determinado 
+Os mantenedores do projeto que não seguirem ou aplicarem o Código de Conduta de boa 
+fé poderão enfrentar repercussões temporárias ou permanentes, conforme determinado 
 por outros membros da liderança do projeto.
 
 ## Atribuição
