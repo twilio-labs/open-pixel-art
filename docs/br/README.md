@@ -17,31 +17,31 @@ código HEX válido. Por exemplo: `#F22F46` a cor da marca de [Twilio](https://w
 > Se você é novo no código-fonte aberto, no GitHub ou no git em geral, não tenha
 > medo, criamos um tutorial em [TwilioQuest](https://www.twilio.com/quest) para
 > você. Ele ensinará passo a passo sobre como você pode começar e o guiará na sua
-> busca de criar sua solicitação de recebimento.
+> jornada de criar seu Pull Request.
 > 🕹 [Download TwilioQuest](https://www.twilio.com/quest/download)
 
-Todo o projeto é automatizado e é amplamente mantido por um conjunto de bots que
-verificará qualquer contribuição de pixel. No entanto, se você quiser saber mais
+Todo o projeto é automatizado e amplamente mantido por um conjunto de bots que
+verificam qualquer contribuição de pixel. No entanto, se você quiser saber mais
 sobre o projeto ou enviar outras contribuições ao projeto que não sejam um pixel,
 sinta-se à vontade para criar um [problema no GitHub](https://github.com/twilio-labs/open-pixel-art/issues)
 dentro do [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Contribuindo
 
-Para contribuir com um pixel na tela, você deverá criar uma [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
+Para contribuir com um pixel na tela, você deverá criar um [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request)
 para o [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
 
-Se você já conhece o git e como criar uma solicitação pull no GitHub, pode seguir
+Se você já conhece o git e como criar um Pull Request no GitHub, pode seguir
 em frente e conferir o [guia de contribuição](CONTRIBUTING.md).
 
 Entendemos que contribuir com o código aberto pode ser intimidador e, como
 resultado, criamos uma missão em nosso jogo de codificação interativo
 [TwilioQuest](https://www.twilio.com/quest) que o orientará passo a passo na
-criação de um puxe a solicitação para este projeto e ajude você a embarcar em
-sua nova busca no código-fonte aberto!
+criação de um Pull Request para este projeto e te ajudará a embarcar em
+sua nova jornada no código-fonte aberto!
 
 - [Download TwilioQuest](https://www.twilio.com/quest/download)
-- Confira os guias de ontribuição:
+- Confira os guias de contribuição:
   - [Inglês](CONTRIBUTING.md)
   - [Espanhol](docs/es/CONTRIBUTING.md)
   - [Alemão](docs/de/CONTRIBUTING.md)
@@ -58,11 +58,11 @@ Conduta do projeto:
 - [Alemão](docs/de/CODE_OF_CONDUCT.md)
 - [Português do Brasil](docs/br/CODE_OF_CONDUCT.md)
 
-Se você sentir que outra pessoa violou o código de conduta, envie uma reclamação para [open-source@twilio.com](mailto:open-source@twilio.com).
+Se você sentir que alguém violou o código de conduta, envie uma reclamação para [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Contribuidores
 
-Obrigado vai a essas pessoas maravilhosas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Agradecemos a essas pessoas maravilhosas ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
@@ -87,18 +87,18 @@ Obrigado vai a essas pessoas maravilhosas ([emoji key](https://allcontributors.o
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Este projeto segue a especificação [todos os colaboradores](https://github.com/all-contributors/all-contributors).
+Este projeto segue a especificação de [todos os colaboradores](https://github.com/all-contributors/all-contributors).
 Contribuições de qualquer tipo são bem-vindas!
 
 ## Agradecimentos
 
-Este projeto é desenvolvido por vários projetos de código aberto. Entre outros:
+Este projeto é movido por vários projetos de código aberto. Entre eles:
 
 - [Eleventy](https://www.11ty.io/) para a geração de sites estáticos
 - [Danger](https://danger.systems/js/) para a revisão automática de código
-- [Mergify](https://github.com/mergifyio) para mesclagem automatizada de relações públicas
+- [Mergify](https://github.com/mergifyio) para mesclagem automatizada de Pull Requests
 - [All Contributors Bot](https://github.com/all-contributors/all-contributors-bot) para reconhecer as contribuições de todos
-- [Jest](https://jestjs.io/) para testes de unidade
+- [Jest](https://jestjs.io/) para testes unitários
 - [NES.css](https://nostalgic-css.github.io/NES.css/) para o estilo CSS
 - [Welcome Bot](https://github.com/behaviorbot/welcome) para receber novos colaboradores
 
