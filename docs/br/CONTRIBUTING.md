@@ -12,7 +12,7 @@ Nos dois cenários, a configuração é a mesma, no entanto, as etapas de contri
 
 Contribuir para o código aberto pode ser intimidador a princípio. Por esse motivo, criamos uma missão dentro do [TwilioQuest](https://twil.io/hacktoberfest-quest) que o guiará passo a passo na criação de uma contribuição para este projeto. [Depois de baixar o jogo](https://www.twilio.com/quest/download), você poderá selecionar a missão e ela o guiará por todas as etapas, desde a clonagem do projeto até a criação da sua pull request.
 
-Aproveite sua busca!
+Aproveite sua jornada!
 
 ## Requisitos
 
@@ -36,13 +36,41 @@ cd open-pixel-art
 npm install
 ```
 
-4. Iniciar um servidor de desenvolvimento local
+4. Inicie o ambiente de desenvolvimento local
 
 ```bash
 npm start
 ```
 
 5. Abra seu navegador em http://localhost:8080. Você deve ver o mesmo conteúdo que em https://open-pixel-art.com apenas com uma grade na tela que ajuda a posicionar melhor seu pixel.
+
+---
+
+Também existe a opção de configurar o projeto usando Docker. Para começar, siga os seguintes passos.
+
+
+1. Gere a imagem Docker
+
+```bash
+ docker build -t open-pixel-art .
+```
+
+2. Inicie a imagem Docker
+
+```bash
+docker run -d -p 8080:8080 -it open-pixel-art
+```
+
+Se algo der errado na hora de gerar a imagem Docker provavelmente há algo de errado no seu código e os testes irão falhar. Se tudo der certo você poderá visitar http://localhost:8080. Você deve ver o mesmo conteúdo que em https://open-pixel-art.apenas com uma grade na tela que ajuda a posicionar melhor seu pixel.
+
+Você também pode verificar se o projeto está rodando executando o comando `docker ps --all`. Você verá uma imagem Docker chamada `open-pixel-art` e onde você pode acessá-la.
+
+Exemplo:
+
+```bash
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                     NAMES
+c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes                   0.0.0.0:8080->8080/tcp    sleepy_lamarr
+```
 
 ## Contribuindo com um pixel
 
@@ -104,13 +132,13 @@ git add _data/pixels.json
 git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
-Substitua `(x, y)` pelas coordenadas xe y do seu pixel alterado, por exemplo `(4, 27)`.
+Substitua `(x, y)` pelas coordenadas x e y do seu pixel alterado, por exemplo `(4, 27)`.
 Isso criará um commit com a mensagem `feat(pixels): add my new pixel (4, 27)`.
 A mensagem de confirmação está seguindo o [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
-### Envie suas alterações e criando uma pull request
+### Envie suas alterações e criando um Pull Request
 
-**Nota:** Se você estiver com problemas para enviar suas alterações ao GitHub, seu branch local do repositório pode não estar atualizada com o repositório atual devido a adições de outros colaboradores. Antes de enviar suas alterações para o GitHub, talvez seja necessário [sincronizar seu fork com o repositório upstream](https://help.github.com/en/articles/syncing-a-fork).
+**Nota:** Se você estiver com problemas para enviar suas alterações ao GitHub, sua branch local do repositório pode não estar atualizada com o repositório atual devido a adições de outros colaboradores. Antes de enviar suas alterações para o GitHub, talvez seja necessário [sincronizar seu fork com o repositório upstream](https://help.github.com/en/articles/syncing-a-fork).
 
 Envie suas alterações para o GitHub executando:
 
@@ -120,13 +148,29 @@ git push origin add-my-new-pixel
 
 Depois, vá para o GitHub e [siga estas instruções](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) para criar uma pull request do seu fork contra o `master` branch do github.com/twilio-labs/open-pixel-art.
 
+### Problems na hora de criar um Pull Request
+
+Quando muitos usuários estão criando Pull Request no mesmo momento então talvez fique difícil para você manter sua branch atualizada. A maneira mais fácil de contornar esse problema é executar os seguintes comandos que irão atualizar todas as modificações no seu 'fork'.
+
+Certifique-se que você tem as últimas modificações executando:
+
+```bash
+npm install
+```
+
+Agora você pode sincronizar o seu 'fork' com o seguinte comando:
+```bash
+npm run sync-fork
+```
+
+
 ## Contribuindo com outras alterações
 
-É ótimo que você queira contribuir com mais de um pixel para este projeto. Antes de começar a trabalhar no código, verifique se já existe uma [issue no GitHub](https://github.com/twilio-labs/open-pixel-art/issues) para essas alterações. Se não houver, abra um primeiro. Se já houver, crie um comentário para que as pessoas saibam que você está trabalhando em uma correção para isso.
+É legal quando você deseja contribuir com algo além de um pixel para este projeto. Antes de começar a trabalhar no código, verifique se já existe uma [issue no GitHub](https://github.com/twilio-labs/open-pixel-art/issues) para essas alterações. Se não houver, abra um primeiro. Se já houver, crie um comentário para que as pessoas saibam que você está trabalhando em uma correção para isso.
 
 Depois de fazer as alterações no código, siga as etapas descritas acima.
 
-Depois de abrir uma pull request, certifique-se de descomentar a seção de informações adicionais no modelo de pull request, adicione uma descrição e faça referência a quaisquer problemas que estiver solucionando.
+Depois de abrir um Pull Request, certifique-se de descomentar a seção de informações adicionais no modelo de Pull Request, adicione uma descrição e faça referência a quaisquer problemas que estiver solucionando.
 
 ## Estrutura do projeto
 
@@ -157,7 +201,7 @@ open-pixel-art
 
 ### `.eleventy.js` and `.eleventyignore`
 
-O projeto é desenvolvido por [Eleventy](https://11ty.io). Estes são os arquivos de configuração para o projeto
+O projeto é desenvolvido por [Eleventy](https://11ty.io). Estes são os arquivos de configuração para o projeto.
 
 ### `.mergify.yml`
 
@@ -165,7 +209,7 @@ O projeto usa o [Mergify](https://mergify.io) para mesclar automaticamente deter
 
 ### `__tests__`
 
-Este diretório contém todos os testes de unidade [Jest](https://jestjs.io)
+Este diretório contém todos os testes unitários [Jest](https://jestjs.io)
 
 ### `_data`
 
@@ -173,7 +217,7 @@ O diretório `_data` contém o arquivo `pixels.json` que representa cada pixel n
 
 ### `assets`
 
-Um diretório para quaisquer ativos estáticos.
+Um diretório para quaisquer arquivos estáticos.
 
 ### `dangerfile.js`
 
