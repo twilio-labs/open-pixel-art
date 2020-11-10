@@ -12,7 +12,7 @@ RUN npm install
 RUN npm test
 
 # Expose 8080 Port so we can access when we have the Docker instance running
-EXPOSE 8080
+EXPOSE 3000
 
 # Turn on Web Server
 CMD ["npm", "start"]
