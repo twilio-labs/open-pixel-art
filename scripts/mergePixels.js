@@ -44,7 +44,7 @@ We are overriding the changes with the latest changes and wrote the conflicting 
 }
 
 function getNextCoordinate(currentX, currentY, width, height) {
-  let x = currentX + 2;
+  let x = currentX + 1;
   let y = currentY;
 
   if (x >= width) {
