@@ -44,7 +44,7 @@ We are overriding the changes with the latest changes and wrote the conflicting 
 }
 
 function getNextCoordinate(currentX, currentY, width, height) {
-  let x = currentX + 1;
+  let x = currentX + 2;
   let y = currentY;
 
   if (x >= width) {
@@ -118,7 +118,7 @@ async function run(args) {
   } catch (err) {
     if (err.missingPixels) {
       const content = `
-The following pixels were removed from the _data/pixels.json file due to a conflict. 
+The following pixels were removed from the _data/pixels.json file due to a conflict.
 If this was by accident please place them back into the right location and commit again.
 
 ${pixelsToString({ data: err.missingPixels })}
