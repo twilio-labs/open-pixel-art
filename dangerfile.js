@@ -28,7 +28,7 @@ function handleMultipleFileChanges(gitChanges) {
 }
 
 function handleSuccessfulSubmission() {
-  message('fuck you 💖');
+  message('Thank you so much for contributing your pixel! 💖');
 }
 
 function doesJsonMatchSchema(json) {
