@@ -122,6 +122,7 @@
     {"y": 21, "x": 8, "color": "#3100E8", "username": "xaviac"},
     {"y": 21, "x": 21, "color": "#dbfc03", "username": "bgraw3"},
     {"y": 22, "x": 2, "color": "#ff0000", "username": "christianbumann"},
+    {"y": 22, "x": 20, "color": "#508ef8", "username": "dlhlisa"},
     {"y": 22, "x": 22, "color": "#ffffff", "username": "willshiao"},
     {"y": 22, "x": 37, "color": "#6D22CB", "username": "benso1"},
     {"y": 23, "x": 23, "color": "#663399", "username": "BtM909"},
@@ -264,7 +265,6 @@
     {"y": 59, "x": 55, "color": "#ff12c2", "username": "marvmn"},
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
     {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"},
-    {"y": 60, "x": 60, "color": "#508ef8", "username": "dlhlisa"}
+    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
   ]
 }
