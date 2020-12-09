@@ -17,6 +17,7 @@ function handleMultipleFileChanges(gitChanges) {
     ${gitChanges.modified_files.map(name => `- ${name}`).join('\n')}
     ${gitChanges.created_files.map(name => `- ${name}`).join('\n')}
     ${gitChanges.deleted_files.map(name => `- ${name}`).join('\n')}
+    //major changes to the file
 
     If you did this on purpose, please consider breaking your PR into multiple ones.
     This will help us to auto-verify your pixels change and someone will take a
