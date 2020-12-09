@@ -2,10 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const { sortPixels, pixelsToString } = require('../utils/pixels-helper');
-
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
-
 const pixelFilePath = path.join('_data', 'pixels.json');
 
 readFile(pixelFilePath, { encoding: 'utf8' })
