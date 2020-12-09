@@ -21,23 +21,23 @@ orientação sexual.
 Exemplos de comportamento que contribuem para criar um ambiente positivo 
 incluem:
 
-- Usando linguagem acolhedora e inclusiva
-- Ser respeitoso com diferentes pontos de vista e experiências
-- Aceitando graciosamente críticas construtivas
-- Focar o que é melhor para a comunidade
-- Mostrar empatia com outros membros da comunidade
+- Usando linguagem acolhedora e inclusiva.
+- Ser respeitoso com diferentes pontos de vista e experiências.
+- Aceitando graciosamente críticas construtivas.
+- Focar o que é melhor para a comunidade.
+- Mostrar empatia com outros membros da comunidade.
 
 Exemplos de comportamento inaceitável pelos participantes incluem:
 
 - O uso de linguagem ou imagem sexualizada e atenção ou avanços sexuais 
 indesejados.
 - Trolagem, comentários ofensivos / depreciativos e ataques pessoais ou 
-políticos
-- Assédio público ou privado
+políticos.
+- Assédio público ou privado.
 - Publicação de informações privadas de terceiros, como informações físicas ou 
-endereço eletrônicos, sem permissão explícita
+endereço eletrônicos, sem permissão explícita.
 - Outras condutas que possam ser razoavelmente consideradas inadequadas no 
-cenário profissional
+cenário profissional.
 
 ## Nossas Responsabilidades
 

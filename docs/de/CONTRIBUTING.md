@@ -15,9 +15,9 @@ Viel Spaß bei der Quest!
 
 ## Was du brauchst
 
-- Einen GitHub-Account
-- git auf deinem Computer installiert. [Erfahre hier, wie du es installierst](https://help.github.com/de/articles/set-up-git)
-- [Node.js](https://nodejs.org) und ein Paketmanager wie [npm](https://npmjs.com)
+- Einen GitHub-Account.
+- git auf deinem Computer installiert. [Erfahre hier, wie du es installierst](https://help.github.com/de/articles/set-up-git).
+- [Node.js](https://nodejs.org) und ein Paketmanager wie [npm](https://npmjs.com).
 
 ## Lokales Projekt erstellen
 
@@ -155,16 +155,16 @@ Diese Art von Beiträgen sind nicht im Sinne des Hacktoberfestes und werden nich
 
 Beispiele für unerwünschte Beiträge sind unter anderem:
 
-- Hinzufügen von unnötigen Kommas, Bindestrichen oder Ausrufezeichen
-- Sätze umformulieren, die bereits aussagekräftig genug sind
-- Ändern der Schreibweise von amerikanischem Englisch in britisches Englisch
+- Hinzufügen von unnötigen Kommas, Bindestrichen oder Ausrufezeichen.
+- Sätze umformulieren, die bereits aussagekräftig genug sind.
+- Ändern der Schreibweise von amerikanischem Englisch in britisches Englisch.
 
 Willkommene Beiträge zur Dokumentation sind hingegen:
 
-- Hinzufügen von Übersetzungen in neue Sprachen
-- Korrektur defekter Verlinkungen
-- Korrektur von fehlerhaftem Markdown
-- Korrektur von Tippfehlern oder falsch geschriebener Wörter
+- Hinzufügen von Übersetzungen in neue Sprachen.
+- Korrektur defekter Verlinkungen.
+- Korrektur von fehlerhaftem Markdown.
+- Korrektur von Tippfehlern oder falsch geschriebener Wörter.
 
 ## Projekt Struktur
 

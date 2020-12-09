@@ -16,13 +16,13 @@ paso a paso para crear una contribución a este proyecto. Después de [descargar
 
 ## Requisitos
 
-- Una cuenta de GitHub
-- Tener git instalado en tu computador. [Aprende aquí como instalarlo](https://help.github.com/en/articles/set-up-git)
-- [Node.js](https://nodejs.org) y un administrador de paquetes como [npm](https://npmjs.com)
+- Una cuenta de GitHub.
+- Tener git instalado en tu computador. [Aprende aquí como instalarlo](https://help.github.com/en/articles/set-up-git).
+- [Node.js](https://nodejs.org) y un administrador de paquetes como [npm](https://npmjs.com).
 
 ## Configurando el proyecto localmente
 
-1. [Crea un fork](https://help.github.com/en/articles/fork-a-repo) de este proyecto
+1. [Crea un fork](https://help.github.com/en/articles/fork-a-repo) de este proyecto.
 2. Clona el proyecto ejecutando en tu terminal:
 
 ```bash

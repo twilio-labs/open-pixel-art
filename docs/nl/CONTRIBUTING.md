@@ -11,12 +11,12 @@ Voor beiden scenario's is de setup hetzelfde, echter wijken de stappen voor het 
 Het bijdragen aan open source kan in het begin intimiderend overkomen. Om die reden hebben we een een nieuwe missie in [TwilioQuest](https://www.twilio.com/quest) aangemaakt welk jou stap voor stap begeleid richting het aanmaken van een bijdrage voor dit project. Wanneer je de [game hebt gedownload](https://www.twilio.com/quest/download) kun je deze missie selecteren. Het zal je dan door elke stap helpen, van het klonen van het project tot het aanmaken van je pull request.
 
 ## Vereisten
-- Een GitHub account
-- git geïnstalleerd op je computer. [Leer hoe je dit doet](https://help.github.com/en/articles/set-up-git) (Engels)
-- [Node.js](https://nodejs.org) een een package manager zoals [npm](https://npmjs.com)
+- Een GitHub account.
+- git geïnstalleerd op je computer. [Leer hoe je dit doet](https://help.github.com/en/articles/set-up-git) (Engels).
+- [Node.js](https://nodejs.org) een een package manager zoals [npm](https://npmjs.com).
 
 ## Lokaal project opzetten
-1. [Maak een fork aan](https://help.github.com/en/articles/fork-a-repo) (engels) van dit project
+1. [Maak een fork aan](https://help.github.com/en/articles/fork-a-repo) (engels) van dit project.
 2. Kloon het project:
 
 ```bash
@@ -80,10 +80,10 @@ Zoek voor het aanmaken van een nieuwe pixel een lege ruimte tussen de nummers va
 Wanneer je een open positie hebt gevonden kun je hiervoor een nieuwe pixelregel aanmaken.
 Een nieuwe pixelregel hoort een object te zijn met de volgende vier eigenschappen:
 
-- `x`: De x-coördinaat van jouw pixel. `0` is de meest linker pixelkolom
-- `y`: De y-coördinaat van jouw pixel. `0` is de onderste pixelrij
-- `color`: De kleur van jouw pixel hoort een hex-code te zijn (bijv. #ff0000 voor rood)
-- `username`: De GitHub gebruikersnaam die je gaat gebruiken voor het aanmaken van de pull request
+- `x`: De x-coördinaat van jouw pixel. `0` is de meest linker pixelkolom.
+- `y`: De y-coördinaat van jouw pixel. `0` is de onderste pixelrij.
+- `color`: De kleur van jouw pixel hoort een hex-code te zijn (bijv. #ff0000 voor rood).
+- `username`: De GitHub gebruikersnaam die je gaat gebruiken voor het aanmaken van de pull request.
 
 De rij voor jouw pixel hoort eerst gesorteerd te worden bij de y-coördinaat en daarna de x-coördinaat. Als je niet zeker van je wijzigingen bent kun je `npm run format:sort-pixels` uitvoeren wat jouw pixel in de correcte positie hoort te sorteren.
 

@@ -16,13 +16,13 @@ Aproveite sua busca!
 
 ## Requisitos
 
-- Uma conta do GitHub
-- Git instalado no seu computador. [Aprenda como instalá-lo](https://help.github.com/en/articles/set-up-git)
-- [Node.js](https://nodejs.org) e um gerenciador de pacotes como [npm](https://npmjs.com)
+- Uma conta do GitHub.
+- Git instalado no seu computador. [Aprenda como instalá-lo](https://help.github.com/en/articles/set-up-git).
+- [Node.js](https://nodejs.org) e um gerenciador de pacotes como [npm](https://npmjs.com).
 
 ## Configurar projeto local
 
-1. [Crie um fork](https://help.github.com/en/articles/fork-a-repo) do projeto
+1. [Crie um fork](https://help.github.com/en/articles/fork-a-repo) do projeto.
 2. Clone o projeto:
 
 ```bash

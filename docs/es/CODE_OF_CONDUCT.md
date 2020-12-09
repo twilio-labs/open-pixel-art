@@ -8,19 +8,19 @@ Con la intención de fomentar un ambiente abierto y acogedor, los mantenedores y
 
 Ejemplos de comportamiento que contribuyen a crear un ambiente más acogedor incluyen:
 
-- Usar lenguaje inclusivo y amigable
-- Respetar diferentes puntos de vista y experiencias
-- Aceptar de manera positiva críticas constructivas
-- Enfocarse en el bien de la comunidad
-- Demostrar empatía hacia otros miembros de la comunidad
+- Usar lenguaje inclusivo y amigable.
+- Respetar diferentes puntos de vista y experiencias.
+- Aceptar de manera positiva críticas constructivas.
+- Enfocarse en el bien de la comunidad.
+- Demostrar empatía hacia otros miembros de la comunidad.
 
 Algunos ejemplos de comportamientos inaceptables de los participantes incluyen:
 
-- Uso de lenguaje, imágenes, acoso y/o acercamientos no solicitados de índole sexual
-- Burlas, insultos y/o comentarios despectivos, así como ataques personales o políticos
-- Acoso público o privado
-- Divulgación de información privada de otros, como direcciones físicas y/o electrónicas, sin su permiso explícito
-- Otras conductas que puedan ser consideradas inapropiadas en un ambiente profesional
+- Uso de lenguaje, imágenes, acoso y/o acercamientos no solicitados de índole sexual.
+- Burlas, insultos y/o comentarios despectivos, así como ataques personales o políticos.
+- Acoso público o privado.
+- Divulgación de información privada de otros, como direcciones físicas y/o electrónicas, sin su permiso explícito.
+- Otras conductas que puedan ser consideradas inapropiadas en un ambiente profesional.
 
 ## Nuestras Responsabilidades
 
