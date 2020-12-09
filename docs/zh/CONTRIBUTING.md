@@ -88,8 +88,8 @@ c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago
 
 - `x`: 像素点的 x 坐标。`0` 代表最左列。
 - `y`: 像素点的 y 坐标。`0` 代表最底行。
-- `color`: 像素点的颜色，应是 hex code (例如 #ff0000 就会是红色).
-- `username`: 你将用来提交代码的 Github 账号用户名.
+- `color`: 像素点的颜色，应是 hex code (例如 #ff0000 就会是红色)
+- `username`: 你将用来提交代码的 Github 账号用户名
 
 你所增加的那一行数据应该以“先 y 坐标，后 x 坐标”进行排序。如果不确定，可以通过指令`npm run format:sort-pixels`来进行自动排序。
 
