@@ -1,5 +1,7 @@
 {
   "data": [
+    { "y": 1, "x": 2, "color": "#FFFF00", "username": "farzanfa" },
+    { "y": 1, "x": 3, "color": "#F22F46", "username": "<UNCLAIMED>" },
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
     {"y": 0, "x": 1, "color": "#0d6d6e", "username": "ViniciusPolachini"},
     {"y": 0, "x": 2, "color": "#50325B", "username": "jesuslerma"},
@@ -273,6 +275,5 @@
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
     {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
     {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
-    { "y": 1, "x": 3, "color": "#F22F46", "username": "farzanfa" },
   ]
 }
