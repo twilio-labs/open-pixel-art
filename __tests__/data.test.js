@@ -1,9 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const { promisify } = require('util');
-
 const readFile = promisify(fs.readFile);
-
 async function loadJson(dataJsonFile) {
   const filePath = path.resolve(__dirname, '../_data/', dataJsonFile);
   const pixelJsonString = await readFile(filePath, 'utf8');
@@ -24,7 +22,6 @@ describe('pixels', () => {
       usernameSet.add(pixel.username);
     }
   });
-
   test('every pixel should be in the limits of the image', async () => {
     const pixels = await loadJson('pixels.json');
     const defaults = await loadJson('defaults.json');
@@ -59,7 +56,6 @@ describe('pixels', () => {
       }
     }
   });
-
   test("claimed name doesn't have brackets", async () => {
     const pixels = await loadJson('pixels.json');
     for (const pixel of pixels.data) {
