@@ -7,7 +7,6 @@ const images = Array.from(
 );
 
 let imagesInitialized = false;
-
 // add additional 'x-start' and 'y-start' and original index attributes
 rects.forEach((rect, i) => {
   rect.setAttribute('x-start', rect.getAttribute('x'));
