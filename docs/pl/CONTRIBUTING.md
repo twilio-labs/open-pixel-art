@@ -1,44 +1,44 @@
-# Contributing to Open Pixel Art
+# Współtworzenie Open Pixel Art
 
 ¿Español? Puedes encontrar nuestra guía de contribuciones traducida en [este enlace](docs/es/CONTRIBUTING.md).
 
-There are two ways you can contribute to this project. You can either contribute a single pixel to the canvas or you can contribute to the underlying project. For example by adding tests, updating the HTML template or updating documentation.
+Istnieją dwa sposoby, aby przyczynić się do tego projektu. Możesz wnieść jeden piksel do kanwy lub możesz wnieść wkład do bazowego projektu. Na przykład poprzez dodanie testów, aktualizację szablonu HTML lub aktualizację dokumentacji.
 
-For both scenarios the setup is the same, however, the contribution steps differ slightly.
+W obu scenariuszach konfiguracja jest taka sama, jednak kroki wkładu różnią się nieznacznie.
 
-## I've Never Contributed to Open Source
+## Nigdy nie współtworzyłem Open Source
 
 ![decorative banner image for TwilioQuest mission](./docs/twilio-quest-oss-banner.png)
 
-Contributing to open source can be intimidating at first. For that reason we created a
-new mission inside [TwilioQuest](https://www.twilio.com/quest) that will guide you
-step-by-step through creating a contribution for this project. Once you [downloaded the game](https://www.twilio.com/quest/download) you'll be able to select the mission and
-it will walk you through every step from cloning the project to creating your pull request.
+Wkład w rozwój oprogramowania open source może na początku onieśmielać. Z tego powodu stworzyliśmy
+nową misję wewnątrz [TwilioQuest](https://www.twilio.com/quest) która cię poprowadzi
+krok po kroku przez tworzenie wkładu do tego projektu. Gdy już [pobrałeś grę](https://www.twilio.com/quest/download) będziesz mógł wybrać misję i
+przeprowadzi ciebie ona przez każdy krok, od sklonowania projektu do utworzenia pull requesta.
 
-Enjoy your quest!
+Miłej zabawy z questem!
 
-## Requirements
+## Wymagania
 
-- A GitHub account
-- git installed on your computer. [Learn how to install it](https://help.github.com/en/articles/set-up-git)
-- [Node.js](https://nodejs.org) and a package manager like [npm](https://npmjs.com)
+- Konto na GitHub
+- zainstalowany git na twoim komputerze. [Dowiedz się, jak go zainstalować](https://help.github.com/en/articles/set-up-git)
+- [Node.js](https://nodejs.org) oraz menedżer pakietów taki jak [npm](https://npmjs.com)
 
-## Setup Local Project
+## Skonfiguruj projekt lokalny
 
-1. [Create a fork](https://help.github.com/en/articles/fork-a-repo) of this project
-2. Clone the project:
+1. [Stwórz fork](https://help.github.com/en/articles/fork-a-repo) tego projektu
+2. Zrób clone tego projektu:
 
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
 
-If you've set up this device with SSH, you can do this instead:
+Jeśli skonfigurowałeś to urządzenie z SSH, możesz zamiast tego zrobić to:
 
 ```bash
 git clone git@github.com:<YOUR_GITHUB_USERNAME>/open-pixel-art.git
 ```
 
-3. Install the dependencies for local development
+3. Zainstaluj zależności dla lokalnego dewelopmentu
 
 ```bash
 cd open-pixel-art
