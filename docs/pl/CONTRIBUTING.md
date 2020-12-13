@@ -45,59 +45,59 @@ cd open-pixel-art
 npm install
 ```
 
-4. Start a local development server
+4. Uruchom lokalny serwer programistyczny
 
 ```bash
 npm start
 ```
 
-5. Open your browser at http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+5. Otwórz przeglądarkę pod adresem http://localhost:8080. Powinieneś zobaczyć tę samą treść, co na https://open-pixel-art.com tylko z siatką na canvas, która pomaga lepiej umieścić piksel.
 
 ---
 
-There is also an option for setting up the project via Docker. To get started with the project by using Docker follow the following steps.
+Istnieje również opcja konfiguracji projektu przez Docker. Aby rozpocząć pracę z projektem przy użyciu platformy Docker, wykonaj następujące kroki.
 
-1. Build the Docker image
+1. Zbuduj obraz platformy Docker
 
 ```bash
  docker build -t open-pixel-art .
 ```
 
-2. Start the Docker image
+2. Uruchom obraz platformy Docker
 
 ```bash
 docker run -d -p 8080:8080 -it open-pixel-art
 ```
 
-If the docker image fails to build there's probably an error in your code and the tests fail to pass. If everything is correct you can easily connect by visiting the following url http://localhost:8080. You should see the same content as on https://open-pixel-art.com just with a grid on the canvas that helps you better place your pixel.
+Jeśli budowanie obrazu Dockera nie powiedzie się, prawdopodobnie w kodzie wystąpił błąd i testy zakończą się niepowodzeniem. Jeśli wszystko jest w porządku, możesz łatwo się połączyć, odwiedzając następujący adres URL http://localhost:8080. Powinieneś zobaczyć tę samą treść, co na https://open-pixel-art.com tylko z siatką na canvas, która pomaga lepiej umieścić piksel.
 
-You can also verify if it's running by doing `docker ps --all` You will see an image called `open-pixel-art` and where you can access it as well.
+Możesz również sprawdzić, czy działa, wykonując `docker ps --all` Zobaczysz obraz o nazwie `open-pixel-art` i gdzie możesz również uzyskać do niego dostęp.
 
-Example:
+Przykład:
 
 ```bash
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                         PORTS                     NAMES
 c861ba4389fe        open-pixel-art      "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes                   0.0.0.0:8080->8080/tcp    sleepy_lamarr
 ```
 
-## Contributing a Pixel
+## Współtworzenie Pixel
 
-If you want to contribute a pixel, you have to open the [`_data/pixels.json`](_data/pixels.json) file. It contains every pixel placed on the canvas.
+Jeśli chcesz wnieść piksel, musisz otworzyć plik [`_data/pixels.json`](_data/pixels.json). Zawiera każdy piksel umieszczony na canvas.
 
-### Create a new pixel
+### Utwórz nowy piksel
 
-To create a new pixel, search for a gap between the numbers for either the `x` or `y` coordinates in the `data` array inside the `pixels.json`.
-Once you have found an open position, go ahead and add a new pixel row.
-A new pixel has to be an object with the following four properties:
+Aby utworzyć nowy piksel, poszukaj przerwy między liczbami współrzędnych `x` lub `y` w tablicy `data` w środku `pixels.json`.
+Po znalezieniu otwartej pozycji dodaj nowy wiersz pikseli.
+Nowy piksel musi być obiektem o następujących czterech właściwościach:
 
-- `x`: The x-coordinate of your pixel. `0` is the left-most column of pixels
-- `y`: The y-coordinate of your pixel. `0` is the bottom-most row of pixels
-- `color`: The color your pixel should have as a hex code (e.g. #ff0000 for red)
-- `username`: The GitHub username you'll use to create the pull request
+- `x`: Współrzędna x twojego piksela. `0` to skrajna lewa kolumna pikseli
+- `y`: Współrzędna y twojego piksela. `0` to najniższy rząd pikseli
+- `color`: Kolor, który twój piksel powinien mieć jako kod szesnastkowy (np. #ff0000 dla czerwonego)
+- `username`: Nazwa użytkownika GitHub, której użyjesz do utworzenia pull requestu
 
-The row for your pixel should be sorted by the y-coordinate first and then by the x-coordinate. If you are unsure about your changes, make the change and run `npm run format:sort-pixels` and it should sort your pixel into the appropriate position.
+Wiersz dla twojego piksela powinien być posortowany najpierw według współrzędnej y, a następnie według współrzędnej x. Jeśli nie jesteś pewien swoich zmian, wprowadź je i uruchom `npm run format:sort-pixels` i powinien posortować piksel w odpowiedniej pozycji.
 
-The change should look like this:
+Zmiana powinna wyglądać następująco:
 
 ```diff
 {
@@ -110,87 +110,87 @@ The change should look like this:
 }
 ```
 
-### Verifying your changes
+### Weryfikacja zmian
 
-Once you did your change, go over to http://localhost:8080 and you should see your new pixel. If you are not happy with the placement, keep changing the `x` and `y` values and if you are not happy with the `color` you can keep changing the `color` property.
+Po dokonaniu zmiany przejdź do http://localhost:8080 i powinieneś zobaczyć swój nowy piksel. Jeśli nie jesteś zadowolony z miejsca docelowego, zmieniaj wartości `x` i `y` a jeśli nie jesteś zadowolony z `color` możesz zmieniać właściwość `color`.
 
-Afterwards make sure that all tests are still passing by running in a different terminal:
+Następnie upewnij się, że wszystkie testy nadal kończą się pomyślnie, uruchamiając na innym terminalu:
 
 ```bash
 npm test
 ```
 
-### Branching and Committing
+### Tworzenia brancha i commitowanie
 
-Once you are happy with the changes, create a [branch](https://help.github.com/en/articles/about-branches) so we can commit the changes.
+Gdy jesteś zadowolony ze zmian, utwórz [branch](https://help.github.com/en/articles/about-branches) abyśmy mogli zatwierdzić zmiany.
 
 ```bash
 git checkout -b add-my-new-pixel
 ```
 
-Afterwards you'll have to pick your change and commit it by running:
+Następnie musisz wybrać swoją zmianę i zrobić commit, uruchamiając:
 
 ```bash
 git add _data/pixels.json
 git commit -m "feat(pixels): add my new pixel (x, y)"
 ```
 
-Replace `(x, y)` with the x-coordinate and y-coordinate of your changed pixel, e.g. `(4, 27)`.
-This will create a new commit with the message `feat(pixels): add my new pixel (4, 27)`.
-The commit message is following the [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
+Zamień `(x, y)` ze współrzędną x i współrzędną y zmienionego piksela, np. `(4, 27)`.
+Spowoduje to utworzenie nowego commita z wiadomością `feat(pixels): add my new pixel (4, 27)`.
+Komunikat dotyczący commita jest zgodny z [Conventional Commits Standard](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
-### Push Your Changes and Creating a Pull Request
+### Wypchnij (push) swoje zmiany i utworzenie pull request
 
-**Note:** If you're having trouble pushing your changes to GitHub, your local branch of the repository may not be up-to-date with the current repository because of additions from other contributors. Before you push your changes to GitHub, you might need to [sync your fork with the upstream repository](https://help.github.com/en/articles/syncing-a-fork). Try run `npm run sync-fork` to sync your fork automatically.
+**Uwaga:** Jeśli masz problemy z przesłaniem zmian do GitHub, twój lokalny branch repozytorium może nie być aktualny z aktualnym repozytorium z powodu dodatków od innych współtwórców. Przed wysłaniem zmian do GitHub może być konieczne [zsynchronizowanie forka z repozytorium nadrzędnym](https://help.github.com/en/articles/syncing-a-fork). Spróbuj uruchomić `npm run sync-fork` aby automatycznie synchronizować fork.
 
-Push your changes to GitHub by running:
+Wypchnij zmiany do GitHub, uruchamiając:
 
 ```bash
 git push origin add-my-new-pixel
 ```
 
-Afterwards head to GitHub and [follow these instructions](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) to create a pull request from your fork against the `master` branch of github.com/twilio-labs/open-pixel-art.
+Następnie przejdź do GitHub i [postępuj zgodnie z tymi instrukcjami](https://help.github.com/en/articles/creating-a-pull-request-from-a-fork) aby utworzyć pull request z forka na branch `master` z github.com/twilio-labs/open-pixel-art.
 
-### Problems When Creating a Pull Request
+### Problemy podczas tworzenia pull requesta
 
-When many users are creating pull requests at the same time then it might be hard to get your branch up to date. The easiest way to overcome this problem is to run the following commands which brings all the required changes to your forked repo.
+Gdy wielu użytkowników jednocześnie tworzy pull requesty, aktualizacja brancha może być trudna. Najłatwiejszym sposobem na rozwiązanie tego problemu jest uruchomienie następujących poleceń, które wprowadzają wszystkie wymagane zmiany do rozwidlonego (forked) repozytorium.
 
-Make sure you have the latest changes by running this command
+Upewnij się, że masz najnowsze zmiany, uruchamiając to polecenie
 
 ```bash
 npm install
 ```
-Now you can just sync it with the fork by running this command
+Teraz możesz po prostu zsynchronizować go z forkiem, uruchamiając to polecenie
 ```bash
 npm run sync-fork
 ```
 
-## Contributing other Changes
+## Przyczynianie się do innych zmian
 
-It's great that you want to contribute more than a pixel to this project. Before you start working on the code, make sure to check if there is already a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) for those changes. If there isn't, please open one first. If there is already one, make sure to create a comment to let people know that you are working on a fix for this.
+To wspaniale, że chcesz wnieść do tego projektu więcej niż jeden piksel. Zanim zaczniesz pracować nad kodem, sprawdź, czy istnieje już [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) dla tych zmian. Jeśli nie ma, otwórz najpierw jeden. Jeśli już istnieje, pamiętaj o utworzeniu komentarza, aby ludzie wiedzieli, że pracujesz nad rozwiązaniem tego issue.
 
-After making the code changes, please follow the steps outlined above.
+Po wprowadzeniu zmian w kodzie wykonaj czynności opisane powyżej.
 
-Once you open a pull request, make sure to uncomment the additional info section in the pull request template and add a description as well as reference any issues this is addressing.
+Po otwarciu pull requesta należy odkomentować sekcję dodatkowych informacji w szablonie pull requesta i dodać opis, a także odwołać się do wszelkich issues, których dotyczy.
 
-### Documentation Contribution Guidelines
+### Wytyczne dotyczące współtworzenia dokumentacji
 
-Please do not open pull requests for inconsequential grammatical changes in the README or other documentation. These types of contributions aren't in the spirit of Hacktoberfest and won't be accepted.
+Proszę nie otwierać pull requesta dla nieistotnych zmian gramatycznych w pliku README lub innej dokumentacji. Tego typu wkłady nie są zgodne z duchem Hacktoberfest i nie będą akceptowane.
 
-Examples of unwanted contributions include but are not limited to:
+Przykłady niechcianych wkładów obejmują między innymi:
 
-- adding unnecessary commas, hyphens, or exclamation points
-- rewording sentences that are already clear enough
-- changing spelling from American English to British English
+- dodawanie niepotrzebnych przecinków, myślników lub wykrzykników
+- przeformułowanie zdań, które są już wystarczająco jasne
+- zmiana pisowni z amerykańskiego angielskiego na brytyjski angielski
 
-These kinds of documentation contributions are welcome and appreciated:
+Te rodzaje dokumentacji są mile widziane i doceniane:
 
-- adding translations into new languages
-- Fixing broken links
-- Fixing broken markdown formatting
-- Fixing typos or misspelled words
+- dodawanie tłumaczeń na nowe języki
+- Naprawianie uszkodzonych linków
+- Naprawianie zepsutego formatowania markdown
+- Poprawianie literówek lub błędnie napisanych słów
 
-## Project Structure
+## Struktura projektu
 
 ```
 open-pixel-art
@@ -217,42 +217,42 @@ open-pixel-art
 └── styles
 ```
 
-### `.eleventy.js` and `.eleventyignore`
+### `.eleventy.js` oraz `.eleventyignore`
 
-The project is powered by [Eleventy](https://11ty.io). These are the configuration files for the project
+Projekt jest obsługiwany przez [Eleventy](https://11ty.io). To są pliki konfiguracyjne projektu
 
 ### `.mergify.yml`
 
-The project uses [Mergify](https://mergify.io) to auto-merge certain PRs based on some conditions.
+Projekt używa [Mergify](https://mergify.io) aby automatycznie zmergować niektóre PR na podstawie pewnych warunków.
 
 ### `__tests__`
 
-This directory contains all [Jest](https://jestjs.io)-powered unit tests
+Ten katalog zawiera wszystkie pliki pod testy jednostkowe [Jest](https://jestjs.io).
 
 ### `_data`
 
-The `_data` directory contains the `pixels.json` file that represents every single pixel on the canvas, a `defaults.json` file that contains any default values like the size of the canvas, and the `env.js` file for any environment related values. All data will be automatically available in the `index.njk` file.
+Katalog `_data` zawiera plik `pixels.json` który reprezentuje każdy pojedynczy piksel w canvas, plik `defaults.json` który zawiera wartości domyślne, takie jak rozmiar canvas, oraz plik `env.js` dla wszelkich wartości związanych ze środowiskiem. Wszystkie dane będą automatycznie dostępne w pliku `index.njk`.
 
 ### `assets`
 
-A directory for any static assets.
+Katalog dla wszystkich statycznych assetów.
 
 ### `dangerfile.js`
 
-We use [Danger](https://danger.systems/js) to perform some code review checks. This file contains the logic for that.
+Używamy [Danger](https://danger.systems/js) do wykonania pewnych kontroli przeglądu kodu. Ten plik zawiera logikę do tego.
 
 ### `index.njk`
 
-This is the template file that is used to generate the HTML of the website.
+To jest plik szablonu używany do generowania kodu HTML witryny.
 
 ### `styles`
 
-This directory contains any custom CSS written. The styles for [`index.njk`](index.njk) are in [`styles/main.css`](styles/main.css)
+Ten katalog zawiera wszelkie napisane niestandardowe pliki CSS. Style dla [`index.njk`](index.njk) są w [`styles/main.css`](styles/main.css)
 
-## Code of Conduct
+## Kodeks postępowania
 
-We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's [Code of Conduct](CODE_OF_CONDUCT.md). If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
+Chcemy mieć pewność, że ten projekt jest jak najbardziej przyjazny dla ludzi. Poprzez interakcję z projektem w jakimkolwiek kształcie lub formie zgadzasz się na [Kodeks Postępowania](CODE_OF_CONDUCT.md). Jeśli uważasz, że inna osoba naruszyła kodeks postępowania, zgłoś skargę na [open-source@twilio.com](mailto:open-source@twilio.com).
 
-## Licensing
+## Licencjonowanie
 
-All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
+Wszyscy współtwórcy zewnętrzni przyjmują do wiadomości, że wszelkie wkłady, które przekazują, będą dokonywane na tej samej licencji open source, na której jest udostępniany projekt open source.
