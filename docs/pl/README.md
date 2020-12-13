@@ -30,6 +30,7 @@ Rozumiemy, że udział w tworzeniu oprogramowania typu open source może onieśm
   - [Brazilian Portuguese](docs/br/CONTRIBUTING.md)
   - [Chinese Mandarin](docs/zh/CONTRIBUTING.md)
   - [Dutch](docs/nl/CONTRIBUTING.md)
+  - [Polski](docs/pl/CONTRIBUTING.md)
 
 ## Kodeks postępowania
 
@@ -39,6 +40,7 @@ Chcemy mieć pewność, że ten projekt jest jak najbardziej przyjazny dla ludzi
 - [Español](docs/es/CODE_OF_CONDUCT.md)
 - [Deutsch](docs/de/CODE_OF_CONDUCT.md)
 - [Brazilian Portuguese](docs/br/CODE_OF_CONDUCT.md)
+- [Polski](docs/pl/CODE_OF_CONDUCT.md)
 
 Jeśli uważasz, że inna osoba naruszyła kodeks postępowania, zgłoś skargę na [open-source@twilio.com](mailto:open-source@twilio.com).
 
