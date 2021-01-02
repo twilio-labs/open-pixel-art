@@ -1,4 +1,4 @@
-import stringify from 'json-stringify-pretty-compact';
+const stringify = require('json-stringify-pretty-compact');
 
 function pixelSortFunction(a, b) {
   const xDiff = a.x - b.x;
@@ -41,7 +41,7 @@ function pixelsToString(pixelJson) {
   return stringify(pixelJson, { indent: 2, maxLength: 100 });
 }
 
-export default {
+module.exports = {
   sortPixels,
   pixelSortFunction,
   pixelsToString
