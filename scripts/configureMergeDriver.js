@@ -15,10 +15,12 @@ async function run() {
   spinner.succeed('Configured custom merge driver');
 }
 
-run().catch(err => {
-  if (spinner) {
-    spinner.fail('Failed to configure custom merge driver for pixels.json');
-  }
-  console.error(err.all);
-  process.exit(1);
-});
+run()
+  .then(() => process.exit(0))
+  .catch(err => {
+    if (spinner) {
+      spinner.fail('Failed to configure custom merge driver for pixels.json');
+    }
+    console.error(err.all);
+    process.exit(1);
+  });
