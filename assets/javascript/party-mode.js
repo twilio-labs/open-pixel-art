@@ -52,7 +52,6 @@ let isRunningAll = false;
 let latestCommand = null;
 let loopingTimeout = null;
 let runningAllTimeout = null;
-const change = 0;
 const width = 60;
 const height = 60;
 const pixelSize = 10;
