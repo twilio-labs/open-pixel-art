@@ -68,6 +68,7 @@ typings/
 *.launch
 .settings/
 *.sublime-workspace
+.vscode
 
 # Image Thumbnail cache file
 .DS_Store
