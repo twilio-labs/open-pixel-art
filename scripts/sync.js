@@ -2,6 +2,7 @@ const { command: exec } = require('execa');
 const ora = require('ora');
 const os = require('os');
 
+
 const trim = x => x.trim();
 
 const opts = {
