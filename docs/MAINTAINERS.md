@@ -1,6 +1,6 @@
 # Maintainers
 
-## List of current maintainers
+## List of current maintainer
 
 The following people are the current maintainers. Feel free to reach out to them for any questions.
 
