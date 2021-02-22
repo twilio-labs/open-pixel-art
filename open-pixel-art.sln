@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "open-pixel-art", "open-pixel-art.njsproj", "{FF7AF937-2647-4AB4-A1DC-8412EE43B16B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF7AF937-2647-4AB4-A1DC-8412EE43B16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7AF937-2647-4AB4-A1DC-8412EE43B16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7AF937-2647-4AB4-A1DC-8412EE43B16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7AF937-2647-4AB4-A1DC-8412EE43B16B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19CE6FC9-7807-4334-8F73-53008BBA2328}
+	EndGlobalSection
+EndGlobal

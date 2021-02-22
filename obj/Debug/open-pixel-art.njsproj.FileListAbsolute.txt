@@ -1,0 +1,3 @@
+C:\Users\M0097145\open-pixel-art\obj\Debug\open-pixel-art.njsprojAssemblyReference.cache
+C:\Users\M0097145\open-pixel-art\obj\Debug\open-pixel-art.njsproj.CoreCompileInputs.cache
+C:\Users\M0097145\open-pixel-art\bin\Microsoft.NodejsTools.WebRole.dll

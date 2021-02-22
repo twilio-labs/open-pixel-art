@@ -1,0 +1,133 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>open-pixel-art</Name>
+    <RootNamespace>open-pixel-art</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ff7af937-2647-4ab4-a1dc-8412ee43b16b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets\javascript\name-hover.js" />
+    <Content Include="assets\javascript\party-mode.js" />
+    <Content Include="assets\open-graph-image.png" />
+    <Content Include="assets\open-graph-image.svg" />
+    <Content Include="assets\open-pixel-art-logo.svg" />
+    <Content Include="assets\twilioBug.svg" />
+    <Content Include="CODE_OF_CONDUCT.md" />
+    <Content Include="CONTRIBUTING.md" />
+    <Content Include="dangerfile.js" />
+    <Content Include="Dockerfile" />
+    <Content Include="docs\br\CODE_OF_CONDUCT.md" />
+    <Content Include="docs\br\CONTRIBUTING.md" />
+    <Content Include="docs\br\README.md" />
+    <Content Include="docs\de\CODE_OF_CONDUCT.md" />
+    <Content Include="docs\de\CONTRIBUTING.md" />
+    <Content Include="docs\de\README.md" />
+    <Content Include="docs\es\CODE_OF_CONDUCT.md" />
+    <Content Include="docs\es\CONTRIBUTING.md" />
+    <Content Include="docs\es\README.md" />
+    <Content Include="docs\images\first-time-screenshot.png" />
+    <Content Include="docs\images\github-actions-check.png" />
+    <Content Include="docs\MAINTAINERS.md" />
+    <Content Include="docs\nl\CONTRIBUTING.md" />
+    <Content Include="docs\twilio-quest-oss-banner.png" />
+    <Content Include="docs\zh\CONTRIBUTING.md" />
+    <Content Include="index.njk" />
+    <Content Include="LICENSE" />
+    <Content Include="package-lock.json" />
+    <Content Include="scripts\configureMergeDriver.js" />
+    <Content Include="scripts\mergePixels.js" />
+    <Content Include="scripts\sortPixels.js" />
+    <Content Include="scripts\sync.js" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="styles\main.css" />
+    <Content Include="utils\pixels-helper.js" />
+    <Content Include="_data\defaults.json" />
+    <Content Include="_data\env.js" />
+    <Content Include="_data\pixels.json" />
+    <Content Include="__tests__\dangerfile.test.js" />
+    <Content Include="__tests__\data.test.js" />
+    <Content Include="__tests__\scripts\mergePixels.test.js" />
+    <Content Include="__tests__\utils\pixels-helper.test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\javascript\" />
+    <Folder Include="docs\" />
+    <Folder Include="docs\br\" />
+    <Folder Include="docs\de\" />
+    <Folder Include="docs\es\" />
+    <Folder Include="docs\images\" />
+    <Folder Include="docs\nl\" />
+    <Folder Include="docs\zh\" />
+    <Folder Include="scripts\" />
+    <Folder Include="styles\" />
+    <Folder Include="utils\" />
+    <Folder Include="_data\" />
+    <Folder Include="__tests__\" />
+    <Folder Include="__tests__\scripts\" />
+    <Folder Include="__tests__\utils\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
