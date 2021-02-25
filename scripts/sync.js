@@ -15,7 +15,7 @@ async function getBranch() {
     .map(trim)
     .find(x => x.startsWith('*'));
   if (!branch) {
-    throw new Error('Failed to determine current branch');
+    throw new Error('Filed to determine current branch');
   }
 
   return branch.replace('* ', '');
