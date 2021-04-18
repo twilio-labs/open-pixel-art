@@ -103,7 +103,7 @@ The change should look like this:
 {
   "data": [
     {"y": 1, "x": 3, "color": "#F22F46", "username": "twilio-labs"},
-+    { "y": 48, "x": 11, "color": "#2E2B2A", "username": "JoseGarciavgdg"},
++    { "y": 47, "x": 11, "color": "#4F4D4D", "username": "JoseGarciavgdg"},
     {"y": 2, "x": 9, "color": "#F22F46", "username": "twilio"},
     ...
   ]
