@@ -451,7 +451,7 @@
     {"y": 49, "x": 57, "color": "#c75a1b", "username": "hanstognon"},
     {"y": 50, "x": 0, "color": "#FFFF00", "username": "aaron-lord"},
     {"y": 50, "x": 1, "color": "#35c497", "username": "czlucius"},
-    { "y" : 50, "x" : 9 , "color" : "# D433FF" , "username" : "Diego-rgb-ship" } ,
+    {"y": 50, "x": 9, "color": "#D433FF", "username": "Diego-rgb-ship"},
     {"y": 50, "x": 10, "color": "#065c6f", "username": "M-O-H"},
     {"y": 50, "x": 11, "color": "#D96E0F", "username": "Chente31209"},
     {"y": 50, "x": 12, "color": "#0B5FDE", "username": "A01232528-JorgeMaa"},
