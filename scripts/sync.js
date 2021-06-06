@@ -1,3 +1,4 @@
+console.log("Hellow World!");
 const { command: exec } = require('execa');
 const ora = require('ora');
 const os = require('os');
