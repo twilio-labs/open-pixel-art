@@ -1,6 +1,5 @@
 {
   "data": [
-    { "y": 1, "x": 2, "color": "#FFFF00", "username": "cedric" },
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
     {"y": 0, "x": 1, "color": "#0d6d6e", "username": "ViniciusPolachini"},
     {"y": 0, "x": 2, "color": "#50325B", "username": "jesuslerma"},
@@ -115,6 +114,7 @@
     {"y": 4, "x": 12, "color": "#4287f5", "username": "ORiveraJr84"},
     {"y": 4, "x": 13, "color": "#FFFF00", "username": "Samuel0413"},
     {"y": 4, "x": 14, "color": "#63C5DA", "username": "tyffical"},
+    {"y": 4, "x": 15, "color": "#FFFF00", "username": "9wick"},
     {"y": 4, "x": 17, "color": "#66CCFF", "username": "apollozhu"},
     {"y": 4, "x": 20, "color": "#42F5CE", "username": "randyyan2000"},
     {"y": 4, "x": 22, "color": "#3498DB", "username": "pslogic"},
