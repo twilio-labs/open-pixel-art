@@ -2,7 +2,7 @@ const { message, fail, markdown, danger } = require('danger');
 const { stripIndent, stripIndents } = require('common-tags');
 
 function handleMultipleFileChanges(gitChanges) {
-  fail(
+  fail( 
     'This PR requires a manual review because you are changing more files than just `_data/pixels.json`.'
   );
   markdown(stripIndent`
