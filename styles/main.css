@@ -147,7 +147,7 @@ p code {
   transform: translateX(-100%) translateY(-100%);
   position: absolute;
   font-size: 10px;
-  border: 1px solid black;
+  border: 1px solid gray;
 }
 
 .pixel {
