@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
       notify: false,
       host: '0.0.0.0'
     });
-  }
+  } 
 
   return {
     htmlTemplateEngine: 'njk'
