@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
     'node_modules/nes.css/css': 'assets/nes.css'
   });
 
-  // This is so we can expose the docker port and host to be accesible
+  // 
   if (fs.existsSync(dockerEnvFile)) {
     eleventyConfig.setBrowserSyncConfig({
       notify: false,
