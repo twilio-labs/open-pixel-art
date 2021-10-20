@@ -92,4 +92,3 @@ This project is powered by various open-source projects. Among others:
 ## License
 
 MIT
-gramps
