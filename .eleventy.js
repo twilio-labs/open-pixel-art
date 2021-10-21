@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs'); //secret change//
 
 // File path on how we know it's a docker instance
 const dockerEnvFile = '/.dockerenv';
