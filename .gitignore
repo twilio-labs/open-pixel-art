@@ -73,3 +73,6 @@ typings/
 .DS_Store
 _site
 thumbs.db
+
+.fake
+.ionide
