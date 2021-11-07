@@ -6,7 +6,7 @@ function handleMultipleFileChanges(gitChanges) {
     'This PR requires a manual review because you are changing more files than just `_data/pixels.json`.'
   );
   markdown(stripIndent`
-    ## FAQ
+    ## FAQs
 
     *Why has my Pull Request failed the tests?*
 
@@ -56,7 +56,7 @@ async function evaluatePixelChanges(jsonPatch) {
   if (!doesJsonMatchSchema(jsonPatch.after)) {
     fail(stripIndents`Your pixels.json file does not match the expected schema.
 
-    expected schema: 
+    expected schema:
     {
       data: [
         // pixels go here
