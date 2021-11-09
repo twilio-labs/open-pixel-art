@@ -1,1 +1,6 @@
-{"data": [{"y": 1, "x": 24, "color": "#457b9d", "username": "OmGandhi18"}]}
+{
+  "data": [
+    {"y": 0, "x": 1, "color": "#457b9d", "username": "Omgandhi18"},
+    {"y": 1, "x": 24, "color": "#457b9d", "username": "OmGandhi18"}
+  ]
+}
