@@ -4,7 +4,7 @@ const path = require('path');
 const { promisify } = require('util');
 const { sortPixels, pixelsToString } = require('../utils/pixels-helper');
 const appDefaults = require('../_data/defaults.json');
-// this is a comment for twilloquest
+
 const readFile = promisify(fs.readFile);
 const writeFile = promisify(fs.writeFile);
 
