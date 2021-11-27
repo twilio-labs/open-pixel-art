@@ -1,2 +1,2 @@
-#welcome to Nothing
-#omit everything possible.
+left-pad('String', 10)
+
