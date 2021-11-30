@@ -134,7 +134,7 @@ p code {
 }
 
 #contributor-name {
-  color: red;
+  color: rgb(255, 0, 255);
   font-weight: bold;
   padding: 0 5px;
   border: 1px solid black;
