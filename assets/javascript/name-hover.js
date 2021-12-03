@@ -34,6 +34,7 @@ function pixelHover(event) {
     currentY = y.replace(/ /g, '');
     const textName = document.createTextNode(`[${currentY},${currentX}] @${currentName}`);
     tooltip = document.createElement('div');
+    // Check if color fill is a light color
     const isLightColor = getContrastYIQ(fill);
 
     tooltip.className = 'tooltip-name';
