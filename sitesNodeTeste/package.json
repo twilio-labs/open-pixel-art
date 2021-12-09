@@ -1,0 +1,14 @@
+{
+  "name": "node-teste",
+  "version": "1.0.0",
+  "description": "teste npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Labela",
+  "license": "ISC",
+  "dependencies": {
+    "left-pad": "^1.3.0"
+  }
+}
