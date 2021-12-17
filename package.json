@@ -21,7 +21,7 @@
     "url": "git+https://github.com/twilio-labs/open-pixel-art.git"
   },
   "keywords": [],
-  "author": "Twilio Labs <open-source@twilio.com> (https://twilio.com)",
+  "author": "Nate Pelzel",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/twilio-labs/open-pixel-art/issues"
