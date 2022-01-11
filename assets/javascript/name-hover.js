@@ -43,7 +43,7 @@ function pixelHover(event) {
     const contrastStyle = {
       color: fill,
       borderColor: fill,
-      background: isLightColor ? '#040000' : ''
+      background: isLightColor ? '#000000' : ''
     };
     styleElem(tooltip, contrastStyle);
     styleElem(contributorName, contrastStyle);
