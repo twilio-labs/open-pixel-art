@@ -31,6 +31,9 @@ We understand that contributing to open-source can be intimidating and as a resu
   - [Chinese Mandarin](docs/zh/CONTRIBUTING.md)
   - [Dutch](docs/nl/CONTRIBUTING.md)
 
+
+
+zaid parkar
 ## Code of Conduct
 
 We want to make sure that this project is as welcoming to people as possible. By interacting with the project in any shape or form you are agreeing to the project's Code of Conduct:
