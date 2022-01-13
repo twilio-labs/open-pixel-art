@@ -1,0 +1,25 @@
+name: Code Review
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm test
+        env:
+          CI: true
+      - name: Danger
+        run: npx danger ci --text-only -f
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
