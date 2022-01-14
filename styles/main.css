@@ -38,7 +38,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 21px;
+  padding: 20px;
 }
 
 main > section {
