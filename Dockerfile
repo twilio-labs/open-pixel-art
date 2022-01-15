@@ -1,6 +1,6 @@
 # Set the base image as the latest node alpine version
 FROM node:lts-alpine
-
+RUN apk --update add git
 # Copy the work directory so we can use it
 COPY . /open-pixel-art
 WORKDIR /open-pixel-art
