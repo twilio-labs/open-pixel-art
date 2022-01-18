@@ -10,6 +10,7 @@ RUN npm install
 
 # Test Code
 RUN npm test
+RUN ls
 
 # Expose 8080 Port so we can access when we have the Docker instance running
 EXPOSE 8080
