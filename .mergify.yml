@@ -1,3 +1,8 @@
+queue_rules:
+  - name: default
+    conditions:
+      - 'status-success=build'
+
 pull_request_rules:
   - name: inform people about merge conflict
     conditions:
@@ -12,9 +17,9 @@ pull_request_rules:
       - files=_data/pixels.json
       - '#files=1'
     actions:
-      merge:
+      queue:
         method: squash
-        strict: true
+        name: default
       label:
         add:
           - 'pixel-contribution'
