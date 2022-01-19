@@ -12,7 +12,7 @@ Jeder, der lernen möchte, wie man eine Pull-Anfrage für ein Projekt auf GitHub
 > Wenn Sie neu in Open Source, GitHub oder Git im Allgemeinen sind, haben wir in [TwilioQuest](https://www.twilio.com/quest) ein Tutorial für Sie erstellt. Hier erfahren Sie Schritt für Schritt, wie Sie beginnen können, und werden bei der Erstellung Ihrer Pull-Anfrage unterstützt.
 > 🕹 [TwilioQuest herunterladen](https://www.twilio.com/quest/download)
 
-Das gesamte Projekt ist automatisiert und wird größtenteils von einer Reihe von Bots verwaltet, die alle Pixelbeiträge überprüfen. Wenn Sie jedoch mehr über das Projekt erfahren oder andere Beiträge zum Projekt einreichen möchten, die kein Pixel sind, können Sie ein [GitHub-Issue](https://github.com/twilio-labs/open-pixel-art/issues) im [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art). new test
+Das gesamte Projekt ist automatisiert und wird größtenteils von einer Reihe von Bots verwaltet, die alle Pixelbeiträge überprüfen. Wenn Sie jedoch mehr über das Projekt erfahren oder andere Beiträge zum Projekt einreichen möchten, die kein Pixel sind, können Sie ein [GitHub-Issue](https://github.com/twilio-labs/open-pixel-art/issues) im [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Mitmachen
 
