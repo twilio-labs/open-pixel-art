@@ -62,5 +62,9 @@
       "git add",
       "npm run test:pixeldata"
     ]
+  },
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
   }
 }
