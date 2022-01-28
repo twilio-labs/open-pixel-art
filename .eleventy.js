@@ -4,6 +4,7 @@ const fs = require('fs');
 const dockerEnvFile = '/.dockerenv';
 
 module.exports = function(eleventyConfig) {
+  console.log("hello, world.")
   eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.addPassthroughCopy({
