@@ -298,7 +298,7 @@
     {"y": 28, "x": 30, "color": "#1dcc83", "username": "mushahidq"},
     {"y": 28, "x": 32, "color": "#7FFF00", "username": "BobbYaka"},
     {"y": 28, "x": 59, "color": "#00997A", "username": "DevTony101"},
-    {"y": 29, "x": 28, "color": "#FF0000", "username": "quantizedchicken"},
+    +    { "y": 29, "x": 28, "color": "#FF0000", "username": "quantizedchicken"},
     {"y": 29, "x": 29, "color": "#21BABE", "username": "daniel-simms"},
     {"y": 29, "x": 30, "color": "#4D291B", "username": "jyzeng17"},
     {"y": 29, "x": 31, "color": "#6682FF", "username": "niklex21"},
