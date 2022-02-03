@@ -271,6 +271,3 @@ module.exports = {
   hasOnlyPixelChanges,
   isValidNewPixelSubmission
 };
-
-
-document.write("test")
