@@ -114,7 +114,7 @@ p code {
 .screenreader-only:hover,
 .screenreader-only:link,
 .screenreader-only:visited {
-  cursor: arrow;
+  cursor: pointer;
 }
 
 .twilio-pixel {
