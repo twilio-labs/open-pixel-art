@@ -92,3 +92,7 @@ This project is powered by various open-source projects. Among others:
 ## License
 
 MIT
+
+## Testing the Branching Feature
+
+I'm writing in the README now.
