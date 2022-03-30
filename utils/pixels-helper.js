@@ -1,6 +1,5 @@
 const stringify = require('json-stringify-pretty-compact');
 
-// Hi! This is my change for the Flame of Open Source.
 
 function pixelSortFunction(a, b) {
   const xDiff = a.x - b.x;
