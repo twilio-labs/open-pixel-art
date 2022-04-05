@@ -1,3 +1,4 @@
+/*This func sorts pixels*/
 const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
