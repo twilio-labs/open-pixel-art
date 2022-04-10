@@ -12,8 +12,6 @@ Anyone who wishes to learn how to create a pull request for a project on GitHub 
 > If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in [TwilioQuest](https://twil.io/hacktoberfest-quest) for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
 > 🕹 [Download TwilioQuest](https://www.twilio.com/quest/download)
 
-test
-
 The entire project is automated and is largely maintained by a set of bots that will verify any pixel contributions. However, if you'd like to know more about the project or submit other contributions to the project that are not a pixel, feel free to create a [GitHub issue](https://github.com/twilio-labs/open-pixel-art/issues) inside the [Open Pixel Art project](https://github.com/twilio-labs/open-pixel-art).
 
 ## Contributing
