@@ -1,3 +1,4 @@
+// this is the pixels helper
 const stringify = require('json-stringify-pretty-compact');
 
 function pixelSortFunction(a, b) {
