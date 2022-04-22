@@ -1,3 +1,8 @@
+queue_rules:
+  - name: default
+    conditions:
+      - 'status-success=build'
+
 pull_request_rules:
   - name: inform people about merge conflict
     conditions:
@@ -12,9 +17,9 @@ pull_request_rules:
       - files=_data/pixels.json
       - '#files=1'
     actions:
-      merge:
+      queue:
         method: squash
-        strict: true
+        name: default
       label:
         add:
           - 'pixel-contribution'
@@ -23,7 +28,7 @@ pull_request_rules:
       - 'status-failure=build'
     actions:
       comment:
-        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information. If the details reveal a fail in Danger please note that there is currently a known issue (\#2046) and @dkundel will merge your PR manually in the coming days. Sorry for the inconvenience.'
+        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information. If the details reveal a fail in Danger please note that there is currently a known issue (\#2046) and @rmkubik will merge your PR manually in the coming days. Sorry for the inconvenience.'
       label:
         add:
           - 'needs-help'
@@ -32,7 +37,7 @@ pull_request_rules:
       - '#files>=2'
     actions:
       comment:
-        message: 'This PR touches more than one file and has to be reviewed manually. @dkundel'
+        message: 'This PR touches more than one file and has to be reviewed manually. @rmkubik'
       label:
         add:
           - 'needs-review'
