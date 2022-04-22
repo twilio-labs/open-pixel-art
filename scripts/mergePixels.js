@@ -11,7 +11,7 @@ const writeFile = promisify(fs.writeFile);
 const pixelToId = pixel => `${pixel.x}|${pixel.y}|${pixel.username}`;
 const coordinatesToId = coord => `${coord.x},${coord.y}`;
 
-async function getSortedPixelsFromFile(filePath) {
+async function getSortedPixelsFromFile(filePath) { 
   const fileContent = await readFile(filePath, 'utf8');
   const unsortedPixelsJson = JSON.parse(fileContent);
   return sortPixels(unsortedPixelsJson);
