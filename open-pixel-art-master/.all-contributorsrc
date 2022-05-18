@@ -1,0 +1,160 @@
+{
+  "projectName": "open-pixel-art",
+  "projectOwner": "twilio-labs",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "dkundel",
+      "name": "Dominik Kundel",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1505101?v=4",
+      "profile": "https://dkundel.com",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "amykapernick",
+      "name": "Amy Kapernick",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/15953185?v=4",
+      "profile": "https://aimhigherwebdesign.com.au",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "kwhinnery",
+      "name": "Kevin Whinnery",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/29193?v=4",
+      "profile": "https://github.com/kwhinnery",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rickyrobinett",
+      "name": "Ricky Robinett",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/838096?v=4",
+      "profile": "http://rickyrobinett.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "andrescalco",
+      "name": "André Felipe Scalco",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/10577705?v=4",
+      "profile": "https://github.com/andrescalco",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "teddy-gustiaux",
+      "name": "Teddy Gustiaux",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/26365722?v=4",
+      "profile": "https://gustiaux.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AidanJSmith",
+      "name": "Aidan Smith",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26717362?v=4",
+      "profile": "https://github.com/AidanJSmith",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "TheHandsomeCoder",
+      "name": "Scott O'Malley",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1569604?v=4",
+      "profile": "https://github.com/TheHandsomeCoder",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "toddmoy",
+      "name": "Todd Moy",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22126?v=4",
+      "profile": "http://www.toddmoy.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "FailedSitcom",
+      "name": "Samuel Durkin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6232253?v=4",
+      "profile": "http://www.samueldurkin.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "nokenwa",
+      "name": "ChatterboxCoder",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/23080261?v=4",
+      "profile": "https://github.com/nokenwa",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "simeydk",
+      "name": "Simey de Klerk",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13088589?v=4",
+      "profile": "https://github.com/simeydk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "annthurium",
+      "name": "Tilde Ann Thurium",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3781742?v=4",
+      "profile": "https://github.com/annthurium",
+      "contributions": [
+        "review"
+      ]
+    },
+    {
+      "login": "dpeukert",
+      "name": "Daniel Peukert",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3451904?v=4",
+      "profile": "https://gitlab.com/dpeukert",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "izontm",
+      "name": "izontm",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/860741?v=4",
+      "profile": "https://github.com/izontm",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "carlyrobison",
+      "name": "Carly Robison",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7573501?v=4",
+      "profile": "https://github.com/carlyrobison",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
