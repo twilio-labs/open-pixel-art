@@ -1,5 +1,3 @@
-//hello
-
 const fs = require('fs');
 const { stripIndent } = require('common-tags');
 const path = require('path');
