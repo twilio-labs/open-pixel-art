@@ -1,0 +1,43 @@
+queue_rules:
+  - name: default
+    conditions:
+      - 'status-success=build'
+
+pull_request_rules:
+  - name: inform people about merge conflict
+    conditions:
+      - conflict
+    actions:
+      comment:
+        message: 'Unfortunately it seems like some other contributions have been merged since you contributed. Please resolve those merge conflicts. For more info check out this page: https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line'
+  - name: automatic merge on CI success for pixel contributions
+    conditions:
+      - -conflict
+      - 'status-success=build'
+      - files=_data/pixels.json
+      - '#files=1'
+    actions:
+      queue:
+        method: squash
+        name: default
+      label:
+        add:
+          - 'pixel-contribution'
+  - name: create comment for failed CI
+    conditions:
+      - 'status-failure=build'
+    actions:
+      comment:
+        message: 'Unfortunately the automatic code review has failed. Please click the details button for more information. If the details reveal a fail in Danger please note that there is currently a known issue (\#2046) and @rmkubik will merge your PR manually in the coming days. Sorry for the inconvenience.'
+      label:
+        add:
+          - 'needs-help'
+  - name: add label for review for more than one file change
+    conditions:
+      - '#files>=2'
+    actions:
+      comment:
+        message: 'This PR touches more than one file and has to be reviewed manually. @rmkubik'
+      label:
+        add:
+          - 'needs-review'
