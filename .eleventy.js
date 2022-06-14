@@ -1,7 +1,5 @@
 const fs = require('fs');
 
-//THESE ARE MY CHANGES!!!!
-
 // File path on how we know it's a docker instance
 const dockerEnvFile = '/.dockerenv';
 
