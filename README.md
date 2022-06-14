@@ -4,7 +4,6 @@
 
 This is an art project created with the intention to teach you how to create a pull request.
 
-<!-- Nothing to see here just adding this to make a pull request  -->
 
 Visit [open-pixel-art.com](https://open-pixel-art.com) to see the full artwork!
 
