@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# Contributor Covenant Code of Conduct 😡
 
 ¿Español? Puedes encontrar nuestro Código de Conducta traducido en [este enlace](docs/es/CODE_OF_CONDUCT.md).
 
