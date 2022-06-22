@@ -11,6 +11,7 @@ const pixelFilePath = path.join('_data', 'pixels.json');
 readFile(pixelFilePath, { encoding: 'utf8' })
   .then(pixelFileData => {
     const pixels = JSON.parse(pixelFileData);
+
     const sortedPixelString = pixelsToString(sortPixels(pixels));
 
     writeFile(pixelFilePath, sortedPixelString);
