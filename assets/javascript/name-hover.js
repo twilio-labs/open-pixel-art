@@ -22,7 +22,7 @@ function pixelHover(event) {
 
   // Calculate top position and put in variable
   const topPos = event.clientY - 3 + window.scrollY;
-
+ // take the tooltip value from the document 
   let tooltip = document.getElementsByClassName('tooltip-name')[0];
   let contributorName = document.getElementById('contributor-name');
 
