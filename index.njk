@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="The Open Pixel Art project is a collaborative art project designed to teach you how to contribute to open-source.">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@twilio" />
+    <meta name="twitter:title" content="Open Pixel Art by Twilio" />
+    <meta name="twitter:description" content="A collaborative art project designed to teach you how to contribute to open-source." />
+    <meta name="twitter:image" content="https://open-pixel-art.com/assets/open-graph-image.png" />
+    <meta name="twitter:image:alt" content="Text saying Open Pixel Art in a pixelated font with colorful pixels spread around." />
+    <meta property="og:url" content="https://open-pixel-art.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Open Pixel Art by Twilio" />
+    <meta property="og:description" content="A collaborative art project designed to teach you how to contribute to open-source." />
+    <meta property="og:image" content="https://open-pixel-art.com/assets/open-graph-image.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <title>Open Pixel Art by Twilio</title>
+    <link rel="shortcut icon" href="https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="/assets/nes.css/nes.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <script src="/assets/javascript/name-hover.js"></script>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1><img class="logo" src="/assets/open-pixel-art-logo.svg" alt="Open Pixel Art by Twilio"/></h1>
+      </hgroup>
+      <nav>
+        <ul class="nav-list">
+          <li class="screenreader-only">
+            <a href="#canvas">Go to the Pixel Art Canvas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nes-btn" href="#about">About the Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nes-btn" href="#contributing">Contribute a Pixel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nes-btn" href="#contributors">See All Contributors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check on Github">View on GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+        <div>
+          <button class="nes-btn" onClick="random()">Random (r)</button>
+          <button class="nes-btn" onClick="order()">Order (o)</button>
+          <button class="nes-btn" onClick="twist()">Twist (t)</button>
+          <button class="nes-btn" onClick="flip()">Flip (f)</button>
+          <button class="nes-btn" onClick="vert()">V-Flip (v)</button>
+          <button class="nes-btn" onClick="walk()">Walk (w)</button>
+          <button class="nes-btn" onClick="gravity()">Gravity (g)</button>
+        </div>
+        <div>
+          <button class="nes-btn" onClick="loop()">Loop (l)</button>
+          <button class="nes-btn" onClick="reset()">Reset (Esc)</button>
+          <button class="nes-btn" onClick="toggleImages()">Avatars (a)</button>
+          <button class="nes-btn" onClick="runAll()">Run All (p)</button>
+        </div>
+      <section  id="canvas" class="nes-container with-title" aria-label="You are in the Pixel Art Canvas. Hover over a pixel to hear the github username who contributed it.">
+        <div role="heading" aria-level="2" class="screenreader-only">Pixel Art Canvas</div>
+        <svg id="pixel-canvas" viewbox="0 0 {{defaults.image.width * defaults.image.scale}} {{defaults.image.height * defaults.image.scale}}">
+          <rect x="0" y="0" width="100%" height="100%" style="fill: {{defaults.image.background}}"/>
+          {% for pixel in pixels.data %}
+            {% if pixel.color %}
+              <rect 
+                class="pixel-rect pixel" 
+                x="{{pixel.x * defaults.image.scale}}" 
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
+                width="{{defaults.image.scale}}" 
+                height="{{defaults.image.scale}}" 
+                style="fill: {{pixel.color}}" 
+                name="{% if pixel.username %}{{pixel.username}} {% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}"
+              /> 
+              <image 
+                class="pixel-image pixel hidden"
+                x="{{pixel.x * defaults.image.scale}}" 
+                y="{{(defaults.image.height - pixel.y - 1) * defaults.image.scale}}" 
+                width="{{defaults.image.scale}}" 
+                height="{{defaults.image.scale}}"
+                xlink:href="#" 
+                color="{{pixel.color}}" 
+                name="{% if pixel.username %}{{pixel.username}}{% endif %}"
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}" 
+              /> 
+            {% elif pixel.tileName %}
+              <image xlink:href="assets/tiles/{{pixel.tileName}}.png"
+                width="{{defaults.image.scale * 5}}"
+                height="{{defaults.image.scale * 5}}"
+                x="{{pixel.x * defaults.image.scale}}"
+                y="{{(defaults.image.height - pixel.y - 5) * defaults.image.scale }}"
+                name="{% if pixel.username %}{{pixel.username}}{% endif %} 
+                data-pixel-x="{% if pixel.x %}{{pixel.x}} {% endif %}"
+                data-pixel-y="{% if pixel.x %}{{pixel.y}} {% endif %}""/>
+            {% endif %}
+          {% endfor %}
+          {% if env.isLocal %}
+            <!-- Lines for debug purposes -->
+            {% for horizontal in range(0, defaults.image.width) %}
+              <line y1="{{horizontal * defaults.image.scale}}" y2="{{horizontal * defaults.image.scale}}" x1="0" x2="{{defaults.image.height * defaults.image.scale}}" stroke-width="1" stroke="#aaa"/>
+            {% endfor %}
+            <line x1="{{defaults.image.width * defaults.image.scale}}" x2="{{defaults.image.width * defaults.image.scale}}" y1="0" y2="{{defaults.image.height * defaults.image.scale}}" stroke-width="1" stroke="#aaa"/>
+            {% for vertical in range(0, defaults.image.height) %}
+              <line x1="{{vertical * defaults.image.scale}}" x2="{{vertical * defaults.image.scale}}" y1="0" y2="{{defaults.image.width * defaults.image.scale}}" stroke-width="1" stroke="#aaa"/>
+            {% endfor %}
+            <line y1="{{defaults.image.height * defaults.image.scale}}" y2="{{defaults.image.height * defaults.image.scale}}" x1="0" x2="{{defaults.image.width * defaults.image.scale}}" stroke-width="1" stroke="#aaa"/>
+          {% endif %}
+        </svg>
+      </section>
+      <section class="nes-container with-title">
+        <h2 class="title" id="contributor">Contributor</h2>
+        <p aria-label="Hover over any pixel to hear the github username who contributed it.">Hover over any pixel to see the username of the person who contributed it.</p>
+        <p>That pixel was contributed by: <span id="contributor-name" aria-live="polite">no pixel hovered</span></p>
+      </section>
+      <section class="nes-container with-title">
+        <h2 class="title" id="about">About the Project</h2>
+        <p>Welcome to the Open Pixel Art project.</p>
+        <p>
+          This is an art project created with the intention to teach you how to create a pull request.
+        </p>
+        <p>
+          Anyone who wishes to learn how to create a pull request for a project on GitHub can use this project to contribute a pixel to the canvas. You will only be able to ever create one pixel but you can pix whatever color you prefer as long as it is a valid HEX code. For example:
+          <code>#F22F46</code>
+          the brand color of
+          <a class="external-link" href="https://www.twilio.com/" target="_blank" rel="noreferrer" >Twilio</a>
+        </p>
+        <div class="nes-container is-dark">
+          <p>
+            If you are new to open-source, GitHub or git in general, fear not, we created a tutorial in
+            <a href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
+            for you. It will teach you step by step on how you can get started and will guide you on your quest of creating your pull request.
+          </p>
+          <p class="text-center">
+            <a class="nes-btn is-primary" href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer">Download TwilioQuest</a>
+          </p>
+        </div>
+        <p>
+          The entire project is automated and is largely maintained by a set of bots that will verify any pixel contributions. However, if you'd like to know more about the project or submit other contributions to the project that are not a pixel, feel free to create a
+          <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art/issues" target="_blank" rel="noreferrer" >GitHub issue</a>
+          inside the
+          <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" >Open Pixel Art project</a>.
+        </p>
+      </section>
+      <section class="nes-container with-title">
+        <h2 id="contributing" class="title">Contribute a Pixel</h2>
+        <p>
+          In order to contribute a pixel to the canvas, you'll have to create a
+          <a class="external-link" href="https://opensource.guide/how-to-contribute/#opening-a-pull-request" target="_blank" rel="noreferrer" >pull request</a>
+          to the
+          <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" >Open Pixel Art project on GitHub</a>.
+        </p>
+        <p>
+          If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the
+          <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" >contributing guide</a>.
+        </p>
+        <p>
+          We understand that contributing to open-source can be intimidating and as a result we created a mission in our interactive coding game
+          <a class="external-link" href="https://twil.io/hacktoberfest-quest" target="_blank" rel="noreferrer" >TwilioQuest</a>
+          that will walk you step by step through creating a pull request for this project and help you embark on your new quest into open-source!
+        </p>
+        <p class="text-center">
+          <i class="nes-octocat" aria-hidden="true"></i>
+        </p>
+        <p class="text-center">
+          <a class="nes-btn is-primary external-link" href="https://www.twilio.com/quest/download" target="_blank" rel="noreferrer" >Download TwilioQuest</a>
+          <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art/blob/master/CONTRIBUTING.md" target="_blank" rel="noreferrer" >Check out the Contributing Guide</a>
+        </p>
+      </section>
+      <section class="nes-container with-title">
+        <h2 class="title" id="contributors">Thank you for Contributing</h2>
+        <p class="text-center">
+          <i class="nes-icon is-large heart" aria-hidden="true"></i>
+        </p>
+        <p>Thank you to everyone who contributed to the project! You can find the whole list of contributors on GitHub.</p>
+        <p class="text-center">
+          <a class="nes-btn external-link" href="https://github.com/twilio-labs/open-pixel-art/graphs/contributors" target="_blank" rel="noreferrer" >View Contributors</a>
+        </p>
+      </section>
+    </main>
+    <footer class="text-center">
+      <p class="footer-icons">
+        <a class="external-link" href="https://github.com/twilio-labs/open-pixel-art" target="_blank" rel="noreferrer" aria-label="Check Project on Github">
+          <i class="nes-icon github" aria-hidden="true"></i>
+        </a>
+        <a class="external-link" href="https://www.twilio.com/labs?utm_source=hacktoberfest19&utm_campaign=hacktoberfest19" target="_blank" rel="noreferrer" aria-label="Check Twilio's Featured Projects for Contribution">
+          <img src="/assets/twilioBug.svg" alt="pixelated Twilio logo" class="twilio-pixel"/>
+        </a>
+        <a class="external-link" href="https://www.facebook.com/TeamTwilio/" target="_blank" rel="noreferrer" aria-label="Check twilio facebook account">
+          <i class="nes-icon facebook" aria-hidden="true"></i>
+        </a>
+        <a class="external-link" href="https://twitter.com/twilio" target="_blank" rel="noreferrer" aria-label="Check twilio twitter account">
+          <i class="nes-icon twitter" aria-hidden="true"></i>
+        </a>
+        <a class="external-link" href="https://www.linkedin.com/company/twilio-inc-" target="_blank" rel="noreferrer" aria-label="Check twilio LinkedIn account">
+          <i class="nes-icon linkedin" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>Created by
+        <a href="https://www.twilio.com/" class="twilio-link external-link" target="_blank" rel="noreferrer" >Twilio</a>
+        with and for the community.</a>
+      <p></footer>
+
+    <script src="/assets/javascript/party-mode.js"></script>
+
+    </body>
+  </html>
