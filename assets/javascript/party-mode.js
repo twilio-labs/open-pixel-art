@@ -18,6 +18,7 @@ rects.forEach((rect, i) => {
 document.addEventListener('keydown', onKeyDown);
 
 function onKeyDown(event) {
+  console.log(event);
   // don't interfere with copy/paste/reload
   const isControlAction = event.metaKey || event.ctrlKey;
   if (isControlAction) {
