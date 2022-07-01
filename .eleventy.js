@@ -1,7 +1,6 @@
 const fs = require('fs');
 
 // File path on how we know it's a docker instance
-//Commentary for Open Source flame
 const dockerEnvFile = '/.dockerenv';
 
 module.exports = function(eleventyConfig) {
