@@ -1,7 +1,7 @@
 {
   "data": [
     {"y": 0, "x": 0, "color": "#ff9900", "username": "scottmwalton"},
-    {"y": 0, "x": 1, "color": "#ff99ff", "username": "cortezedu"},
+    {"y": 0, "x": 1, "color": "#0d6d6e", "username": "ViniciusPolachini"},
     {"y": 0, "x": 2, "color": "#50325B", "username": "jesuslerma"},
     {"y": 0, "x": 3, "color": "#FFFF00", "username": "Beowulfdgo"},
     {"y": 0, "x": 4, "color": "#a51c30", "username": "lonerz"},
@@ -23,7 +23,7 @@
     {"y": 0, "x": 20, "color": "#003B6F", "username": "buzzell"},
     {"y": 0, "x": 21, "color": "#003B6F", "username": "MonteCrystal"},
     {"y": 0, "x": 22, "color": "#114514", "username": "Certseeds"},
-    {"y": 0, "x": 23, "color": "#000000", "username": "stryx"},
+    {"y": 0, "x": 23, "color": "#000000", "username": "jpceia"},
     {"y": 0, "x": 24, "color": "#ff00ee", "username": "ParitySm"},
     {"y": 0, "x": 25, "color": "#000019", "username": "AgoraSecurity"},
     {"y": 0, "x": 26, "color": "#ff5632", "username": "ga-sr"},
@@ -69,6 +69,7 @@
     {"y": 1, "x": 21, "color": "#210B61", "username": "dzeyelid"},
     {"y": 1, "x": 22, "color": "#FF2F21", "username": "PaulZhu0122"},
     {"y": 1, "x": 23, "color": "#F22F46", "username": "rodneybbjr"},
+    {"y": 1, "x": 28, "color": "#F22F46", "username": "cortezedu"},
     {"y": 1, "x": 34, "color": "#AAFF00", "username": "foting"},
     {"y": 1, "x": 35, "color": "#333333", "username": "spoelstraethan"},
     {"y": 1, "x": 57, "color": "#0000FF", "username": "Dummyapt"},
@@ -192,7 +193,6 @@
     {"y": 10, "x": 44, "color": "#98B4D4", "username": "krith-10"},
     {"y": 11, "x": 11, "color": "#008080", "username": "dimalytvyn"},
     {"y": 11, "x": 41, "color": "#A556F2", "username": "SriyaR"},
-    {"y": 12, "x": 3, "color": "#0d6d6e", "username": "cortez"},
     {"y": 12, "x": 4, "color": "#FFFF00", "username": "xiaoyang413"},
     {"y": 12, "x": 7, "color": "#FFA500", "username": "happypotato1207"},
     {"y": 12, "x": 12, "color": "#000000", "username": "LiaTsernant"},
