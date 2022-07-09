@@ -26,7 +26,7 @@ Enjoy your quest!
 ## Setup Local Project
 
 1. [Create a fork](https://help.github.com/en/articles/fork-a-repo) of this project
-2. Clone the project:npm
+2. Clone the project:
 
 ```bash
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/open-pixel-art.git
