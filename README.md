@@ -79,7 +79,7 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Technology Thank You
 
-This project is powered by various open-source projects. E.g.:
+This project is powered by various open-source projects. Among others:
 
 - [Eleventy](https://www.11ty.io/) for the static site generation
 - [Danger](https://danger.systems/js/) for the automated code review
