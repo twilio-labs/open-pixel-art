@@ -26,7 +26,7 @@ let spinner;
 async function run() {
   spinner = ora('Syncing your fork with the original repo').start();
 
-  spinner.text = 'Getting current branch';
+  spinner.text = 'Getting current branch';asdfasdf
   const currentBranch = await getBranch();
 
   spinner.text = 'Checking if remote "twilio-labs" is configured';
