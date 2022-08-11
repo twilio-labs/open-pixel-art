@@ -1,5 +1,6 @@
 const stringify = require('json-stringify-pretty-compact');
 
+
 function pixelSortFunction(a, b) {
   const xDiff = a.x - b.x;
   const yDiff = a.y - b.y;
