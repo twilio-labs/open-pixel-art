@@ -1,4 +1,3 @@
-
 # Maintainers
 
 ## List of current maintainers
