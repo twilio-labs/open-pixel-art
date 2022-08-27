@@ -1,4 +1,3 @@
-//this is a comment
 const { command: exec } = require('execa');
 const ora = require('ora');
 
