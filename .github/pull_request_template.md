@@ -7,11 +7,12 @@
 <!-- Before submitting your pull request please make sure you checked the following tasks: -->
 
 - [ ] I ran `npm test` locally and it passed without errors.
+- [X] I ran `npm test` locally and it passed without errors.
 <!-- Delete this if the PR is for something other than a pixel -->
-- [ ] I only edited the `_data/pixels.json` file.
+- [X] I only edited the `_data/pixels.json` file.
 <!-- Delete this if the PR is for something other than a pixel -->
-- [ ] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
-- [ ] I acknowledge that all my contributions will be made under the project's [license](../LICENSE).
+- [X] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
+- [X] I acknowledge that all my contributions will be made under the project's [license](../LICENSE).
 
 <!-- To check a task, put a "x" between the brackets, similar to [x] -->
 
