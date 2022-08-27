@@ -1,6 +1,10 @@
 {
-  "[json]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  }
+    "[json]": {
+        "editor.formatOnSave": false,
+        "editor.formatOnPaste": false
+    },
+    "cSpell.words": [
+        "nullinteger",
+        "nullinterger"
+    ]
 }
