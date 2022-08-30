@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/twilio-labs/open-pixel-art#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^1.0.2",
     "@types/jest": "^24.0.18",
     "common-tags": "^1.8.0",
     "danger": "^10.0.0",
