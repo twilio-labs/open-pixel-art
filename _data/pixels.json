@@ -244,6 +244,7 @@
     {"y": 20, "x": 0, "color": "#fe2b5b", "username": "Elisecroft"},
     {"y": 20, "x": 1, "color": "#990000", "username": "emberquill"},
     {"y": 20, "x": 2, "color": "#ffd9d6", "username": "litiwu"},
+    {"y": 20, "x": 10, "color": "#f542da", "username": "russpv"},
     {"y": 20, "x": 13, "color": "#ff0000", "username": "phundal-twilio"},
     {"y": 20, "x": 14, "color": "#ff0000", "username": "enkeboll"},
     {"y": 20, "x": 15, "color": "#ff0000", "username": "hezonghan"},
