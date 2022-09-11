@@ -8,6 +8,9 @@ WORKDIR /open-pixel-art
 # Install Dependencies
 RUN npm install
 
+# Make a mark MLH
+# Nothing too fancy, 😎.
+
 # Test Code
 RUN npm test
 
