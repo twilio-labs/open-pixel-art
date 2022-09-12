@@ -23,6 +23,7 @@ function pixelHover(event) {
   // Calculate top position and put in variable
   const topPos = event.clientY - 3 + window.scrollY;
 
+  // Get the first element on the page by the name of tooltip-name
   let tooltip = document.getElementsByClassName('tooltip-name')[0];
   let contributorName = document.getElementById('contributor-name');
 
