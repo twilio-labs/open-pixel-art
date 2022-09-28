@@ -89,7 +89,6 @@ This project is powered by various open-source projects. Among others:
 - [NES.css](https://nostalgic-css.github.io/NES.css/) for the CSS styling
 - [Welcome Bot](https://github.com/behaviorbot/welcome) to welcome new contributors
 
-updating for twilioQuest
 ## License
 
 MIT
