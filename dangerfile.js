@@ -6,7 +6,7 @@ function handleMultipleFileChanges(gitChanges) {
     'This PR requires a manual review because you are changing more files than just `_data/pixels.json`.'
   );
   markdown(stripIndent`
-    ## Frequently Asked Questions (FAQ)
+    ## Frequently Asked Questions(FAQ):-
 
     *Why has my Pull Request failed the tests?*
 
