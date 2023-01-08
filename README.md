@@ -40,7 +40,7 @@ We want to make sure that this project is as welcoming to people as possible. By
 - [Deutsch](docs/de/CODE_OF_CONDUCT.md)
 - [Brazilian Portuguese](docs/br/CODE_OF_CONDUCT.md)
 
-If you feel like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
+If  felt like another individual has violated the code of conduct, please raise a complaint to [open-source@twilio.com](mailto:open-source@twilio.com).
 
 ## Contributors
 
