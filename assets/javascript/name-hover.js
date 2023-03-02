@@ -6,7 +6,7 @@ window.onload = () => {
   document.getElementById('canvas').onmouseout = removeTooltip;
 };
 
-// To save name that currently in the tooltip
+// To save name that currently in the tooltip.....
 let currentName;
 
 /**
