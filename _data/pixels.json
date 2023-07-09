@@ -319,7 +319,7 @@
     {"y": 31, "x": 29, "color": "#16A096", "username": "t3xhno"},
     {"y": 31, "x": 30, "color": "#160986", "username": "jeojhx"},
     {"y": 31, "x": 31, "color": "#FF00FF", "username": "OliverParoczai"},
-    {"y": 31, "x": 32, "color": "#003399", "username": "ArmandoMG"},
+    {"y": 31, "x": 42, "color": "#003399", "username": "apzeedyk"},
     {"y": 31, "x": 44, "color": "#fcaa77", "username": "juanpflores"},
     {"y": 31, "x": 45, "color": "#FF00FF", "username": "Giovannacm"},
     {"y": 31, "x": 46, "color": "#420696", "username": "jibaky"},
@@ -425,6 +425,7 @@
     {"y": 42, "x": 24, "color": "#2DE09A", "username": "FannarLumi"},
     {"y": 42, "x": 28, "color": "#5918df", "username": "YasiOnFire"},
     {"y": 42, "x": 29, "color": "#b572c0", "username": "kezizhou"},
+    {"y": 42, "x": 31, "color": "#fc03be", "username": "mike"},
     {"y": 42, "x": 40, "color": "#0276fd", "username": "MishManners"},
     {"y": 42, "x": 41, "color": "#cc0066", "username": "msandfor"},
     {"y": 42, "x": 42, "color": "#9440A0", "username": "amykapernick"},
@@ -568,7 +569,6 @@
     {"y": 59, "x": 55, "color": "#ff12c2", "username": "marvmn"},
     {"y": 59, "x": 56, "color": "#00BBEE", "username": "OfficialSirH"},
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
-    {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
+    {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"}
   ]
 }
