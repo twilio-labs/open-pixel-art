@@ -27,7 +27,6 @@ function findNewPixel(oldPixels, branchPixels) {
   if (missingPixels.length > 1) {
     const msg = `
 More pixels than one have been added or modified. This requires a manual merge.
-
 The following pixels have been added or modified:
 
 ${pixelsToString(missingPixels)}
