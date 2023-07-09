@@ -3,6 +3,7 @@ const fs = require('fs');
 // File path on how we know it's a docker instance
 const dockerEnvFile = '/.dockerenv';
 
+//Hi xd
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
   eleventyConfig.addPassthroughCopy('assets');
