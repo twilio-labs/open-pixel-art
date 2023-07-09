@@ -16,6 +16,11 @@ The entire project is automated and is largely maintained by a set of bots that 
 
 ## Contributing
 
+
+
+
+
+
 In order to contribute a pixel to the canvas, you'll have to create a [pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) to the [Open Pixel Art project on GitHub](https://github.com/twilio-labs/open-pixel-art).
 
 If you are already familiar with git and how to create a pull request on GitHub, you can go ahead and check out the [contributing guide](CONTRIBUTING.md).
