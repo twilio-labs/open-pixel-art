@@ -506,6 +506,7 @@
     {"y": 57, "x": 3, "color": "#00ffff", "username": "NEwtonsPlaylist"},
     {"y": 57, "x": 5, "color": "#ff0000", "username": "lory575"},
     {"y": 57, "x": 6, "color": "#fc03be", "username": "mich-al"},
+    {"y": 57, "x": 22, "color": "#fc03be", "username": "jkeller22"},
     {"y": 57, "x": 42, "color": "#aabbcc", "username": "Cheyenne-development"},
     {"y": 57, "x": 57, "color": "#AAE3F5", "username": "nottiffchan"},
     {"y": 57, "x": 58, "color": "#888888", "username": "geeknees"},
@@ -567,8 +568,6 @@
     {"y": 59, "x": 53, "color": "#deadbe", "username": "liropa"},
     {"y": 59, "x": 55, "color": "#ff12c2", "username": "marvmn"},
     {"y": 59, "x": 56, "color": "#00BBEE", "username": "OfficialSirH"},
-    {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
-    {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
+    {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"}
   ]
 }
