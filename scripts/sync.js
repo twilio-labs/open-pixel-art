@@ -17,7 +17,6 @@ async function getBranch() {
   if (!branch) {
     throw new Error('Failed to determine current branch');
   }
-
   return branch.replace('* ', '');
 }
 
