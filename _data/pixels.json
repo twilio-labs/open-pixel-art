@@ -569,6 +569,11 @@
     {"y": 59, "x": 56, "color": "#00BBEE", "username": "OfficialSirH"},
     {"y": 59, "x": 57, "color": "#36FF00", "username": "poecilonym"},
     {"y": 59, "x": 58, "color": "#ccff00", "username": "TheLaz"},
-    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"}
+    {"y": 59, "x": 59, "color": "#fc03be", "username": "hjpunzalan"},
+    {"y": 32, "x": 3, "color": "#FFFFFF", "username": "Ananya0504"},
+    {"y": 32, "x": 5, "color": "#FFFFFF", "username": "Ananya0504"},
+    {"y": 30, "x": 3, "color": "#FFFFFF", "username": "Ananya0504"},
+    {"y": 30, "x": 4, "color": "#FFFFFF", "username": "Ananya0504"},
+    {"y": 30, "x": 5, "color": "#FFFFFF", "username": "Ananya0504"}
   ]
 }
