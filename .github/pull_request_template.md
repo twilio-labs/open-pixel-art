@@ -6,16 +6,16 @@
 
 <!-- Before submitting your pull request please make sure you checked the following tasks: -->
 
-- [ ] I ran `npm test` locally and it passed without errors.
+- [x] I ran `npm test` locally and it passed without errors.
 <!-- Delete this if the PR is for something other than a pixel -->
-- [ ] I only edited the `_data/pixels.json` file.
+- [x] I only edited the `_data/pixels.json` file.
 <!-- Delete this if the PR is for something other than a pixel -->
-- [ ] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
-- [ ] I acknowledge that all my contributions will be made under the project's [license](../LICENSE).
+- [x] I entered the `username` in the `pixels.json` that I'm also using to create this pull request.
+- [x] I acknowledge that all my contributions will be made under the project's [license](../LICENSE).
 
 <!-- To check a task, put a "x" between the brackets, similar to [x] -->
 
-<!-- PIXEL CONTRIBUTIONS // END -->
+<!-- {"y": 1, "x": 1, "color": "#E6E6FA", "username": "coxjl24"}, // END -->
 
 <!-- OTHER CONTRIBUTIONS // START -->
 
@@ -26,7 +26,7 @@
 
 ## Description
 
-a short description of your pull request
+I'm doing this for Twilioquest!
 
 ## Related issues
 
